@@ -26,23 +26,16 @@ for (const file of files) {
   }
 }
 
-let failed = false;
 for (const category of taxonomy.categories) {
   const categoryCount = categoryCounts.get(category.id) ?? 0;
-  const categoryReady = categoryCount >= 20;
-  failed ||= !categoryReady;
-  console.log(
-    `${categoryReady ? "PASS" : "MISS"} ${category.id}: ${categoryCount}/20 listings`,
-  );
+  console.log(`COUNT ${category.id}: ${categoryCount} listings`);
   for (const subcategory of category.subcategories) {
     const count = subcategoryCounts.get(`${category.id}/${subcategory.id}`) ?? 0;
-    const ready = count >= 10;
-    failed ||= !ready;
-    console.log(
-      `  ${ready ? "PASS" : "MISS"} ${subcategory.id}: ${count}/10 assignments`,
-    );
+    console.log(`  COUNT ${subcategory.id}: ${count} assignments`);
   }
 }
 
 console.log(`\n${files.length} published opportunities inspected.`);
-if (process.argv.includes("--enforce") && failed) process.exit(1);
+if (process.argv.includes("--enforce")) {
+  console.warn("--enforce is deprecated: catalogue quantity is not a quality gate. Run npm run reports for quality metrics.");
+}

@@ -29,13 +29,15 @@ Run the schema and taxonomy tests before submitting data changes:
 ```sh
 npm ci
 npm test
-npm run coverage -- --enforce
+npm run coverage
+npm run reports -- --as-of YYYY-MM-DD
 ```
 
-The coverage check requires at least 20 opportunities in every primary category
-and at least 10 assignments for every subcategory. One opportunity may count
-toward multiple subcategories only when each assignment accurately describes
-the program.
+Coverage is descriptive and has no minimum quota. A smaller category of strong,
+current, evidence-backed records does not fail. Quality reporting tracks review
+age, structured fields, duplicate/generic text, geography, provenance and
+manual-review needs. One opportunity may count toward multiple subcategories
+only when each assignment accurately describes the program.
 
 Use `npm run audit:sources` to verify published source and official URLs. A
 failed URL makes the command fail. Some official sites reject automated requests;

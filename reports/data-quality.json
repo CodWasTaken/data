@@ -1,0 +1,72 @@
+{
+  "reportVersion": 1,
+  "asOf": "2026-07-22",
+  "recordsInspected": 1068,
+  "metrics": {
+    "recentlyReviewed": {
+      "count": 1068,
+      "percentage": 100
+    },
+    "recordsOverdueForReview": {
+      "count": 0,
+      "percentage": 0
+    },
+    "structuredDeadlines": {
+      "count": 0,
+      "percentage": 0
+    },
+    "applicationUrls": {
+      "count": 0,
+      "percentage": 0
+    },
+    "providerSpecificEligibility": {
+      "count": 73,
+      "percentage": 6.84
+    },
+    "multipleEvidenceLinks": {
+      "count": 0,
+      "percentage": 0
+    },
+    "duplicateUrlRecords": {
+      "count": 120,
+      "percentage": 11.24
+    },
+    "duplicateProviderTitleRecords": {
+      "count": 0,
+      "percentage": 0
+    },
+    "genericTextRecords": {
+      "count": 995,
+      "percentage": 93.16
+    },
+    "brokenLinkRate": {
+      "status": "not-measured",
+      "reason": "Network source audit was not run as part of deterministic report generation."
+    },
+    "redirectRate": {
+      "status": "not-measured",
+      "reason": "Redirect destinations require a separate network audit."
+    },
+    "uncertainStatus": {
+      "count": 0,
+      "percentage": 0
+    },
+    "incompleteGeography": {
+      "count": 1057,
+      "percentage": 98.97
+    },
+    "humanReviewProvenance": {
+      "count": 0,
+      "percentage": 0
+    },
+    "automatedImportLikely": {
+      "count": 1067,
+      "percentage": 99.91
+    },
+    "requiresManualSourceReview": {
+      "count": 1061,
+      "percentage": 99.34
+    }
+  },
+  "interpretation": "Coverage counts are descriptive only. Categories do not fail because they contain fewer than an arbitrary quota."
+}
