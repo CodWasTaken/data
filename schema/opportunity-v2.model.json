@@ -136,11 +136,11 @@
         "properties": {
           "status": { "enum": ["open", "rolling", "upcoming", "limited", "waitlist", "temporarily-unavailable", "closed", "expired", "unconfirmed", "disputed", "archived"] },
           "statusReason": { "type": ["string", "null"], "maxLength": 1000 },
-          "opensAt": { "$ref": "#/$defs/nullableDateTime" },
-          "closesAt": { "$ref": "#/$defs/nullableDateTime" },
+          "opensAt": { "$ref": "#/$defs/nullableTemporal" },
+          "closesAt": { "$ref": "#/$defs/nullableTemporal" },
           "deadlineType": { "enum": ["fixed", "rolling", "periodic", "unknown", "none"] },
           "applicationCycle": { "type": ["string", "null"], "maxLength": 500 },
-          "nextExpectedOpening": { "$ref": "#/$defs/nullableDateTime" }
+          "nextExpectedOpening": { "$ref": "#/$defs/nullableTemporal" }
         }
       },
       "costAndBenefit": {
@@ -181,7 +181,7 @@
           "reviewMethod": { "enum": ["human", "human-assisted", "provider-confirmed", "legacy-record-migration"] },
           "reviewerReference": { "type": ["string", "null"], "maxLength": 120 },
           "claimsChecked": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 200 }, "uniqueItems": true },
-          "nextReviewAt": { "$ref": "#/$defs/nullableDateTime" },
+          "nextReviewAt": { "$ref": "#/$defs/nullableTemporal" },
           "sourceFetchedAt": { "$ref": "#/$defs/nullableDateTime" },
           "sourceHash": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" },
           "confidence": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
@@ -231,6 +231,7 @@
       "httpsUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
       "nullableHttpsUrl": { "anyOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }] },
       "nullableDateTime": { "anyOf": [{ "type": "string", "format": "date-time" }, { "type": "null" }] },
+      "nullableTemporal": { "anyOf": [{ "type": "string", "format": "date-time" }, { "type": "string", "format": "date" }, { "type": "null" }] },
       "slugArray": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }, "uniqueItems": true, "maxItems": 30 },
       "idArray": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }, "uniqueItems": true },
       "countryCodeArray": { "type": "array", "items": { "type": "string", "pattern": "^[A-Z]{2}$" }, "uniqueItems": true }

@@ -302,10 +302,10 @@
                 "maxLength": 1000
               },
               "opensAt": {
-                "$ref": "#/$defs/nullableDateTime"
+                "$ref": "#/$defs/nullableTemporal"
               },
               "closesAt": {
-                "$ref": "#/$defs/nullableDateTime"
+                "$ref": "#/$defs/nullableTemporal"
               },
               "deadlineType": {
                 "enum": [
@@ -324,7 +324,7 @@
                 "maxLength": 500
               },
               "nextExpectedOpening": {
-                "$ref": "#/$defs/nullableDateTime"
+                "$ref": "#/$defs/nullableTemporal"
               }
             }
           },
@@ -516,7 +516,7 @@
                 "uniqueItems": true
               },
               "nextReviewAt": {
-                "$ref": "#/$defs/nullableDateTime"
+                "$ref": "#/$defs/nullableTemporal"
               },
               "sourceFetchedAt": {
                 "$ref": "#/$defs/nullableDateTime"
@@ -688,6 +688,21 @@
               {
                 "type": "string",
                 "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "nullableTemporal": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "string",
+                "format": "date"
               },
               {
                 "type": "null"
