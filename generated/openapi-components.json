@@ -1,0 +1,726 @@
+{
+  "components": {
+    "schemas": {
+      "OpportunityV2": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://perkcommons.com/schema/opportunity-v2.json",
+        "title": "PerkCommons opportunity v2",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "schemaVersion",
+          "provider",
+          "title",
+          "aliases",
+          "description",
+          "canonicalUrl",
+          "urls",
+          "classification",
+          "geography",
+          "availability",
+          "costAndBenefit",
+          "eligibility",
+          "reviewProvenance",
+          "changeHistory",
+          "sponsorship"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "minLength": 3,
+            "maxLength": 80
+          },
+          "schemaVersion": {
+            "const": "2.0"
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 140
+          },
+          "title": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 180
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180
+            },
+            "uniqueItems": true,
+            "maxItems": 20
+          },
+          "description": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 3000
+          },
+          "canonicalUrl": {
+            "$ref": "#/$defs/nullableHttpsUrl"
+          },
+          "urls": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "providerUrl",
+              "programUrl",
+              "applicationUrl",
+              "evidenceUrls"
+            ],
+            "properties": {
+              "providerUrl": {
+                "$ref": "#/$defs/nullableHttpsUrl"
+              },
+              "programUrl": {
+                "$ref": "#/$defs/nullableHttpsUrl"
+              },
+              "applicationUrl": {
+                "$ref": "#/$defs/nullableHttpsUrl"
+              },
+              "evidenceUrls": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "url",
+                    "checkedAt",
+                    "claim"
+                  ],
+                  "properties": {
+                    "type": {
+                      "enum": [
+                        "overview",
+                        "eligibility",
+                        "application",
+                        "terms",
+                        "deadline",
+                        "pricing",
+                        "regional-restrictions"
+                      ]
+                    },
+                    "url": {
+                      "$ref": "#/$defs/httpsUrl"
+                    },
+                    "checkedAt": {
+                      "$ref": "#/$defs/nullableDateTime"
+                    },
+                    "claim": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "maxLength": 500
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "classification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "resourceType",
+              "primaryCategory",
+              "subcategories",
+              "topics",
+              "audiences",
+              "organizationStages",
+              "benefitTypes",
+              "reviewState",
+              "defaultSearchEligible"
+            ],
+            "properties": {
+              "resourceType": {
+                "enum": [
+                  "opportunity",
+                  "resource",
+                  "benefit",
+                  "program",
+                  "event",
+                  "funding",
+                  "fellowship",
+                  "competition",
+                  "community",
+                  "learning-resource",
+                  "public-dataset",
+                  "general-free-product"
+                ]
+              },
+              "primaryCategory": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "subcategories": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "topics": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "audiences": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "organizationStages": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "benefitTypes": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "grant",
+                    "prize",
+                    "stipend",
+                    "credit",
+                    "discount",
+                    "software",
+                    "hardware",
+                    "training",
+                    "mentorship",
+                    "workspace",
+                    "compute",
+                    "network-access",
+                    "recognition"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "reviewState": {
+                "enum": [
+                  "unreviewed",
+                  "automated-lint-passed",
+                  "needs-human-review",
+                  "human-reviewed",
+                  "rejected",
+                  "published"
+                ]
+              },
+              "defaultSearchEligible": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          },
+          "geography": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "global",
+              "remote",
+              "countries",
+              "excludedCountries",
+              "physicalLocations",
+              "residencyRequired",
+              "languages"
+            ],
+            "properties": {
+              "global": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "remote": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "countries": {
+                "$ref": "#/$defs/countryCodeArray"
+              },
+              "excludedCountries": {
+                "$ref": "#/$defs/countryCodeArray"
+              },
+              "physicalLocations": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 2,
+                  "maxLength": 200
+                },
+                "uniqueItems": true
+              },
+              "residencyRequired": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "languages": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z]{2,3}(?:-[A-Z]{2})?$"
+                },
+                "uniqueItems": true
+              }
+            }
+          },
+          "availability": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "statusReason",
+              "opensAt",
+              "closesAt",
+              "deadlineType",
+              "applicationCycle",
+              "nextExpectedOpening"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "open",
+                  "rolling",
+                  "upcoming",
+                  "limited",
+                  "waitlist",
+                  "temporarily-unavailable",
+                  "closed",
+                  "expired",
+                  "unconfirmed",
+                  "disputed",
+                  "archived"
+                ]
+              },
+              "statusReason": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 1000
+              },
+              "opensAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "closesAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "deadlineType": {
+                "enum": [
+                  "fixed",
+                  "rolling",
+                  "periodic",
+                  "unknown",
+                  "none"
+                ]
+              },
+              "applicationCycle": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 500
+              },
+              "nextExpectedOpening": {
+                "$ref": "#/$defs/nullableDateTime"
+              }
+            }
+          },
+          "costAndBenefit": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "cost",
+              "benefits",
+              "currency",
+              "amount",
+              "maximumAmount",
+              "benefitSummary"
+            ],
+            "properties": {
+              "cost": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 500
+              },
+              "benefits": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "summary"
+                  ],
+                  "properties": {
+                    "type": {
+                      "enum": [
+                        "grant",
+                        "prize",
+                        "stipend",
+                        "credit",
+                        "discount",
+                        "software",
+                        "hardware",
+                        "training",
+                        "mentorship",
+                        "workspace",
+                        "compute",
+                        "network-access",
+                        "recognition"
+                      ]
+                    },
+                    "summary": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 1000
+                    }
+                  }
+                }
+              },
+              "currency": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[A-Z]{3}$"
+              },
+              "amount": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "maximumAmount": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "benefitSummary": {
+                "type": "string",
+                "minLength": 2,
+                "maxLength": 2000
+              }
+            }
+          },
+          "eligibility": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "summary",
+              "studentLevels",
+              "organizationTypes",
+              "companyStages",
+              "ageRestrictions",
+              "incorporationRequired",
+              "nonprofitStatusRequired",
+              "openSourceRequired",
+              "researchAffiliationRequired"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string",
+                "minLength": 5,
+                "maxLength": 3000
+              },
+              "studentLevels": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "organizationTypes": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "companyStages": {
+                "$ref": "#/$defs/slugArray"
+              },
+              "ageRestrictions": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 500
+              },
+              "incorporationRequired": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "nonprofitStatusRequired": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "openSourceRequired": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "researchAffiliationRequired": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          },
+          "reviewProvenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "reviewedAt",
+              "reviewMethod",
+              "reviewerReference",
+              "claimsChecked",
+              "nextReviewAt",
+              "sourceFetchedAt",
+              "sourceHash",
+              "confidence",
+              "importSource",
+              "extractorVersion"
+            ],
+            "properties": {
+              "reviewedAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "reviewMethod": {
+                "enum": [
+                  "human",
+                  "human-assisted",
+                  "provider-confirmed",
+                  "legacy-record-migration"
+                ]
+              },
+              "reviewerReference": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 120
+              },
+              "claimsChecked": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                },
+                "uniqueItems": true
+              },
+              "nextReviewAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "sourceFetchedAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "sourceHash": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "confidence": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 1
+              },
+              "importSource": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 200
+              },
+              "extractorVersion": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 100
+              }
+            }
+          },
+          "changeHistory": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "createdAt",
+              "updatedAt",
+              "previousIds",
+              "supersedes",
+              "supersededBy",
+              "tombstone",
+              "removalReason"
+            ],
+            "properties": {
+              "createdAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "updatedAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              },
+              "previousIds": {
+                "$ref": "#/$defs/idArray"
+              },
+              "supersedes": {
+                "$ref": "#/$defs/idArray"
+              },
+              "supersededBy": {
+                "$ref": "#/$defs/idArray"
+              },
+              "tombstone": {
+                "type": "boolean"
+              },
+              "removalReason": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 1000
+              }
+            }
+          },
+          "sponsorship": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sponsored",
+              "sponsorshipType",
+              "sponsorshipDisclosure",
+              "featuredReason",
+              "featureExpiresAt"
+            ],
+            "properties": {
+              "sponsored": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "sponsorshipType": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 100
+              },
+              "sponsorshipDisclosure": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 1000
+              },
+              "featuredReason": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 500
+              },
+              "featureExpiresAt": {
+                "$ref": "#/$defs/nullableDateTime"
+              }
+            }
+          },
+          "migration": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "fromSchemaVersion",
+              "legacyStatus",
+              "legacyRegions",
+              "unresolvedFields"
+            ],
+            "properties": {
+              "fromSchemaVersion": {
+                "const": "1"
+              },
+              "legacyStatus": {
+                "type": "string"
+              },
+              "legacyRegions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "unresolvedFields": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              }
+            }
+          }
+        },
+        "$defs": {
+          "httpsUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "nullableHttpsUrl": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/httpsUrl"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "nullableDateTime": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "slugArray": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true,
+            "maxItems": 30
+          },
+          "idArray": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "uniqueItems": true
+          },
+          "countryCodeArray": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Z]{2}$"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}
