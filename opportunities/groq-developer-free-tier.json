@@ -48,7 +48,7 @@
     "languages": []
   },
   "availability": {
-    "status": "limited",
+    "status": "unconfirmed",
     "statusReason": "Excluded from default search by scope decision 'ordinary-free-products': Generally available free products and standard free tiers do not satisfy the default opportunity inclusion policy.",
     "opensAt": null,
     "closesAt": null,

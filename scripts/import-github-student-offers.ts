@@ -72,7 +72,7 @@ for (const match of html.matchAll(/<div class="pack-offer-card[^>]*>([\s\S]*?)(?
     value: fit(offer, 200),
     sourceUrl,
     officialUrl: sourceUrl,
-    status: "limited",
+    status: "unconfirmed",
     submissionType: "maintainer",
     sponsor: false,
     regions: ["Global"],

@@ -12,8 +12,10 @@
     "migrate:v2": "tsx scripts/migrate-v1-to-v2.ts",
     "scope:apply": "tsx scripts/apply-scope-decisions.ts",
     "scope:check": "tsx scripts/apply-scope-decisions.ts --check",
+    "status:apply": "tsx scripts/correct-generated-statuses.ts",
+    "status:check": "tsx scripts/correct-generated-statuses.ts --check",
     "validate": "tsx scripts/validate.ts",
-    "check": "npm run generate:check && npm run scope:check && npm run validate",
+    "check": "npm run generate:check && npm run scope:check && npm run status:check && npm run validate",
     "test": "npm run check && tsx --test tests/*.test.ts"
   },
   "devDependencies": {

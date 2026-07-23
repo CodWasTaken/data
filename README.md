@@ -47,6 +47,10 @@ age, structured fields, duplicate/generic text, geography, provenance and
 manual-review needs. One opportunity may count toward multiple subcategories
 only when each assignment accurately describes the program.
 
+Availability status describes current access, not whether eligibility is
+selective. Import candidates must use `unconfirmed`; only a human source review
+may choose `open`, `rolling`, `upcoming`, `limited`, `waitlist`, or `closed`.
+
 Use `npm run audit:sources` to verify published source and official URLs. A
 failed URL makes the command fail. Some official sites reject automated requests;
 the audit reports those separately for manual browser review.

@@ -50,7 +50,7 @@
     "languages": []
   },
   "availability": {
-    "status": "limited",
+    "status": "unconfirmed",
     "statusReason": "Excluded from default search by scope decision 'generic-communities': General product, coworking, accountability, and founder communities without a distinct selective or material program belong outside default opportunity results.",
     "opensAt": null,
     "closesAt": null,

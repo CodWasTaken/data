@@ -95,7 +95,7 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     id, provider, title, category: 'awards-recognition', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Candidates must meet the current nomination or entry window, geography, age, work ownership, fee, and program-specific requirements.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
   await writeImportCandidate({ root: process.cwd(), importer: "award-opportunities", suggestedFields: record });
   count += 1;

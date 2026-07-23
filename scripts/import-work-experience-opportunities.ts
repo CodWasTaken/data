@@ -107,7 +107,7 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     category: 'internships-work-experience', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.label} administered by ${provider}.`,
     eligibility: 'Applicants must meet the current career-stage, affiliation, location, availability, work-authorization, and application requirements.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
   await writeImportCandidate({ root: process.cwd(), importer: "work-experience-opportunities", suggestedFields: record });
   count += 1;

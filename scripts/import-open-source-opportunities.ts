@@ -78,7 +78,7 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     id, provider, title, category: 'open-source', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Projects or contributors must meet the current open-source license, governance, activity, location, and program-specific requirements.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
   await writeImportCandidate({ root: process.cwd(), importer: "open-source-opportunities", suggestedFields: record });
   count += 1;

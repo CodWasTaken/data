@@ -56,8 +56,8 @@
       "reason": "Redirect destinations require a separate network audit."
     },
     "uncertainStatus": {
-      "count": 50,
-      "percentage": 4.68
+      "count": 1061,
+      "percentage": 99.34
     },
     "incompleteGeography": {
       "count": 1057,

@@ -29,6 +29,10 @@ claims that the cited source does not support.
 - Never turn heuristic audit output directly into removal or publication.
   Scope changes require an explicit, reviewable decision with a reason; run
   `npm run scope:apply` and commit the resulting record changes together.
+- Use `limited` only when current evidence shows restricted availability such
+  as selected partners, regions, cohorts, or capacity. Selective eligibility
+  alone is not a limited availability state. Use `unconfirmed` when the current
+  application state has not been checked.
 
 By contributing factual data, you agree that accepted changes are published
 under CC0 1.0.

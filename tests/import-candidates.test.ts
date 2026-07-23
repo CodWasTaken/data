@@ -35,7 +35,7 @@ test("import output is isolated from canonical published records", async () => {
   }
 });
 
-test("every importer uses the candidate writer and contains no hard-coded review date or published output path", async () => {
+test("every importer uses the candidate writer and contains no editorial review defaults", async () => {
   const root = join(dirname(fileURLToPath(import.meta.url)), "..");
   const scripts = (await readdir(join(root, "scripts"))).filter((name) => name.startsWith("import-") && name.endsWith(".ts") && name !== "import-candidate.ts");
   assert.ok(scripts.length > 0);
@@ -44,5 +44,6 @@ test("every importer uses the candidate writer and contains no hard-coded review
     assert.match(source, /writeImportCandidate/);
     assert.doesNotMatch(source, /["']opportunities["']/);
     assert.doesNotMatch(source, /reviewDate\s*:/);
+    assert.doesNotMatch(source, /status\s*:\s*["']limited["']/);
   }
 });

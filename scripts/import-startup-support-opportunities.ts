@@ -65,7 +65,7 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     id, provider, title, category: 'startup-benefits', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Companies must meet the provider’s current stage, funding, age, geography, partner-referral, account, and program-specific requirements; ordinary fees may apply outside promotional benefits.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
   await writeImportCandidate({ root: process.cwd(), importer: "startup-support-opportunities", suggestedFields: record });
   count += 1;

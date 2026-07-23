@@ -17,7 +17,7 @@ As of 2026-07-23, 1068 mixed v1/v2 records were inspected. Coverage totals are d
 | genericTextRecords | 995 (93.16%) |
 | brokenLinkRate | not-measured |
 | redirectRate | not-measured |
-| uncertainStatus | 50 (4.68%) |
+| uncertainStatus | 1061 (99.34%) |
 | incompleteGeography | 1057 (98.97%) |
 | humanReviewProvenance | 0 (0%) |
 | automatedImportLikely | 1067 (99.91%) |

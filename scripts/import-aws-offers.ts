@@ -93,7 +93,7 @@ for (const match of html.matchAll(/<a data-testid="card-link"([\s\S]*?)<\/articl
     value: fit(title, 200),
     sourceUrl,
     officialUrl: sourceUrl,
-    status: "limited",
+    status: "unconfirmed",
     submissionType: "maintainer",
     sponsor: false,
     regions: ["Global"],

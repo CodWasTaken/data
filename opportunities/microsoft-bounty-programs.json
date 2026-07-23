@@ -15,7 +15,7 @@
   "value": "Bounty awards for qualifying vulnerability reports",
   "sourceUrl": "https://www.microsoft.com/en-us/msrc/bounty",
   "officialUrl": "https://www.microsoft.com/en-us/msrc/bounty",
-  "status": "limited",
+  "status": "unconfirmed",
   "submissionType": "maintainer",
   "sponsor": false,
   "reviewDate": "2026-07-18",

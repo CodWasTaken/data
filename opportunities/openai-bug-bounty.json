@@ -15,7 +15,7 @@
   "value": "Bounty awards for qualifying vulnerability reports",
   "sourceUrl": "https://openai.com/index/bug-bounty-program/",
   "officialUrl": "https://openai.com/index/bug-bounty-program/",
-  "status": "limited",
+  "status": "unconfirmed",
   "submissionType": "maintainer",
   "sponsor": false,
   "reviewDate": "2026-07-18",

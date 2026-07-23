@@ -92,7 +92,7 @@ for (const row of rows) {
     value: row.value,
     sourceUrl: row.url,
     officialUrl: row.url,
-    status: 'limited',
+    status: 'unconfirmed',
     submissionType: 'maintainer',
     sponsor: false,
     regions: row.regions ?? ['Global'],

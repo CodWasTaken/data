@@ -48,7 +48,7 @@
     "languages": []
   },
   "availability": {
-    "status": "limited",
+    "status": "unconfirmed",
     "statusReason": "Excluded from default search by scope decision 'public-datasets-and-open-learning': Public datasets, open course catalogues, and general reference resources belong in the wider resource catalogue, not default opportunity results.",
     "opensAt": null,
     "closesAt": null,

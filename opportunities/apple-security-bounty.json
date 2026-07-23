@@ -15,7 +15,7 @@
   "value": "Bounty awards for qualifying vulnerability reports",
   "sourceUrl": "https://security.apple.com/bounty/",
   "officialUrl": "https://security.apple.com/bounty/",
-  "status": "limited",
+  "status": "unconfirmed",
   "submissionType": "maintainer",
   "sponsor": false,
   "reviewDate": "2026-07-18",

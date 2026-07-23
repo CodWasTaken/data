@@ -78,7 +78,7 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     id, provider, title, category: 'social-impact-civic-tech', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Applicants or participants must meet the current mission alignment, project stage, location, cohort timing, and program-specific requirements.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
   await writeImportCandidate({ root: process.cwd(), importer: "social-impact-opportunities", suggestedFields: record });
   count += 1;

@@ -45,7 +45,7 @@
     "languages": []
   },
   "availability": {
-    "status": "limited",
+    "status": "unconfirmed",
     "statusReason": "Excluded from default search by scope decision 'duplicate-bundle-components': Individual AWS Activate and GitHub Student Developer Pack components duplicate a larger bundle and overwhelm default opportunity discovery.",
     "opensAt": null,
     "closesAt": null,

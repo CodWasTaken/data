@@ -95,7 +95,7 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     id, provider, title, category: 'creator-media', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
   await writeImportCandidate({ root: process.cwd(), importer: "creator-media-opportunities", suggestedFields: record });
   count += 1;

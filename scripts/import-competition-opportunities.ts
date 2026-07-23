@@ -107,7 +107,7 @@ for (const group of groups) {
       value: group.value,
       sourceUrl: url,
       officialUrl: url,
-      status: 'limited',
+      status: 'unconfirmed',
       submissionType: 'maintainer',
       sponsor: false,
       regions: ['Global'],

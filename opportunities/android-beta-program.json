@@ -46,7 +46,7 @@
     "languages": []
   },
   "availability": {
-    "status": "limited",
+    "status": "unconfirmed",
     "statusReason": "Excluded from default search by scope decision 'normal-beta-preview-channels': Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
     "opensAt": null,
     "closesAt": null,

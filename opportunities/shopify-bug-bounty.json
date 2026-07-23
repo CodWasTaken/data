@@ -15,7 +15,7 @@
   "value": "Bounty awards for qualifying vulnerability reports",
   "sourceUrl": "https://hackerone.com/shopify",
   "officialUrl": "https://hackerone.com/shopify",
-  "status": "limited",
+  "status": "unconfirmed",
   "submissionType": "maintainer",
   "sponsor": false,
   "reviewDate": "2026-07-18",
