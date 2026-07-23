@@ -14,8 +14,14 @@
       {
         "type": "overview",
         "url": "https://docs.datadoghq.com/account_management/rbac/permissions/?tab=datadogapplication#preview-features",
-        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://docs.datadoghq.com/account_management/rbac/permissions/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
       }
     ]
   },
@@ -49,7 +55,7 @@
   },
   "availability": {
     "status": "unconfirmed",
-    "statusReason": "Excluded from default search by scope decision 'normal-beta-preview-channels': Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
+    "statusReason": "The matched invite-only text describes a dashboard permission, not availability of Datadog preview features. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -81,16 +87,18 @@
     "researchAffiliationRequired": null
   },
   "reviewProvenance": {
-    "reviewedAt": "2026-07-18T00:00:00.000Z",
-    "reviewMethod": "legacy-record-migration",
-    "reviewerReference": null,
-    "claimsChecked": [],
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
     "sourceHash": null,
-    "confidence": null,
+    "confidence": 0.2,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": null
+    "extractorVersion": "availability-research/1"
   },
   "changeHistory": {
     "createdAt": null,
@@ -122,8 +130,7 @@
       "geography.remote",
       "geography.countries",
       "geography.residencyRequired",
-      "availability.deadlineType",
-      "reviewProvenance.reviewerReference"
+      "availability.deadlineType"
     ]
   }
 }

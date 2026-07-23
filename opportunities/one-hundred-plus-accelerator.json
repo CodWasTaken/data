@@ -1,26 +1,135 @@
 {
   "id": "one-hundred-plus-accelerator",
+  "schemaVersion": "2.0",
   "provider": "100+ Accelerator",
   "title": "100+ Accelerator",
-  "category": "accelerators-incubators",
-  "subcategories": [
-    "climate-accelerators",
-    "social-impact-accelerators"
-  ],
-  "tags": [
-    "accelerator",
-    "entrepreneurship"
-  ],
+  "aliases": [],
   "description": "100+ Accelerator is an accelerator from 100+ Accelerator for ventures developing climate, sustainability, or environmental-impact solutions.",
-  "eligibility": "Ventures must meet the current climate focus, company stage, technology, geography, and cohort requirements.",
-  "value": "Climate venture mentoring, partnerships, technical support, and program-specific funding",
-  "sourceUrl": "https://www.100accelerator.com/",
-  "officialUrl": "https://www.100accelerator.com/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.100accelerator.com/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.100accelerator.com/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.100accelerator.com/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "accelerators-incubators",
+    "subcategories": [
+      "climate-accelerators",
+      "social-impact-accelerators"
+    ],
+    "topics": [
+      "accelerator",
+      "entrepreneurship"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant",
+      "mentorship"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Climate venture mentoring, partnerships, technical support, and program-specific funding"
+      },
+      {
+        "type": "mentorship",
+        "summary": "Climate venture mentoring, partnerships, technical support, and program-specific funding"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Climate venture mentoring, partnerships, technical support, and program-specific funding"
+  },
+  "eligibility": {
+    "summary": "Ventures must meet the current climate focus, company stage, technology, geography, and cohort requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "4728264b175fc8a825ee7e74bbae6a478214e576c20eb0fc18cb2102ed8c1b56",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

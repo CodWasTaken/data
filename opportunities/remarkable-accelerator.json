@@ -1,27 +1,142 @@
 {
   "id": "remarkable-accelerator",
+  "schemaVersion": "2.0",
   "provider": "Remarkable",
   "title": "Remarkable Accelerator",
-  "category": "social-impact-civic-tech",
-  "subcategories": [
-    "accessibility-programs",
-    "education-impact-programs",
-    "health-impact-programs"
-  ],
-  "tags": [
-    "accessibility",
-    "inclusive-design"
-  ],
+  "aliases": [],
   "description": "Remarkable Accelerator is an education, leadership, funding, or innovation program advancing accessibility, disability inclusion, or inclusive health and learning administered by Remarkable.",
-  "eligibility": "Applicants or participants must meet the current mission alignment, project stage, location, cohort timing, and program-specific requirements.",
-  "value": "Accessible-design skills, leadership development, expert networks, funding or acceleration, and implementation resources",
-  "sourceUrl": "https://remarkable.org/accelerator/",
-  "officialUrl": "https://remarkable.org/accelerator/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://remarkable.org/accelerator/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://remarkable.org/accelerator/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://remarkable.org/accelerator/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://www.remarkable.org/accelerator",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "social-impact-civic-tech",
+    "subcategories": [
+      "accessibility-programs",
+      "education-impact-programs",
+      "health-impact-programs"
+    ],
+    "topics": [
+      "accessibility",
+      "inclusive-design"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant",
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "upcoming",
+    "statusReason": "The provider currently accepts expressions of interest and says applicants will be notified when the next application window opens. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Accessible-design skills, leadership development, expert networks, funding or acceleration, and implementation resources"
+      },
+      {
+        "type": "network-access",
+        "summary": "Accessible-design skills, leadership development, expert networks, funding or acceleration, and implementation resources"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Accessible-design skills, leadership development, expert networks, funding or acceleration, and implementation resources"
+  },
+  "eligibility": {
+    "summary": "Applicants or participants must meet the current mission alignment, project stage, location, cohort timing, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": null,
+    "confidence": 0.95,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

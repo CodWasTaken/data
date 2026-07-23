@@ -14,7 +14,7 @@
       {
         "type": "overview",
         "url": "https://foundersnetwork.com/",
-        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
       }
     ]
@@ -50,8 +50,8 @@
     "languages": []
   },
   "availability": {
-    "status": "unconfirmed",
-    "statusReason": "Excluded from default search by scope decision 'generic-communities': General product, coworking, accountability, and founder communities without a distinct selective or material program belong outside default opportunity results.",
+    "status": "limited",
+    "statusReason": "Visible source text contains the 'restricted-availability' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -87,16 +87,19 @@
     "researchAffiliationRequired": null
   },
   "reviewProvenance": {
-    "reviewedAt": "2026-07-18T00:00:00.000Z",
-    "reviewMethod": "legacy-record-migration",
-    "reviewerReference": null,
-    "claimsChecked": [],
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
-    "sourceHash": null,
-    "confidence": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "e42eac659b04df813112b8ebc6e6d5cafd26b913c989c4e335ec2696b1d61eff",
+    "confidence": 0.86,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": null
+    "extractorVersion": "availability-research/1"
   },
   "changeHistory": {
     "createdAt": null,
@@ -128,8 +131,7 @@
       "geography.remote",
       "geography.countries",
       "geography.residencyRequired",
-      "availability.deadlineType",
-      "reviewProvenance.reviewerReference"
+      "availability.deadlineType"
     ]
   }
 }

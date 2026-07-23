@@ -1,26 +1,135 @@
 {
   "id": "bemis-center-residency",
+  "schemaVersion": "2.0",
   "provider": "Bemis Center for Contemporary Arts",
   "title": "Artist-in-Residence Program",
-  "category": "creator-media",
-  "subcategories": [
-    "creator-funds",
-    "design-residencies"
-  ],
-  "tags": [
-    "artists",
-    "residency"
-  ],
+  "aliases": [],
   "description": "Artist-in-Residence Program is a funded or supported residency pathway for eligible artists, designers, and creative practitioners developing original work administered by Bemis Center for Contemporary Arts.",
-  "eligibility": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
-  "value": "Dedicated creation time, workspace or accommodation, peer exchange, mentorship, and program-specific financial support",
-  "sourceUrl": "https://www.bemiscenter.org/residency",
-  "officialUrl": "https://www.bemiscenter.org/residency",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.bemiscenter.org/residency",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.bemiscenter.org/residency",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.bemiscenter.org/residency",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "creator-media",
+    "subcategories": [
+      "creator-funds",
+      "design-residencies"
+    ],
+    "topics": [
+      "artists",
+      "residency"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "mentorship",
+      "workspace"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "mentorship",
+        "summary": "Dedicated creation time, workspace or accommodation, peer exchange, mentorship, and program-specific financial support"
+      },
+      {
+        "type": "workspace",
+        "summary": "Dedicated creation time, workspace or accommodation, peer exchange, mentorship, and program-specific financial support"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Dedicated creation time, workspace or accommodation, peer exchange, mentorship, and program-specific financial support"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "b51d441b7fd09ee570721ac10f2961afb56878c8b8e966b4e7db1ee6509fb32e",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

@@ -1,26 +1,130 @@
 {
   "id": "points-north-fellowship",
+  "schemaVersion": "2.0",
   "provider": "Points North Institute",
   "title": "Points North Fellowship",
-  "category": "creator-media",
-  "subcategories": [
-    "film-grants",
-    "creator-funds"
-  ],
-  "tags": [
-    "film",
-    "documentary"
-  ],
+  "aliases": [],
   "description": "Points North Fellowship is a selective fund supporting eligible independent film or documentary projects at specified stages of development, production, or completion administered by Points North Institute.",
-  "eligibility": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
-  "value": "Project funding, creative or editorial support, industry access, and program-specific distribution resources",
-  "sourceUrl": "https://pointsnorthinstitute.org/artist-programs/points-north-fellowship/",
-  "officialUrl": "https://pointsnorthinstitute.org/artist-programs/points-north-fellowship/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://pointsnorthinstitute.org/artist-programs/points-north-fellowship/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://pointsnorthinstitute.org/artist-programs/points-north-fellowship/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://pointsnorthinstitute.org/artist-programs/points-north-fellowship/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "creator-media",
+    "subcategories": [
+      "film-grants",
+      "creator-funds"
+    ],
+    "topics": [
+      "film",
+      "documentary"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Project funding, creative or editorial support, industry access, and program-specific distribution resources"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Project funding, creative or editorial support, industry access, and program-specific distribution resources"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "22eaff10fe6d8ddc181dce9af06bc6c4e7fe0e67c3423611949dc23e2ec53543",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

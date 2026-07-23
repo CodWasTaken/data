@@ -46,8 +46,20 @@ test("canonical records contain no generated limited defaults", async () => {
     if (record.schemaVersion === "2.0") {
       const migration = record.migration as { legacyStatus?: unknown } | undefined;
       const availability = record.availability as { status?: unknown };
-      if (migration?.legacyStatus === "limited") {
-        assert.notEqual(availability.status, "limited", file);
+      if (
+        migration?.legacyStatus === "limited" &&
+        availability.status === "limited"
+      ) {
+        const provenance = record.reviewProvenance as {
+          reviewMethod?: unknown;
+          confidence?: unknown;
+        };
+        assert.equal(
+          provenance.reviewMethod,
+          "automated-source-research",
+          file,
+        );
+        assert.ok(Number(provenance.confidence) >= 0.8, file);
       }
     } else {
       assert.notEqual(record.status, "limited", file);

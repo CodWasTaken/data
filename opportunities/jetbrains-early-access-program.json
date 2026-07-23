@@ -14,7 +14,7 @@
       {
         "type": "overview",
         "url": "https://www.jetbrains.com/resources/eap/",
-        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
       }
     ]
@@ -47,7 +47,7 @@
   },
   "availability": {
     "status": "unconfirmed",
-    "statusReason": "Excluded from default search by scope decision 'normal-beta-preview-channels': Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
+    "statusReason": "No source provided sufficiently clear current-availability evidence. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -74,16 +74,18 @@
     "researchAffiliationRequired": null
   },
   "reviewProvenance": {
-    "reviewedAt": "2026-07-18T00:00:00.000Z",
-    "reviewMethod": "legacy-record-migration",
-    "reviewerReference": null,
-    "claimsChecked": [],
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
-    "sourceHash": null,
-    "confidence": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "e89b30aa1dc30a6ad8c34610689bede83b3ef645a24c3a84a0990826687fb735",
+    "confidence": 0.15,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": null
+    "extractorVersion": "availability-research/1"
   },
   "changeHistory": {
     "createdAt": null,
@@ -115,8 +117,7 @@
       "geography.remote",
       "geography.countries",
       "geography.residencyRequired",
-      "availability.deadlineType",
-      "reviewProvenance.reviewerReference"
+      "availability.deadlineType"
     ]
   }
 }

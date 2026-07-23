@@ -1,26 +1,130 @@
 {
   "id": "cal-job-shadow",
+  "schemaVersion": "2.0",
   "provider": "University of California, Berkeley",
   "title": "Cal Job Shadow Program",
-  "category": "internships-work-experience",
-  "subcategories": [
-    "externships",
-    "job-shadowing-programs"
-  ],
-  "tags": [
-    "job-shadowing",
-    "career-exploration"
-  ],
+  "aliases": [],
   "description": "Cal Job Shadow Program is a short-term job-shadow or externship program administered by University of California, Berkeley.",
-  "eligibility": "Applicants must meet the current career-stage, affiliation, location, availability, work-authorization, and application requirements.",
-  "value": "Workplace observation, career exploration, and professional networking",
-  "sourceUrl": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
-  "officialUrl": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "internships-work-experience",
+    "subcategories": [
+      "externships",
+      "job-shadowing-programs"
+    ],
+    "topics": [
+      "job-shadowing",
+      "career-exploration"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "upcoming",
+    "statusReason": "Visible source text contains the 'future-opening' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "network-access",
+        "summary": "Workplace observation, career exploration, and professional networking"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Workplace observation, career exploration, and professional networking"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current career-stage, affiliation, location, availability, work-authorization, and application requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "c8db184ed971fb46f17c09ddc38125cd2969b21916503e265915f795429dedd5",
+    "confidence": 0.86,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

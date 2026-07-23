@@ -14,8 +14,14 @@
       {
         "type": "overview",
         "url": "https://slack.com/help/articles/115004846068-Slack-beta-program",
-        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://slack.com/help/articles/226192087-Join-Slack%E2%80%99s-desktop-app-beta-program",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
       }
     ]
   },
@@ -46,8 +52,8 @@
     "languages": []
   },
   "availability": {
-    "status": "unconfirmed",
-    "statusReason": "Excluded from default search by scope decision 'normal-beta-preview-channels': Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
+    "status": "open",
+    "statusReason": "Slack's current instructions allow users to opt into the desktop beta; unrelated invite-only workspace text caused the automatic match. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -74,16 +80,19 @@
     "researchAffiliationRequired": null
   },
   "reviewProvenance": {
-    "reviewedAt": "2026-07-18T00:00:00.000Z",
-    "reviewMethod": "legacy-record-migration",
-    "reviewerReference": null,
-    "claimsChecked": [],
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
     "sourceHash": null,
-    "confidence": null,
+    "confidence": 0.98,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": null
+    "extractorVersion": "availability-research/1"
   },
   "changeHistory": {
     "createdAt": null,
@@ -115,8 +124,7 @@
       "geography.remote",
       "geography.countries",
       "geography.residencyRequired",
-      "availability.deadlineType",
-      "reviewProvenance.reviewerReference"
+      "availability.deadlineType"
     ]
   }
 }

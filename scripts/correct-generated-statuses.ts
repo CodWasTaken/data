@@ -15,6 +15,12 @@ export function correctGeneratedLimitedStatus(
   }
   const record = structuredClone(raw);
   if (
+    record.reviewProvenance.reviewMethod === "automated-source-research" &&
+    (record.reviewProvenance.confidence ?? 0) >= 0.8
+  ) {
+    return record;
+  }
+  if (
     record.availability.status !== "limited" ||
     record.migration?.legacyStatus !== "limited"
   ) {

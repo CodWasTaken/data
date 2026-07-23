@@ -1,26 +1,125 @@
 {
   "id": "anthropic-model-safety-bug-bounty",
+  "schemaVersion": "2.0",
   "provider": "Anthropic",
   "title": "Anthropic Model Safety Bug Bounty Program",
-  "category": "developer-programs",
-  "subcategories": [
-    "bug-bounty-programs"
-  ],
-  "tags": [
-    "ai-safety",
-    "security-research",
-    "red-teaming"
-  ],
+  "aliases": [],
   "description": "Anthropic's ongoing Model Safety Bug Bounty Program rewards selected researchers for identifying qualifying universal jailbreaks in deployed model safeguards.",
-  "eligibility": "Experienced AI security and safety researchers may apply for the HackerOne-hosted program; accepted participants must follow its scope, account, testing, and confidentiality requirements.",
-  "value": "Bounties up to $35,000 for qualifying novel universal jailbreaks, plus authorized access to a testing model alias",
-  "sourceUrl": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
-  "officialUrl": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global, subject to program availability and selection"
-  ]
+  "canonicalUrl": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "developer-programs",
+    "subcategories": [
+      "bug-bounty-programs"
+    ],
+    "topics": [
+      "ai-safety",
+      "security-research",
+      "red-teaming"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [
+      "Global, subject to program availability and selection"
+    ],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "rolling",
+    "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Bounties up to $35,000 for qualifying novel universal jailbreaks, plus authorized access to a testing model alias"
+  },
+  "eligibility": {
+    "summary": "Experienced AI security and safety researchers may apply for the HackerOne-hosted program; accepted participants must follow its scope, account, testing, and confidentiality requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "27552855d0a6fd5552cf8a2c72f86a7195e66e6040d9794a2cff5d78439d32d8",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global, subject to program availability and selection"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

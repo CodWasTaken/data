@@ -96,8 +96,10 @@ export function applyScopeDecision(
   record.classification.resourceType = decision.resourceType;
   record.classification.defaultSearchEligible = false;
   record.classification.reviewState = "needs-human-review";
-  record.availability.statusReason =
-    `Excluded from default search by scope decision '${decision.ruleId}': ${decision.rationale}`;
+  if (record.reviewProvenance.reviewMethod !== "automated-source-research") {
+    record.availability.statusReason =
+      `Excluded from default search by scope decision '${decision.ruleId}': ${decision.rationale}`;
+  }
   record.changeHistory.updatedAt = `${manifest.decidedAt}T00:00:00.000Z`;
   if (decision.supersededBy) {
     record.changeHistory.supersededBy = [decision.supersededBy];

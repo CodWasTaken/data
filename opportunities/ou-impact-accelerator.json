@@ -1,26 +1,130 @@
 {
   "id": "ou-impact-accelerator",
+  "schemaVersion": "2.0",
   "provider": "Orthodox Union",
   "title": "OU Impact Accelerator",
-  "category": "accelerators-incubators",
-  "subcategories": [
-    "nonprofit-accelerators",
-    "social-impact-accelerators"
-  ],
-  "tags": [
-    "accelerator",
-    "entrepreneurship"
-  ],
+  "aliases": [],
   "description": "OU Impact Accelerator is a capacity-building accelerator from Orthodox Union for nonprofits, NGOs, or other mission-driven organizations working toward measurable social impact.",
-  "eligibility": "Mission-driven organizations must satisfy the current legal-status, impact, stage, location, and cohort requirements.",
-  "value": "Cohort training, expert support, peer learning, and program-specific resources",
-  "sourceUrl": "https://accelerator.ou.org/apply/",
-  "officialUrl": "https://accelerator.ou.org/apply/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://accelerator.ou.org/apply/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://accelerator.ou.org/apply/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://accelerator.ou.org/apply/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "accelerators-incubators",
+    "subcategories": [
+      "nonprofit-accelerators",
+      "social-impact-accelerators"
+    ],
+    "topics": [
+      "accelerator",
+      "entrepreneurship"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "upcoming",
+    "statusReason": "Visible source text contains the 'future-opening' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Cohort training, expert support, peer learning, and program-specific resources"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Cohort training, expert support, peer learning, and program-specific resources"
+  },
+  "eligibility": {
+    "summary": "Mission-driven organizations must satisfy the current legal-status, impact, stage, location, and cohort requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "5dbfee75d9b108502e733d99e4b636a8ac5bb2fa89cebaf1e72d271c98bce004",
+    "confidence": 0.86,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

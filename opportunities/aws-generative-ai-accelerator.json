@@ -1,26 +1,140 @@
 {
   "id": "aws-generative-ai-accelerator",
+  "schemaVersion": "2.0",
   "provider": "Amazon Web Services",
   "title": "AWS Generative AI Accelerator",
-  "category": "accelerators-incubators",
-  "subcategories": [
-    "ai-accelerators",
-    "startup-accelerators"
-  ],
-  "tags": [
-    "accelerator",
-    "entrepreneurship"
-  ],
+  "aliases": [],
   "description": "AWS Generative AI Accelerator is a startup support or accelerator program from Amazon Web Services for teams building artificial-intelligence products or infrastructure.",
-  "eligibility": "AI startups must satisfy the current product focus, company stage, geography, technical, and selection requirements.",
-  "value": "AI technical support, mentoring, ecosystem access, and program-specific credits or funding",
-  "sourceUrl": "https://aws.amazon.com/startups/accelerators/generative-ai/",
-  "officialUrl": "https://aws.amazon.com/startups/accelerators/generative-ai/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://aws.amazon.com/startups/accelerators/generative-ai/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://aws.amazon.com/startups/accelerators/generative-ai/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://aws.amazon.com/startups/accelerators/generative-ai/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "accelerators-incubators",
+    "subcategories": [
+      "ai-accelerators",
+      "startup-accelerators"
+    ],
+    "topics": [
+      "accelerator",
+      "entrepreneurship"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant",
+      "credit",
+      "mentorship"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Visible source text contains the 'restricted-availability' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "AI technical support, mentoring, ecosystem access, and program-specific credits or funding"
+      },
+      {
+        "type": "credit",
+        "summary": "AI technical support, mentoring, ecosystem access, and program-specific credits or funding"
+      },
+      {
+        "type": "mentorship",
+        "summary": "AI technical support, mentoring, ecosystem access, and program-specific credits or funding"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "AI technical support, mentoring, ecosystem access, and program-specific credits or funding"
+  },
+  "eligibility": {
+    "summary": "AI startups must satisfy the current product focus, company stage, geography, technical, and selection requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "d8c5d2f23300c9a4efb30a6ca405cba06b8e03252e23e4e333d16efe328d2f91",
+    "confidence": 0.86,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

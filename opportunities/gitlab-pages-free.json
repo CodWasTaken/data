@@ -14,7 +14,7 @@
       {
         "type": "overview",
         "url": "https://docs.gitlab.com/user/project/pages/",
-        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
       }
     ]
@@ -47,8 +47,8 @@
     "languages": []
   },
   "availability": {
-    "status": "unconfirmed",
-    "statusReason": "Excluded from default search by scope decision 'ordinary-free-products': Generally available free products and standard free tiers do not satisfy the default opportunity inclusion policy.",
+    "status": "open",
+    "statusReason": "A relevant provider page is live for an ongoing program or non-default resource; no contrary availability signal was found. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -80,16 +80,19 @@
     "researchAffiliationRequired": null
   },
   "reviewProvenance": {
-    "reviewedAt": "2026-07-18T00:00:00.000Z",
-    "reviewMethod": "legacy-record-migration",
-    "reviewerReference": null,
-    "claimsChecked": [],
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-program-page-match"
+    ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
-    "sourceHash": null,
-    "confidence": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "44007a0a6e690dfc2154858a7841147eae5892ee99586f2164ac48b76a4276b4",
+    "confidence": 0.7,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": null
+    "extractorVersion": "availability-research/1"
   },
   "changeHistory": {
     "createdAt": null,
@@ -121,9 +124,7 @@
       "geography.remote",
       "geography.countries",
       "geography.residencyRequired",
-      "availability.deadlineType",
-      "reviewProvenance.reviewerReference",
-      "availability.status"
+      "availability.deadlineType"
     ]
   }
 }

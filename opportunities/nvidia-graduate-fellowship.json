@@ -1,26 +1,140 @@
 {
   "id": "nvidia-graduate-fellowship",
+  "schemaVersion": "2.0",
   "provider": "NVIDIA",
   "title": "Graduate Fellowship Program",
-  "category": "fellowships",
-  "subcategories": [
-    "research-fellowships",
-    "student-fellowships"
-  ],
-  "tags": [
-    "research",
-    "graduate-students"
-  ],
+  "aliases": [],
   "description": "Graduate Fellowship Program is a competitive graduate research fellowship administered by NVIDIA.",
-  "eligibility": "Applicants must meet the current career-stage, location, experience, affiliation, conduct, and application requirements.",
-  "value": "Research funding, mentoring, recognition, or program-specific academic support",
-  "sourceUrl": "https://research.nvidia.com/graduate-fellowships",
-  "officialUrl": "https://research.nvidia.com/graduate-fellowships",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://research.nvidia.com/graduate-fellowships",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://research.nvidia.com/graduate-fellowships",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://research.nvidia.com/graduate-fellowships",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "fellowship",
+    "primaryCategory": "fellowships",
+    "subcategories": [
+      "research-fellowships",
+      "student-fellowships"
+    ],
+    "topics": [
+      "research",
+      "graduate-students"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant",
+      "mentorship",
+      "recognition"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Research funding, mentoring, recognition, or program-specific academic support"
+      },
+      {
+        "type": "mentorship",
+        "summary": "Research funding, mentoring, recognition, or program-specific academic support"
+      },
+      {
+        "type": "recognition",
+        "summary": "Research funding, mentoring, recognition, or program-specific academic support"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Research funding, mentoring, recognition, or program-specific academic support"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current career-stage, location, experience, affiliation, conduct, and application requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "81d789356d5661605eccf8c81df3fc40660e4788785d17a6b895cbdb55c0a1ce",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

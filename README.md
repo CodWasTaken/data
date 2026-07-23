@@ -48,8 +48,25 @@ manual-review needs. One opportunity may count toward multiple subcategories
 only when each assignment accurately describes the program.
 
 Availability status describes current access, not whether eligibility is
-selective. Import candidates must use `unconfirmed`; only a human source review
-may choose `open`, `rolling`, `upcoming`, `limited`, `waitlist`, or `closed`.
+selective. Import candidates must use `unconfirmed`. AI-assisted source research
+may record a provisional status only with `automated-source-research`
+provenance and `needs-human-review`; it cannot approve a record or represent a
+manual review. A human reviewer must finalize publication claims.
+
+Run the complete fork-only availability audit and verify its applied decisions:
+
+```sh
+npm run research:availability
+npm run availability:check
+```
+
+The audit fetches each distinct HTTPS source once, stores hashes and short
+evidence excerpts rather than provider page bodies, and leaves blocked,
+ambiguous, conflicting, or unsupported listings `unconfirmed`. Context-sensitive
+exceptions are versioned in
+[`editorial/availability-overrides.json`](editorial/availability-overrides.json);
+the full ledger is in
+[`reports/availability-research.json`](reports/availability-research.json).
 
 Use `npm run audit:sources` to verify published source and official URLs. A
 failed URL makes the command fail. Some official sites reject automated requests;

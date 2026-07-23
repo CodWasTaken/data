@@ -53,7 +53,7 @@
     "recognition"
   ],
   "deadlineTypes": ["fixed", "rolling", "periodic", "unknown", "none"],
-  "reviewMethods": ["human", "human-assisted", "provider-confirmed", "legacy-record-migration"],
+  "reviewMethods": ["human", "human-assisted", "provider-confirmed", "automated-source-research", "legacy-record-migration"],
   "reviewStates": ["unreviewed", "automated-lint-passed", "needs-human-review", "human-reviewed", "rejected", "published"],
   "schema": {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -178,7 +178,7 @@
         "required": ["reviewedAt", "reviewMethod", "reviewerReference", "claimsChecked", "nextReviewAt", "sourceFetchedAt", "sourceHash", "confidence", "importSource", "extractorVersion"],
         "properties": {
           "reviewedAt": { "$ref": "#/$defs/nullableDateTime" },
-          "reviewMethod": { "enum": ["human", "human-assisted", "provider-confirmed", "legacy-record-migration"] },
+          "reviewMethod": { "enum": ["human", "human-assisted", "provider-confirmed", "automated-source-research", "legacy-record-migration"] },
           "reviewerReference": { "type": ["string", "null"], "maxLength": 120 },
           "claimsChecked": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 200 }, "uniqueItems": true },
           "nextReviewAt": { "$ref": "#/$defs/nullableTemporal" },

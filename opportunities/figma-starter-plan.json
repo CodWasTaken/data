@@ -14,7 +14,7 @@
       {
         "type": "overview",
         "url": "https://www.figma.com/pricing/",
-        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
       }
     ]
@@ -47,7 +47,7 @@
   },
   "availability": {
     "status": "unconfirmed",
-    "statusReason": "Excluded from default search by scope decision 'ordinary-free-products': Generally available free products and standard free tiers do not satisfy the default opportunity inclusion policy.",
+    "statusReason": "No source provided sufficiently clear current-availability evidence. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -74,16 +74,18 @@
     "researchAffiliationRequired": null
   },
   "reviewProvenance": {
-    "reviewedAt": "2026-07-18T00:00:00.000Z",
-    "reviewMethod": "legacy-record-migration",
-    "reviewerReference": null,
-    "claimsChecked": [],
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
     "sourceHash": null,
-    "confidence": null,
+    "confidence": 0,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": null
+    "extractorVersion": "availability-research/1"
   },
   "changeHistory": {
     "createdAt": null,
@@ -115,9 +117,7 @@
       "geography.remote",
       "geography.countries",
       "geography.residencyRequired",
-      "availability.deadlineType",
-      "reviewProvenance.reviewerReference",
-      "availability.status"
+      "availability.deadlineType"
     ]
   }
 }

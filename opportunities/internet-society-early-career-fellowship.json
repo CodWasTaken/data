@@ -1,25 +1,139 @@
 {
   "id": "internet-society-early-career-fellowship",
+  "schemaVersion": "2.0",
   "provider": "Internet Society",
   "title": "Early Career Fellowship",
-  "category": "fellowships",
-  "subcategories": [
-    "policy-fellowships"
-  ],
-  "tags": [
-    "policy",
-    "public-interest"
-  ],
+  "aliases": [],
   "description": "Early Career Fellowship is a policy fellowship administered by Internet Society.",
-  "eligibility": "Applicants must meet the current career-stage, location, experience, affiliation, conduct, and application requirements.",
-  "value": "Policy placement, research time, training, mentoring, or a program-specific stipend",
-  "sourceUrl": "https://www.internetsociety.org/fellowships/early-career/",
-  "officialUrl": "https://www.internetsociety.org/fellowships/early-career/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.internetsociety.org/fellowships/early-career/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.internetsociety.org/fellowships/early-career/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.internetsociety.org/fellowships/early-career/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "fellowship",
+    "primaryCategory": "fellowships",
+    "subcategories": [
+      "policy-fellowships"
+    ],
+    "topics": [
+      "policy",
+      "public-interest"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "stipend",
+      "training",
+      "mentorship"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "stipend",
+        "summary": "Policy placement, research time, training, mentoring, or a program-specific stipend"
+      },
+      {
+        "type": "training",
+        "summary": "Policy placement, research time, training, mentoring, or a program-specific stipend"
+      },
+      {
+        "type": "mentorship",
+        "summary": "Policy placement, research time, training, mentoring, or a program-specific stipend"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Policy placement, research time, training, mentoring, or a program-specific stipend"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current career-stage, location, experience, affiliation, conduct, and application requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "374bb255061e1fbcc63e57e91ba353e1c37ffd580741c41c3db70ac8ec67b709",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

@@ -1,26 +1,129 @@
 {
   "id": "embl-visitor-programme",
+  "schemaVersion": "2.0",
   "provider": "European Molecular Biology Laboratory",
   "title": "Scientific Visitor Programme",
-  "category": "research-opportunities",
-  "subcategories": [
-    "visiting-researcher-programs",
-    "lab-programs"
-  ],
-  "tags": [
-    "research",
-    "visiting-researchers"
-  ],
+  "aliases": [],
   "description": "Scientific Visitor Programme is a visiting-researcher or visiting-scholar program offering access to a research community or facility administered by European Molecular Biology Laboratory.",
-  "eligibility": "Researchers must meet the current program, affiliation, location, subject-area, and application requirements.",
-  "value": "Research affiliation, collaboration, facilities, and program-specific financial support",
-  "sourceUrl": "https://www.embl.org/about/info/scientific-visitor-programme/",
-  "officialUrl": "https://www.embl.org/about/info/scientific-visitor-programme/",
-  "status": "unconfirmed",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.embl.org/about/info/scientific-visitor-programme/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.embl.org/about/info/scientific-visitor-programme/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.embl.org/about/info/scientific-visitor-programme/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://www.embl.org/about/info/scientific-visitor-programme/fellowships/corporate-partnership-programme-fellowships/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "research-opportunities",
+    "subcategories": [
+      "visiting-researcher-programs",
+      "lab-programs"
+    ],
+    "topics": [
+      "research",
+      "visiting-researchers"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "rolling",
+    "statusReason": "Current visitor fellowship routes accept applications throughout the year; capacity language does not mean the whole visitor programme is limited. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Research affiliation, collaboration, facilities, and program-specific financial support"
+  },
+  "eligibility": {
+    "summary": "Researchers must meet the current program, affiliation, location, subject-area, and application requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": null,
+    "confidence": 0.9,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }
