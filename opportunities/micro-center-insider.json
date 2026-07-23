@@ -1,26 +1,130 @@
 {
   "id": "micro-center-insider",
+  "schemaVersion": "2.0",
   "provider": "Micro Center",
   "title": "Insider Card Benefits",
-  "category": "discounts-perks",
-  "subcategories": [
-    "hardware",
-    "memberships"
-  ],
-  "tags": [
-    "rewards",
-    "hardware"
-  ],
+  "aliases": [],
   "description": "Insider Card Benefits is a free rewards membership that can provide published savings or rewards on eligible hardware purchases administered by Micro Center.",
-  "eligibility": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
-  "value": "Member pricing, reward points, delivery benefits, or hardware-purchase savings under current terms",
-  "sourceUrl": "https://www.microcenter.com/site/content/mcinsidercard.aspx",
-  "officialUrl": "https://www.microcenter.com/site/content/mcinsidercard.aspx",
-  "status": "active",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.microcenter.com/site/content/mcinsidercard.aspx",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.microcenter.com/site/content/mcinsidercard.aspx",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "discounts-perks",
+    "subcategories": [
+      "hardware",
+      "memberships"
+    ],
+    "topics": [
+      "rewards",
+      "hardware"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "hardware"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "unconfirmed",
+    "statusReason": "Excluded from default search by scope decision 'consumer-loyalty-memberships': Ordinary consumer rewards and loyalty memberships are not selective, difficult-to-discover support opportunities.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "hardware",
+        "summary": "Member pricing, reward points, delivery benefits, or hardware-purchase savings under current terms"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Member pricing, reward points, delivery benefits, or hardware-purchase savings under current terms"
+  },
+  "eligibility": {
+    "summary": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (loyalty-program); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "active",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference",
+      "availability.status"
+    ]
+  }
 }

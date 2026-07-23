@@ -1,0 +1,229 @@
+{
+  "decisionVersion": 1,
+  "decidedAt": "2026-07-23",
+  "policy": {
+    "action": "exclude-from-default-search",
+    "preserveHistory": true,
+    "requiresHumanSourceReviewBeforeReentry": true,
+    "note": "These decisions change catalogue scope, not the truth of provider claims. Records remain available as typed resources and retain Git history."
+  },
+  "rules": [
+    {
+      "id": "duplicate-bundle-components",
+      "reasonCode": "component-offer",
+      "rationale": "Individual AWS Activate and GitHub Student Developer Pack components duplicate a larger bundle and overwhelm default opportunity discovery.",
+      "resourceType": "benefit",
+      "groupTargetsByPrefix": {
+        "aws-activate-": "aws-activate-cloud-credits",
+        "github-student-pack-": "github-student-developer-pack"
+      },
+      "match": {
+        "idPrefixes": ["aws-activate-", "github-student-pack-"],
+        "excludeIds": ["aws-activate-cloud-credits"]
+      },
+      "expectedMatches": 151
+    },
+    {
+      "id": "ordinary-free-products",
+      "reasonCode": "ordinary-free-product",
+      "rationale": "Generally available free products and standard free tiers do not satisfy the default opportunity inclusion policy.",
+      "resourceType": "general-free-product",
+      "match": {
+        "ids": [
+          "adobe-express-free",
+          "airtable-free-plan",
+          "asana-personal-plan",
+          "assemblyai-developer-free-tier",
+          "blender-free",
+          "canva-free-plan",
+          "clickup-free-plan",
+          "cloudflare-pages-free",
+          "cloudflare-workers-free-plan",
+          "davinci-resolve-free",
+          "figma-starter-plan",
+          "firebase-spark-plan",
+          "gitlab-pages-free",
+          "groq-developer-free-tier",
+          "inkscape-free",
+          "krita-free",
+          "loom-starter-plan",
+          "lunacy-free-design",
+          "mapbox-developer-free-tier",
+          "miro-free-plan",
+          "neocities-free-plan",
+          "netlify-free-plan",
+          "notion-free-plan",
+          "oracle-cloud-free-tier",
+          "penpot-free",
+          "photopea-free-editor",
+          "pythonanywhere-free-account",
+          "render-free-services",
+          "slack-free-plan",
+          "surge-static-hosting",
+          "todoist-free-plan",
+          "trello-free-plan",
+          "vercel-hobby-plan",
+          "zoom-basic-plan"
+        ]
+      },
+      "expectedMatches": 34
+    },
+    {
+      "id": "consumer-loyalty-memberships",
+      "reasonCode": "loyalty-program",
+      "rationale": "Ordinary consumer rewards and loyalty memberships are not selective, difficult-to-discover support opportunities.",
+      "resourceType": "resource",
+      "match": {
+        "ids": [
+          "accor-live-limitless",
+          "aubuchon-hardware-membership",
+          "autozone-rewards",
+          "best-western-rewards",
+          "choice-privileges",
+          "dell-rewards",
+          "expedia-one-key",
+          "hilton-honors",
+          "hp-rewards",
+          "ihg-one-rewards",
+          "lenovo-rewards",
+          "marriott-bonvoy",
+          "micro-center-insider",
+          "microsoft-rewards",
+          "my-best-buy",
+          "office-depot-rewards",
+          "radisson-rewards",
+          "samsung-rewards",
+          "world-of-hyatt",
+          "wyndham-rewards"
+        ]
+      },
+      "expectedMatches": 20
+    },
+    {
+      "id": "normal-beta-preview-channels",
+      "reasonCode": "ordinary-preview-channel",
+      "rationale": "Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
+      "resourceType": "resource",
+      "match": {
+        "ids": [
+          "adobe-creative-cloud-beta",
+          "android-beta-program",
+          "apple-beta-software-program",
+          "atlassian-early-access-program",
+          "aws-preview-terms",
+          "azure-preview-features",
+          "brave-beta",
+          "canonical-preview-services",
+          "chrome-beta-channel",
+          "cloudflare-beta-features",
+          "datadog-preview-features",
+          "docker-desktop-beta",
+          "dropbox-early-access",
+          "firefox-beta",
+          "github-public-preview",
+          "google-cloud-preview",
+          "google-workspace-developer-preview",
+          "jetbrains-early-access-program",
+          "microsoft-365-insider",
+          "microsoft-edge-insider",
+          "mongodb-preview-features",
+          "okta-early-access",
+          "opera-beta",
+          "playstation-beta-program",
+          "red-hat-technology-preview",
+          "salesforce-pilot-beta-programs",
+          "samsung-one-ui-beta",
+          "sap-beta-testing",
+          "shopify-developer-preview",
+          "slack-beta-program",
+          "sonos-beta-program",
+          "steam-client-beta",
+          "stripe-preview-features",
+          "twilio-beta-products",
+          "unity-beta-program",
+          "xbox-insider-program"
+        ]
+      },
+      "expectedMatches": 36
+    },
+    {
+      "id": "public-datasets-and-open-learning",
+      "reasonCode": "public-resource",
+      "rationale": "Public datasets, open course catalogues, and general reference resources belong in the wider resource catalogue, not default opportunity results.",
+      "resourceType": "public-dataset",
+      "resourceTypeOverrides": {
+        "arxiv-submission-access": "resource",
+        "civic-tech-field-guide": "resource",
+        "freecodecamp-curriculum": "learning-resource",
+        "harvard-cs50-open-courses": "learning-resource",
+        "linux-foundation-free-courses": "learning-resource",
+        "mit-opencourseware": "learning-resource",
+        "openlearn-free-courses": "learning-resource"
+      },
+      "match": {
+        "ids": [
+          "arxiv-submission-access",
+          "cern-open-data-portal",
+          "civic-tech-field-guide",
+          "copernicus-data-space",
+          "esa-earth-observation-data",
+          "freecodecamp-curriculum",
+          "harvard-cs50-open-courses",
+          "icpsr-data-access",
+          "linux-foundation-free-courses",
+          "mit-opencourseware",
+          "nasa-earthdata",
+          "nci-genomic-data-commons",
+          "nih-dbgap",
+          "openlearn-free-courses",
+          "physionet-data-access",
+          "uk-biobank-research-access",
+          "world-bank-data"
+        ]
+      },
+      "expectedMatches": 17
+    },
+    {
+      "id": "generic-communities",
+      "reasonCode": "generic-membership",
+      "rationale": "General product, coworking, accountability, and founder communities without a distinct selective or material program belong outside default opportunity results.",
+      "resourceType": "community",
+      "match": {
+        "ids": [
+          "aws-cloud-clubs",
+          "aws-user-groups",
+          "caveday",
+          "cncf-community-groups",
+          "deepwrk",
+          "docker-community",
+          "entrepreneurs-organization",
+          "f6s-founder-community",
+          "flow-club",
+          "focusmate",
+          "founder-university-community",
+          "founders-network",
+          "google-developer-groups",
+          "grafana-community",
+          "groove-coworking",
+          "indie-hackers-community",
+          "kubernetes-community",
+          "london-writers-salon",
+          "microsoft-tech-community",
+          "pipewing-accountability",
+          "postman-community",
+          "product-hunt-makers",
+          "python-user-groups",
+          "rust-user-groups",
+          "saas-alliance-community",
+          "shut-up-write",
+          "startup-genome-community",
+          "startup-grind-community",
+          "startup-school-community",
+          "study-together",
+          "studystream-focus-rooms"
+        ]
+      },
+      "expectedMatches": 31
+    }
+  ]
+}

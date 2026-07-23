@@ -1,26 +1,122 @@
 {
   "id": "azure-preview-features",
+  "schemaVersion": "2.0",
   "provider": "Microsoft Azure",
   "title": "Azure Preview Features",
-  "category": "early-access",
-  "subcategories": [
-    "developer-previews",
-    "research-previews"
-  ],
-  "tags": [
-    "developer-preview",
-    "experimental"
-  ],
+  "aliases": [],
   "description": "Azure Preview Features is an official preview channel for developers evaluating experimental APIs, tools, platforms, or technical capabilities administered by Microsoft Azure.",
-  "eligibility": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
-  "value": "Prerelease technical access, documentation, compatibility testing, and structured feedback opportunities",
-  "sourceUrl": "https://azure.microsoft.com/support/legal/preview-supplemental-terms/",
-  "officialUrl": "https://azure.microsoft.com/support/legal/preview-supplemental-terms/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://azure.microsoft.com/support/legal/preview-supplemental-terms/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://azure.microsoft.com/support/legal/preview-supplemental-terms/",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "early-access",
+    "subcategories": [
+      "developer-previews",
+      "research-previews"
+    ],
+    "topics": [
+      "developer-preview",
+      "experimental"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'normal-beta-preview-channels': Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Prerelease technical access, documentation, compatibility testing, and structured feedback opportunities"
+  },
+  "eligibility": {
+    "summary": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-preview-channel); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

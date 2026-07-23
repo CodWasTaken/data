@@ -1,31 +1,141 @@
 {
   "id": "aws-activate-clickhouse",
+  "schemaVersion": "2.0",
   "provider": "Clickhouse",
   "title": "ClickHouse Cloud customers receive $400 in free credits",
-  "category": "startup-benefits",
-  "subcategories": [
-    "saas-discounts",
-    "infrastructure-credits",
-    "developer-tooling",
-    "analytics-observability"
-  ],
-  "tags": [
-    "aws-activate",
-    "startups",
-    "easy-apply",
-    "analytics",
-    "productivity"
-  ],
+  "aliases": [],
   "description": "ClickHouse Cloud is an extraordinarily fast, seamlessly scalable and delightfully easy-to-use online analytical database. Start today and receive $400 in free credits.",
-  "eligibility": "AWS Activate members who meet the offer's current provider, account, and regional requirements.",
-  "value": "ClickHouse Cloud customers receive $400 in free credits",
-  "sourceUrl": "https://startups.aws.com/offers/clickhouse",
-  "officialUrl": "https://startups.aws.com/offers/clickhouse",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://startups.aws.com/offers/clickhouse",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://startups.aws.com/offers/clickhouse",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "benefit",
+    "primaryCategory": "startup-benefits",
+    "subcategories": [
+      "saas-discounts",
+      "infrastructure-credits",
+      "developer-tooling",
+      "analytics-observability"
+    ],
+    "topics": [
+      "aws-activate",
+      "startups",
+      "easy-apply",
+      "analytics",
+      "productivity"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "credit",
+      "compute"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'duplicate-bundle-components': Individual AWS Activate and GitHub Student Developer Pack components duplicate a larger bundle and overwhelm default opportunity discovery.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "credit",
+        "summary": "ClickHouse Cloud customers receive $400 in free credits"
+      },
+      {
+        "type": "compute",
+        "summary": "ClickHouse Cloud customers receive $400 in free credits"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "ClickHouse Cloud customers receive $400 in free credits"
+  },
+  "eligibility": {
+    "summary": "AWS Activate members who meet the offer's current provider, account, and regional requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [
+      "aws-activate-cloud-credits"
+    ],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (component-offer); record retained as benefit."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

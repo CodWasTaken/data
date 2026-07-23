@@ -10,8 +10,10 @@
     "generate:check": "tsx scripts/generate-schema-artifacts.ts --check",
     "reports": "tsx scripts/report-catalog-health.ts",
     "migrate:v2": "tsx scripts/migrate-v1-to-v2.ts",
+    "scope:apply": "tsx scripts/apply-scope-decisions.ts",
+    "scope:check": "tsx scripts/apply-scope-decisions.ts --check",
     "validate": "tsx scripts/validate.ts",
-    "check": "npm run generate:check && npm run validate",
+    "check": "npm run generate:check && npm run scope:check && npm run validate",
     "test": "npm run check && tsx --test tests/*.test.ts"
   },
   "devDependencies": {

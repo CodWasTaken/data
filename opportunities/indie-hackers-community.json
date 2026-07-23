@@ -1,27 +1,130 @@
 {
   "id": "indie-hackers-community",
+  "schemaVersion": "2.0",
   "provider": "Indie Hackers",
   "title": "Founder Community",
-  "category": "mentorship-community",
-  "subcategories": [
-    "founder-communities",
-    "peer-communities",
-    "expert-networks"
-  ],
-  "tags": [
-    "founders",
-    "peer-support"
-  ],
+  "aliases": [],
   "description": "Founder Community is a founder community offering peer learning, connections, and access to experienced operators administered by Indie Hackers.",
-  "eligibility": "Participants must meet the current membership, age, location, profession, conduct, and program-specific requirements.",
-  "value": "Founder peer support, practical knowledge sharing, introductions, and community events",
-  "sourceUrl": "https://www.indiehackers.com/",
-  "officialUrl": "https://www.indiehackers.com/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.indiehackers.com/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.indiehackers.com/",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "community",
+    "primaryCategory": "mentorship-community",
+    "subcategories": [
+      "founder-communities",
+      "peer-communities",
+      "expert-networks"
+    ],
+    "topics": [
+      "founders",
+      "peer-support"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'generic-communities': General product, coworking, accountability, and founder communities without a distinct selective or material program belong outside default opportunity results.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "network-access",
+        "summary": "Founder peer support, practical knowledge sharing, introductions, and community events"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Founder peer support, practical knowledge sharing, introductions, and community events"
+  },
+  "eligibility": {
+    "summary": "Participants must meet the current membership, age, location, profession, conduct, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (generic-membership); record retained as community."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

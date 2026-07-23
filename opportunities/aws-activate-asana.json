@@ -1,27 +1,125 @@
 {
   "id": "aws-activate-asana",
+  "schemaVersion": "2.0",
   "provider": "Asana",
   "title": "90% off of an Asana Annual Subscription",
-  "category": "startup-benefits",
-  "subcategories": [
-    "saas-discounts"
-  ],
-  "tags": [
-    "aws-activate",
-    "startups",
-    "productivity",
-    "crm"
-  ],
+  "aliases": [],
   "description": "One hub to manage work and scale your startup. Sign up now to take advantag e of 90% off of Asana Starter or Advanced annual subscriptions for your first year, to help you organize work in one place, so you have more focus time, more collaboration, and more opportunities to grow.",
-  "eligibility": "AWS Activate members who meet the offer's current provider, account, and regional requirements.",
-  "value": "90% off of an Asana Annual Subscription",
-  "sourceUrl": "https://startups.aws.com/offers/asana",
-  "officialUrl": "https://startups.aws.com/offers/asana",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://startups.aws.com/offers/asana",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://startups.aws.com/offers/asana",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "benefit",
+    "primaryCategory": "startup-benefits",
+    "subcategories": [
+      "saas-discounts"
+    ],
+    "topics": [
+      "aws-activate",
+      "startups",
+      "productivity",
+      "crm"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'duplicate-bundle-components': Individual AWS Activate and GitHub Student Developer Pack components duplicate a larger bundle and overwhelm default opportunity discovery.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "90% off of an Asana Annual Subscription"
+  },
+  "eligibility": {
+    "summary": "AWS Activate members who meet the offer's current provider, account, and regional requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [
+      "aws-activate-cloud-credits"
+    ],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (component-offer); record retained as benefit."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

@@ -1,25 +1,121 @@
 {
   "id": "uk-biobank-research-access",
+  "schemaVersion": "2.0",
   "provider": "UK Biobank",
   "title": "Researcher Access",
-  "category": "research-opportunities",
-  "subcategories": [
-    "dataset-access"
-  ],
-  "tags": [
-    "research-data",
-    "datasets"
-  ],
+  "aliases": [],
   "description": "Researcher Access is an official research-data access program or repository with datasets available under its stated access conditions administered by UK Biobank.",
-  "eligibility": "Researchers must meet the current program, affiliation, location, subject-area, and application requirements.",
-  "value": "Access to curated datasets, documentation, and research-use infrastructure",
-  "sourceUrl": "https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access",
-  "officialUrl": "https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "public-dataset",
+    "primaryCategory": "research-opportunities",
+    "subcategories": [
+      "dataset-access"
+    ],
+    "topics": [
+      "research-data",
+      "datasets"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'public-datasets-and-open-learning': Public datasets, open course catalogues, and general reference resources belong in the wider resource catalogue, not default opportunity results.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Access to curated datasets, documentation, and research-use infrastructure"
+  },
+  "eligibility": {
+    "summary": "Researchers must meet the current program, affiliation, location, subject-area, and application requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (public-resource); record retained as public-dataset."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

@@ -1,26 +1,129 @@
 {
   "id": "openlearn-free-courses",
+  "schemaVersion": "2.0",
   "provider": "The Open University",
   "title": "OpenLearn Free Courses",
-  "category": "education-training",
-  "subcategories": [
-    "courses",
-    "learning-paths"
-  ],
-  "tags": [
-    "online-learning",
-    "self-paced"
-  ],
+  "aliases": [],
   "description": "OpenLearn Free Courses is an open online learning catalog with structured courses or learning paths administered by The Open University.",
-  "eligibility": "Learners must meet the current age, location, affiliation, experience, and program-specific requirements.",
-  "value": "Self-paced lessons, exercises, and subject-specific learning paths",
-  "sourceUrl": "https://www.open.edu/openlearn/free-courses/full-catalogue",
-  "officialUrl": "https://www.open.edu/openlearn/free-courses/full-catalogue",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.open.edu/openlearn/free-courses/full-catalogue",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.open.edu/openlearn/free-courses/full-catalogue",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "learning-resource",
+    "primaryCategory": "education-training",
+    "subcategories": [
+      "courses",
+      "learning-paths"
+    ],
+    "topics": [
+      "online-learning",
+      "self-paced"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'public-datasets-and-open-learning': Public datasets, open course catalogues, and general reference resources belong in the wider resource catalogue, not default opportunity results.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Self-paced lessons, exercises, and subject-specific learning paths"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Self-paced lessons, exercises, and subject-specific learning paths"
+  },
+  "eligibility": {
+    "summary": "Learners must meet the current age, location, affiliation, experience, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (public-resource); record retained as learning-resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

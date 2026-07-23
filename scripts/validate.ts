@@ -46,7 +46,10 @@ for (const target of Object.values(taxonomy.legacyCategoryAliases)) {
 const files = (await readdir(join(root, "opportunities"))).filter((name) => name.endsWith(".json") && !name.startsWith("_"));
 const ids = new Set<string>();
 const v2ProviderTitles = new Map<string, string>();
-const v2CanonicalUrls = new Map<string, string>();
+const v2CanonicalUrls = new Map<
+  string,
+  { id: string; relationshipIds: Set<string> }
+>();
 let failed = false;
 // Accept today's date in every civil timezone while still rejecting true future dates.
 const latestCivilDate = new Date(Date.now() + 14 * 60 * 60 * 1000).toISOString().slice(0, 10);
@@ -85,12 +88,31 @@ for (const file of files) {
       const url = new URL(rawOpportunity.canonicalUrl);
       url.hash = "";
       const normalizedUrl = url.toString();
+      const relationshipIds = new Set<string>([
+        ...(rawOpportunity.changeHistory?.supersedes ?? []),
+        ...(rawOpportunity.changeHistory?.supersededBy ?? []),
+        ...(rawOpportunity.changeHistory?.previousIds ?? []),
+      ]);
       const previousUrl = v2CanonicalUrls.get(normalizedUrl);
-      if (previousUrl && !explicitlyRelated) {
+      const urlRelationship =
+        previousUrl &&
+        (
+          relationshipIds.has(previousUrl.id) ||
+          previousUrl.relationshipIds.has(rawOpportunity.id) ||
+          [...relationshipIds].some((id) =>
+            previousUrl.relationshipIds.has(id)
+          )
+        );
+      if (previousUrl && !explicitlyRelated && !urlRelationship) {
         failed = true;
-        console.error(`${file}: duplicate canonical URL also used by '${previousUrl}'`);
+        console.error(
+          `${file}: duplicate canonical URL also used by '${previousUrl.id}'`,
+        );
       }
-      v2CanonicalUrls.set(normalizedUrl, rawOpportunity.id);
+      v2CanonicalUrls.set(normalizedUrl, {
+        id: rawOpportunity.id,
+        relationshipIds,
+      });
     }
     continue;
   }

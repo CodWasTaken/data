@@ -1,28 +1,133 @@
 {
   "id": "github-student-pack-github-campus-experts",
+  "schemaVersion": "2.0",
   "provider": "Github Campus Experts",
   "title": "Github Campus Experts Student Developer Pack Offer",
-  "category": "student-benefits",
-  "subcategories": [
-    "student-developer-packs",
-    "free-courses",
-    "academic-resources"
-  ],
-  "tags": [
-    "github-education",
-    "students",
-    "learn"
-  ],
+  "aliases": [],
   "description": "GitHub Campus Experts are students who build technical communities on campus, with training and support from GitHub.",
-  "eligibility": "Verified students aged 13 or older who are approved for the GitHub Student Developer Pack; provider restrictions may also apply.",
-  "value": "Apply to become part of the program while you’re a student.",
-  "sourceUrl": "https://education.github.com/pack#github-campus-experts",
-  "officialUrl": "https://education.github.com/pack#github-campus-experts",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://education.github.com/pack#github-campus-experts",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://education.github.com/pack#github-campus-experts",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "benefit",
+    "primaryCategory": "student-benefits",
+    "subcategories": [
+      "student-developer-packs",
+      "free-courses",
+      "academic-resources"
+    ],
+    "topics": [
+      "github-education",
+      "students",
+      "learn"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'duplicate-bundle-components': Individual AWS Activate and GitHub Student Developer Pack components duplicate a larger bundle and overwhelm default opportunity discovery.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Apply to become part of the program while you’re a student."
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Apply to become part of the program while you’re a student."
+  },
+  "eligibility": {
+    "summary": "Verified students aged 13 or older who are approved for the GitHub Student Developer Pack; provider restrictions may also apply.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [
+      "github-student-developer-pack"
+    ],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (component-offer); record retained as benefit."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

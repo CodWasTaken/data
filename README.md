@@ -17,6 +17,13 @@ Publication means that a reviewer found credible evidence on the stated review
 date. It does not guarantee eligibility, acceptance, value, or continuing
 availability.
 
+Default opportunity discovery is intentionally narrower than the complete open
+dataset. Ordinary free products, consumer loyalty memberships, normal public
+beta channels, generic communities, public datasets, and ungrouped bundle
+components remain preserved as typed resources but are excluded from default
+results. The versioned decisions and reasons live in
+[`editorial/scope-decisions.json`](editorial/scope-decisions.json).
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) and
 [schema/opportunity.schema.json](schema/opportunity.schema.json). Category
 labels, descriptions, subcategories, and legacy aliases are maintained in
@@ -29,6 +36,7 @@ Run the schema and taxonomy tests before submitting data changes:
 ```sh
 npm ci
 npm test
+npm run scope:check
 npm run coverage
 npm run reports -- --as-of YYYY-MM-DD
 ```

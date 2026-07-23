@@ -1,27 +1,124 @@
 {
   "id": "clickup-free-plan",
+  "schemaVersion": "2.0",
   "provider": "ClickUp",
   "title": "Free Forever Plan",
-  "category": "discounts-perks",
-  "subcategories": [
-    "professional-software",
-    "productivity-tools",
-    "communications-tools"
-  ],
-  "tags": [
-    "productivity",
-    "free-plan"
-  ],
+  "aliases": [],
   "description": "Free Forever Plan is a generally available free plan for professional productivity or communication administered by ClickUp.",
-  "eligibility": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
-  "value": "Core collaboration, organization, or communication features without a required paid subscription",
-  "sourceUrl": "https://clickup.com/pricing",
-  "officialUrl": "https://clickup.com/pricing",
-  "status": "active",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://clickup.com/pricing",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://clickup.com/pricing",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "general-free-product",
+    "primaryCategory": "discounts-perks",
+    "subcategories": [
+      "professional-software",
+      "productivity-tools",
+      "communications-tools"
+    ],
+    "topics": [
+      "productivity",
+      "free-plan"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "unconfirmed",
+    "statusReason": "Excluded from default search by scope decision 'ordinary-free-products': Generally available free products and standard free tiers do not satisfy the default opportunity inclusion policy.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Core collaboration, organization, or communication features without a required paid subscription"
+  },
+  "eligibility": {
+    "summary": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-free-product); record retained as general-free-product."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "active",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference",
+      "availability.status"
+    ]
+  }
 }

@@ -1,9 +1,11 @@
 # Data quality report
 
-As of 2026-07-22, 1068 v1 records were inspected. Coverage totals are descriptive and are not pass/fail quotas.
+As of 2026-07-23, 1068 mixed v1/v2 records were inspected. Coverage totals are descriptive and are not pass/fail quotas.
 
 | Metric | Result |
 | --- | ---: |
+| defaultSearchEligible | 779 (72.94%) |
+| explicitlyExcludedFromDefault | 289 (27.06%) |
 | recentlyReviewed | 1068 (100%) |
 | recordsOverdueForReview | 0 (0%) |
 | structuredDeadlines | 0 (0%) |
@@ -15,10 +17,10 @@ As of 2026-07-22, 1068 v1 records were inspected. Coverage totals are descriptiv
 | genericTextRecords | 995 (93.16%) |
 | brokenLinkRate | not-measured |
 | redirectRate | not-measured |
-| uncertainStatus | 0 (0%) |
+| uncertainStatus | 50 (4.68%) |
 | incompleteGeography | 1057 (98.97%) |
 | humanReviewProvenance | 0 (0%) |
 | automatedImportLikely | 1067 (99.91%) |
-| requiresManualSourceReview | 1061 (99.34%) |
+| requiresManualSourceReview | 772 (72.28%) |
 
-Broken-link and redirect rates remain unmeasured until the separate network audit is run. Existing v1 records cannot express structured deadlines, application URLs, multiple evidence claims, or public review provenance; those zero values are migration priorities, not claims that the underlying facts are absent.
+Broken-link and redirect rates remain unmeasured until the separate network audit is run. Explicit exclusions preserve history and require human review before re-entry.

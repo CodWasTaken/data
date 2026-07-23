@@ -1,26 +1,122 @@
 {
   "id": "firefox-beta",
+  "schemaVersion": "2.0",
   "provider": "Mozilla",
   "title": "Firefox Beta",
-  "category": "early-access",
-  "subcategories": [
-    "public-betas",
-    "product-testing"
-  ],
-  "tags": [
-    "beta",
-    "product-testing"
-  ],
+  "aliases": [],
   "description": "Firefox Beta is an official public beta channel that lets participants test prerelease product builds and provide feedback administered by Mozilla.",
-  "eligibility": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
-  "value": "Early product access, prerelease testing, and a supported feedback channel",
-  "sourceUrl": "https://www.mozilla.org/firefox/channel/desktop/",
-  "officialUrl": "https://www.mozilla.org/firefox/channel/desktop/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.mozilla.org/firefox/channel/desktop/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.mozilla.org/firefox/channel/desktop/",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "early-access",
+    "subcategories": [
+      "public-betas",
+      "product-testing"
+    ],
+    "topics": [
+      "beta",
+      "product-testing"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'normal-beta-preview-channels': Normal public beta, insider, and preview channels are product release mechanisms rather than opportunities by default.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Early product access, prerelease testing, and a supported feedback channel"
+  },
+  "eligibility": {
+    "summary": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-preview-channel); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

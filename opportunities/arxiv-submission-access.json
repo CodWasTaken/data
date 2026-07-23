@@ -1,25 +1,121 @@
 {
   "id": "arxiv-submission-access",
+  "schemaVersion": "2.0",
   "provider": "arXiv",
   "title": "arXiv Submission Access",
-  "category": "research-opportunities",
-  "subcategories": [
-    "publication-support"
-  ],
-  "tags": [
-    "publishing",
-    "open-access"
-  ],
+  "aliases": [],
   "description": "arXiv Submission Access is a publication-support, fee-waiver, or research-communication program for eligible authors administered by arXiv.",
-  "eligibility": "Researchers must meet the current program, affiliation, location, subject-area, and application requirements.",
-  "value": "Publishing guidance, access support, fee assistance, or research dissemination infrastructure",
-  "sourceUrl": "https://info.arxiv.org/help/submit/index.html",
-  "officialUrl": "https://info.arxiv.org/help/submit/index.html",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://info.arxiv.org/help/submit/index.html",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://info.arxiv.org/help/submit/index.html",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "research-opportunities",
+    "subcategories": [
+      "publication-support"
+    ],
+    "topics": [
+      "publishing",
+      "open-access"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'public-datasets-and-open-learning': Public datasets, open course catalogues, and general reference resources belong in the wider resource catalogue, not default opportunity results.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Publishing guidance, access support, fee assistance, or research dissemination infrastructure"
+  },
+  "eligibility": {
+    "summary": "Researchers must meet the current program, affiliation, location, subject-area, and application requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (public-resource); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

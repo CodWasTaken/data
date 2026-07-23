@@ -122,27 +122,44 @@ if (isMain) {
   if (output) await mkdir(output, { recursive: true });
   const failures: Array<{ id: string; errors: string[] }> = [];
   let unresolvedFields = 0;
+  let v1RecordsMigrated = 0;
+  let alreadyV2Records = 0;
   for (const file of files) {
-    const record = JSON.parse(await readFile(join(root, "opportunities", file), "utf8")) as OpportunityV1;
-    const migrated = migrateV1ToV2(record);
+    const raw = JSON.parse(
+      await readFile(join(root, "opportunities", file), "utf8"),
+    ) as OpportunityV1 | OpportunityV2;
+    const migrated = raw.schemaVersion === "2.0"
+      ? raw
+      : migrateV1ToV2(raw as OpportunityV1);
+    if (raw.schemaVersion === "2.0") alreadyV2Records += 1;
+    else v1RecordsMigrated += 1;
     const result = validateOpportunityV2(migrated);
-    if (!result.valid) failures.push({ id: record.id, errors: result.errors });
+    if (!result.valid) failures.push({ id: raw.id, errors: result.errors });
     unresolvedFields += migrated.migration?.unresolvedFields.length ?? 0;
-    if (output) await writeFile(join(output, file), `${JSON.stringify(migrated, null, 2)}\n`);
+    if (output) {
+      await writeFile(
+        join(output, file),
+        `${JSON.stringify(migrated, null, 2)}\n`,
+      );
+    }
   }
   const report = {
     schemaVersion: "2.0",
-    sourceSchemaVersion: "1",
+    sourceSchemaVersions: ["1", "2.0"],
     recordsInspected: files.length,
-    recordsMigrated: files.length - failures.length,
+    v1RecordsMigrated,
+    alreadyV2Records,
+    recordsValid: files.length - failures.length,
     recordsFailed: failures.length,
     unresolvedFieldCount: unresolvedFields,
     outputWritten: Boolean(output),
     failures,
-    note: "Dry-run migration does not replace v1 records. Every migrated record remains needs-human-review.",
+    note: "Dry-run migration does not replace records. Existing v2 records are validated without being migrated again; newly migrated v1 records remain needs-human-review.",
   };
   await mkdir(join(root, "reports"), { recursive: true });
   await writeFile(join(root, "reports/migration-results.json"), `${JSON.stringify(report, null, 2)}\n`);
-  console.log(`Migration dry run: ${report.recordsMigrated}/${files.length} valid; ${unresolvedFields} unresolved fields preserved.`);
+  console.log(
+    `Migration dry run: ${report.recordsValid}/${files.length} valid; ${v1RecordsMigrated} v1 migrated; ${alreadyV2Records} v2 validated; ${unresolvedFields} unresolved fields preserved.`,
+  );
   if (failures.length) process.exit(1);
 }

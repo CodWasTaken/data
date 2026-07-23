@@ -1,8 +1,16 @@
 {
-  "reportVersion": 1,
-  "asOf": "2026-07-22",
+  "reportVersion": 2,
+  "asOf": "2026-07-23",
   "recordsInspected": 1068,
   "metrics": {
+    "defaultSearchEligible": {
+      "count": 779,
+      "percentage": 72.94
+    },
+    "explicitlyExcludedFromDefault": {
+      "count": 289,
+      "percentage": 27.06
+    },
     "recentlyReviewed": {
       "count": 1068,
       "percentage": 100
@@ -48,8 +56,8 @@
       "reason": "Redirect destinations require a separate network audit."
     },
     "uncertainStatus": {
-      "count": 0,
-      "percentage": 0
+      "count": 50,
+      "percentage": 4.68
     },
     "incompleteGeography": {
       "count": 1057,
@@ -64,9 +72,9 @@
       "percentage": 99.91
     },
     "requiresManualSourceReview": {
-      "count": 1061,
-      "percentage": 99.34
+      "count": 772,
+      "percentage": 72.28
     }
   },
-  "interpretation": "Coverage counts are descriptive only. Categories do not fail because they contain fewer than an arbitrary quota."
+  "interpretation": "Coverage counts are descriptive only. Explicit scope decisions affect default discovery; heuristics never mutate records."
 }

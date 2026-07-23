@@ -1,26 +1,134 @@
 {
   "id": "pipewing-accountability",
+  "schemaVersion": "2.0",
   "provider": "Pipewing",
   "title": "Virtual Coworking Accountability",
-  "category": "mentorship-community",
-  "subcategories": [
-    "accountability-groups",
-    "peer-communities"
-  ],
-  "tags": [
-    "accountability",
-    "coworking"
-  ],
+  "aliases": [],
   "description": "Virtual Coworking Accountability is a structured peer-accountability or facilitated focus community administered by Pipewing.",
-  "eligibility": "Participants must meet the current membership, age, location, profession, conduct, and program-specific requirements.",
-  "value": "Scheduled focus sessions, peer accountability, and a supportive community routine",
-  "sourceUrl": "https://pipewing.com/",
-  "officialUrl": "https://pipewing.com/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://pipewing.com/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://pipewing.com/",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "community",
+    "primaryCategory": "mentorship-community",
+    "subcategories": [
+      "accountability-groups",
+      "peer-communities"
+    ],
+    "topics": [
+      "accountability",
+      "coworking"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "workspace",
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'generic-communities': General product, coworking, accountability, and founder communities without a distinct selective or material program belong outside default opportunity results.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "workspace",
+        "summary": "Scheduled focus sessions, peer accountability, and a supportive community routine"
+      },
+      {
+        "type": "network-access",
+        "summary": "Scheduled focus sessions, peer accountability, and a supportive community routine"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Scheduled focus sessions, peer accountability, and a supportive community routine"
+  },
+  "eligibility": {
+    "summary": "Participants must meet the current membership, age, location, profession, conduct, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (generic-membership); record retained as community."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }

@@ -1,26 +1,129 @@
 {
   "id": "linux-foundation-free-courses",
+  "schemaVersion": "2.0",
   "provider": "Linux Foundation",
   "title": "Free Training Courses",
-  "category": "education-training",
-  "subcategories": [
-    "certifications",
-    "learning-paths"
-  ],
-  "tags": [
-    "credentials",
-    "professional-learning"
-  ],
+  "aliases": [],
   "description": "Free Training Courses is a training and credential pathway with an official assessment or verifiable certificate administered by Linux Foundation.",
-  "eligibility": "Learners must meet the current age, location, affiliation, experience, and program-specific requirements.",
-  "value": "Role-based learning and an official certificate, badge, or certification pathway",
-  "sourceUrl": "https://training.linuxfoundation.org/resources/?_sft_content_type=free-course",
-  "officialUrl": "https://training.linuxfoundation.org/resources/?_sft_content_type=free-course",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://training.linuxfoundation.org/resources/?_sft_content_type=free-course",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://training.linuxfoundation.org/resources/?_sft_content_type=free-course",
+        "checkedAt": "2026-07-18T00:00:00.000Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "learning-resource",
+    "primaryCategory": "education-training",
+    "subcategories": [
+      "certifications",
+      "learning-paths"
+    ],
+    "topics": [
+      "credentials",
+      "professional-learning"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "limited",
+    "statusReason": "Excluded from default search by scope decision 'public-datasets-and-open-learning': Public datasets, open course catalogues, and general reference resources belong in the wider resource catalogue, not default opportunity results.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Role-based learning and an official certificate, badge, or certification pathway"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Role-based learning and an official certificate, badge, or certification pathway"
+  },
+  "eligibility": {
+    "summary": "Learners must meet the current age, location, affiliation, experience, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": "2026-07-18T00:00:00.000Z",
+    "reviewMethod": "legacy-record-migration",
+    "reviewerReference": null,
+    "claimsChecked": [],
+    "nextReviewAt": null,
+    "sourceFetchedAt": null,
+    "sourceHash": null,
+    "confidence": null,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": null
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (public-resource); record retained as learning-resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType",
+      "reviewProvenance.reviewerReference"
+    ]
+  }
 }
