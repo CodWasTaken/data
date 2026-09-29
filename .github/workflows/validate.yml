@@ -2,17 +2,38 @@ name: Validate data
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, next/schema-v2]
 permissions:
-  contents: read
+  contents: write
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
       - run: npm test
+      - name: Refresh promotion reports
+        if: github.ref == 'refs/heads/next/schema-v2'
+        run: |
+          npm run coverage
+          npm run migrate:v2
+          npm run audit:sources -- --as-of 2026-09-29
+          npm run reports -- --as-of 2026-09-29
+      - name: Commit promotion reports
+        if: github.ref == 'refs/heads/next/schema-v2'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports
+          if git diff --cached --quiet; then
+            echo "Promotion reports already current."
+          else
+            git commit -m "chore(data): refresh canonical quality reports"
+            git push origin HEAD:next/schema-v2
+          fi
