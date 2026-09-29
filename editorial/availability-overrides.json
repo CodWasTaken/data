@@ -9,8 +9,15 @@
       "id": "amazon-sustainability-accelerator",
       "status": "closed",
       "confidence": 0.98,
-      "evidenceUrl": "https://www.aboutamazon.co.uk/news/sustainability/amazon-sustainability-accelerator-climate-tech",
+      "evidenceUrl": "https://sustainability.aboutamazon.com/sustainability-accelerator-climate-tech",
       "rationale": "The cited 2026 application window closed on 10 July 2026."
+    },
+    {
+      "id": "aws-generative-ai-accelerator",
+      "status": "closed",
+      "confidence": 0.98,
+      "evidenceUrl": "https://startups.aws.com/programs/generative-ai",
+      "rationale": "The published 2025 application window ended on 10 July 2025; current application availability has not been established for a later cohort."
     },
     {
       "id": "berkeley-skydeck",
