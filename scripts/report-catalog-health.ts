@@ -23,7 +23,7 @@ interface ReportRecord {
   status: string;
   submissionType: string;
   sponsor: boolean;
-  reviewDate: string;
+  reviewDate: string | null;
   regions: string[];
   schemaVersion: "1" | "2.0";
   resourceType: string | null;
@@ -94,7 +94,7 @@ const toReportRecord = (raw: Record<string, unknown>): ReportRecord => {
     : [];
   const reviewedAt = typeof provenance.reviewedAt === "string"
     ? provenance.reviewedAt
-    : "1970-01-01";
+    : null;
   const countries = Array.isArray(geography.countries)
     ? geography.countries as string[]
     : [];
@@ -136,7 +136,7 @@ const toReportRecord = (raw: Record<string, unknown>): ReportRecord => {
     status: String(availability.status),
     submissionType: provenance.importSource ? "maintainer" : "community",
     sponsor: sponsorship.sponsored === true,
-    reviewDate: reviewedAt.slice(0, 10),
+    reviewDate: reviewedAt ? reviewedAt.slice(0, 10) : null,
     regions: [...new Set(regions)],
     schemaVersion: "2.0",
     resourceType: String(classification.resourceType),
@@ -437,7 +437,9 @@ await writeFile(
 );
 
 const asOfTime = Date.parse(`${asOf}T23:59:59Z`);
+const missingReviewDate = records.filter((record) => !record.reviewDate);
 const stale = records.filter((record) =>
+  record.reviewDate !== null &&
   asOfTime - Date.parse(`${record.reviewDate}T00:00:00Z`) > 180 * 86400_000
 ).map((record) => ({
   id: record.id,
@@ -457,7 +459,10 @@ await writeFile(
   }, null, 2)}\n`,
 );
 
-const recent = records.length - stale.length;
+const recent = records.filter((record) =>
+  record.reviewDate !== null &&
+  asOfTime - Date.parse(`${record.reviewDate}T00:00:00Z`) <= 180 * 86400_000
+).length;
 const duplicateUrlRecords = new Set(
   [...urlGroups.values()]
     .filter((group) => group.length > 1)
@@ -517,6 +522,7 @@ const qualityReport = {
     explicitlyExcludedFromDefault: metric(explicitExclusions.length),
     recentlyReviewed: metric(recent),
     recordsOverdueForReview: metric(stale.length),
+    missingReviewDate: metric(missingReviewDate.length),
     structuredDeadlines: metric(
       records.filter((record) => record.structuredDeadline).length,
     ),
@@ -547,6 +553,7 @@ const qualityReport = {
       new Set([
         ...pendingCandidates.map((item) => item.id),
         ...stale.map((item) => item.id),
+        ...missingReviewDate.map((item) => item.id),
       ]).size,
     ),
   },
@@ -573,6 +580,7 @@ await writeFile(
 const requiresReviewIds = new Set([
   ...pendingCandidates.map((item) => item.id),
   ...stale.map((item) => item.id),
+  ...missingReviewDate.map((item) => item.id),
 ]);
 const humanReviewQueue = records
   .filter((record) => requiresReviewIds.has(record.id))
