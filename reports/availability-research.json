@@ -7,7 +7,7 @@
     "timeoutMs": 20000,
     "maximumBytes": 2000000,
     "note": "Suggested statuses require direct evidence or an explicitly documented context decision and are not represented as manual human review. Ambiguous, blocked, conflicting, or unsupported sources remain unconfirmed.",
-    "contextOverrides": 17
+    "contextOverrides": 18
   },
   "recordsInspected": 1068,
   "uniqueSourceRequests": 1050,
@@ -1126,8 +1126,7 @@
       "title": "Amazon Sustainability Accelerator: Climate Tech",
       "currentStatus": "unconfirmed",
       "urls": [
-        "https://sustainability.aboutamazon.com/sustainability-accelerator-climate-tech",
-        "https://www.aboutamazon.co.uk/news/sustainability/amazon-sustainability-accelerator-climate-tech"
+        "https://sustainability.aboutamazon.com/sustainability-accelerator-climate-tech"
       ],
       "sources": [
         {
@@ -4960,7 +4959,7 @@
       "title": "AWS Generative AI Accelerator",
       "currentStatus": "unconfirmed",
       "urls": [
-        "https://aws.amazon.com/startups/accelerators/generative-ai/"
+        "https://startups.aws.com/programs/generative-ai"
       ],
       "sources": [
         {
@@ -4977,19 +4976,19 @@
           "blocked": false,
           "evidence": [
             {
-              "signal": "restricted-availability",
-              "snippet": "d questionsRead full FAQWhat are the eligibility criteria? This is an invite-only program for priority startups who are working on interesting and comp"
+              "signal": "past-closing-date",
+              "snippet": "Application window June 10 - July 10, 2025."
             }
           ],
-          "suggestedStatus": "limited",
-          "confidence": 0.86,
-          "reason": "Visible source text contains the 'restricted-availability' signal."
+          "suggestedStatus": "closed",
+          "confidence": 0.98,
+          "reason": "The published 2025 application window ended on 10 July 2025."
         }
       ],
-      "suggestedStatus": "limited",
-      "confidence": 0.86,
-      "reason": "Visible source text contains the 'restricted-availability' signal.",
-      "reviewState": "explicit-source-supported"
+      "suggestedStatus": "closed",
+      "confidence": 0.98,
+      "reason": "The published 2025 application window ended on 10 July 2025; current application availability has not been established for a later cohort.",
+      "reviewState": "context-reviewed"
     },
     {
       "id": "aws-heroes",
