@@ -1,26 +1,136 @@
 {
   "id": "lambda-literary-writers-retreat",
+  "schemaVersion": "2.0",
   "provider": "Lambda Literary",
   "title": "Writers Retreat for Emerging LGBTQ Voices",
-  "category": "creator-media",
-  "subcategories": [
-    "writing-programs",
-    "publishing-support"
-  ],
-  "tags": [
-    "writers",
-    "publishing"
-  ],
+  "aliases": [],
   "description": "Writers Retreat for Emerging LGBTQ Voices is a selective writing-development program offering eligible writers workshops, mentorship, residency time, or routes toward publication administered by Lambda Literary.",
-  "eligibility": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
-  "value": "Craft development, editorial feedback, literary community access, and program-specific scholarships or publishing connections",
-  "sourceUrl": "https://lambdaliterary.org/writers-retreat/",
-  "officialUrl": "https://lambdaliterary.org/writers-retreat/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://lambdaliterary.org/writers-retreat/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://lambdaliterary.org/writers-retreat/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://lambdaliterary.org/writers-retreat/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://lambdaliterary.org/2026/06/fellows-announcement-2026-writers-retreat/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "creator-media",
+    "subcategories": [
+      "writing-programs",
+      "publishing-support"
+    ],
+    "topics": [
+      "writers",
+      "publishing"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "The stored source is a stale 2015 application page, while the provider has already announced the selected 2026 fellows. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "network-access",
+        "summary": "Craft development, editorial feedback, literary community access, and program-specific scholarships or publishing connections"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Craft development, editorial feedback, literary community access, and program-specific scholarships or publishing connections"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": null,
+    "confidence": 0.95,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

@@ -1,5 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { writeImportCandidate } from './import-candidate';
 
 type Row = [id: string, provider: string, title: string, url: string];
 const groups = [
@@ -101,8 +100,6 @@ const groups = [
   },
 ];
 
-const outputDirectory = resolve(process.cwd(), 'opportunities');
-await mkdir(outputDirectory, { recursive: true });
 let count = 0;
 for (const group of groups) for (const [id, provider, title, url] of group.rows) {
   const record = {
@@ -110,10 +107,9 @@ for (const group of groups) for (const [id, provider, title, url] of group.rows)
     category: 'internships-work-experience', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.label} administered by ${provider}.`,
     eligibility: 'Applicants must meet the current career-stage, affiliation, location, availability, work-authorization, and application requirements.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false,
-    reviewDate: '2026-07-18', regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
-  await writeFile(resolve(outputDirectory, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`);
+  await writeImportCandidate({ root: process.cwd(), importer: "work-experience-opportunities", suggestedFields: record });
   count += 1;
 }
 console.log(`Wrote ${count} curated work-experience opportunities.`);

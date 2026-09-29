@@ -1,26 +1,124 @@
 {
   "id": "dropbox-early-access",
+  "schemaVersion": "2.0",
   "provider": "Dropbox",
   "title": "Dropbox Early Access",
-  "category": "early-access",
-  "subcategories": [
-    "private-betas",
-    "waitlists"
-  ],
-  "tags": [
-    "private-beta",
-    "application"
-  ],
+  "aliases": [],
   "description": "Dropbox Early Access is an official application, prerelease, or invitation channel through which selected participants may test unreleased capabilities administered by Dropbox.",
-  "eligibility": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
-  "value": "Potential invitation to private testing, direct product feedback, and prerelease feature access",
-  "sourceUrl": "https://help.dropbox.com/account-settings/advance-access",
-  "officialUrl": "https://help.dropbox.com/account-settings/advance-access",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://help.dropbox.com/account-settings/advance-access",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://help.dropbox.com/account-settings/advance-access",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "early-access",
+    "subcategories": [
+      "private-betas",
+      "waitlists"
+    ],
+    "topics": [
+      "private-beta",
+      "application"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "open",
+    "statusReason": "A relevant provider page is live for an ongoing program or non-default resource; no contrary availability signal was found. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Potential invitation to private testing, direct product feedback, and prerelease feature access"
+  },
+  "eligibility": {
+    "summary": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-program-page-match"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "df3e31202e0ca7d5a0dd86f458450ff075631c10e2e56aed7649139b39c74076",
+    "confidence": 0.7,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-preview-channel); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

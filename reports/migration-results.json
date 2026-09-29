@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "2.0",
+  "sourceSchemaVersions": [
+    "1",
+    "2.0"
+  ],
+  "recordsInspected": 1068,
+  "v1RecordsMigrated": 779,
+  "alreadyV2Records": 289,
+  "recordsValid": 1068,
+  "recordsFailed": 0,
+  "unresolvedFieldCount": 10448,
+  "outputWritten": false,
+  "failures": [],
+  "note": "Dry-run migration does not replace records. Existing v2 records are validated without being migrated again; newly migrated v1 records remain needs-human-review."
+}

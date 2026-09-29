@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "2.0",
+  "resourceTypes": [
+    "opportunity",
+    "resource",
+    "benefit",
+    "program",
+    "event",
+    "funding",
+    "fellowship",
+    "competition",
+    "community",
+    "learning-resource",
+    "public-dataset",
+    "general-free-product"
+  ],
+  "statuses": [
+    "open",
+    "rolling",
+    "upcoming",
+    "limited",
+    "waitlist",
+    "temporarily-unavailable",
+    "closed",
+    "expired",
+    "unconfirmed",
+    "disputed",
+    "archived"
+  ],
+  "evidenceTypes": [
+    "overview",
+    "eligibility",
+    "application",
+    "terms",
+    "deadline",
+    "pricing",
+    "regional-restrictions"
+  ],
+  "benefitTypes": [
+    "grant",
+    "prize",
+    "stipend",
+    "credit",
+    "discount",
+    "software",
+    "hardware",
+    "training",
+    "mentorship",
+    "workspace",
+    "compute",
+    "network-access",
+    "recognition"
+  ],
+  "deadlineTypes": [
+    "fixed",
+    "rolling",
+    "periodic",
+    "unknown",
+    "none"
+  ],
+  "reviewMethods": [
+    "human",
+    "human-assisted",
+    "provider-confirmed",
+    "automated-source-research",
+    "legacy-record-migration"
+  ],
+  "reviewStates": [
+    "unreviewed",
+    "automated-lint-passed",
+    "needs-human-review",
+    "human-reviewed",
+    "rejected",
+    "published"
+  ]
+}

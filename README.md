@@ -17,6 +17,13 @@ Publication means that a reviewer found credible evidence on the stated review
 date. It does not guarantee eligibility, acceptance, value, or continuing
 availability.
 
+Default opportunity discovery is intentionally narrower than the complete open
+dataset. Ordinary free products, consumer loyalty memberships, normal public
+beta channels, generic communities, public datasets, and ungrouped bundle
+components remain preserved as typed resources but are excluded from default
+results. The versioned decisions and reasons live in
+[`editorial/scope-decisions.json`](editorial/scope-decisions.json).
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) and
 [schema/opportunity.schema.json](schema/opportunity.schema.json). Category
 labels, descriptions, subcategories, and legacy aliases are maintained in
@@ -29,13 +36,37 @@ Run the schema and taxonomy tests before submitting data changes:
 ```sh
 npm ci
 npm test
-npm run coverage -- --enforce
+npm run scope:check
+npm run coverage
+npm run reports -- --as-of YYYY-MM-DD
 ```
 
-The coverage check requires at least 20 opportunities in every primary category
-and at least 10 assignments for every subcategory. One opportunity may count
-toward multiple subcategories only when each assignment accurately describes
-the program.
+Coverage is descriptive and has no minimum quota. A smaller category of strong,
+current, evidence-backed records does not fail. Quality reporting tracks review
+age, structured fields, duplicate/generic text, geography, provenance and
+manual-review needs. One opportunity may count toward multiple subcategories
+only when each assignment accurately describes the program.
+
+Availability status describes current access, not whether eligibility is
+selective. Import candidates must use `unconfirmed`. AI-assisted source research
+may record a provisional status only with `automated-source-research`
+provenance and `needs-human-review`; it cannot approve a record or represent a
+manual review. A human reviewer must finalize publication claims.
+
+Run the complete fork-only availability audit and verify its applied decisions:
+
+```sh
+npm run research:availability
+npm run availability:check
+```
+
+The audit fetches each distinct HTTPS source once, stores hashes and short
+evidence excerpts rather than provider page bodies, and leaves blocked,
+ambiguous, conflicting, or unsupported listings `unconfirmed`. Context-sensitive
+exceptions are versioned in
+[`editorial/availability-overrides.json`](editorial/availability-overrides.json);
+the full ledger is in
+[`reports/availability-research.json`](reports/availability-research.json).
 
 Use `npm run audit:sources` to verify published source and official URLs. A
 failed URL makes the command fail. Some official sites reject automated requests;

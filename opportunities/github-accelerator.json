@@ -1,27 +1,137 @@
 {
   "id": "github-accelerator",
+  "schemaVersion": "2.0",
   "provider": "GitHub",
   "title": "GitHub Accelerator",
-  "category": "developer-programs",
-  "subcategories": [
-    "open-source-programs",
-    "maintainer-support",
-    "developer-grants"
-  ],
-  "tags": [
-    "developers",
-    "open-source"
-  ],
+  "aliases": [],
   "description": "GitHub Accelerator funds or supports selected open-source developers, maintainers, and public-interest technology projects.",
-  "eligibility": "Applicants or participants must satisfy the provider's current technical, account, conduct, scope, selection, and regional requirements.",
-  "value": "Grant funding or structured maintainer support subject to selection",
-  "sourceUrl": "https://accelerator.github.com/",
-  "officialUrl": "https://accelerator.github.com/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://accelerator.github.com/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://accelerator.github.com/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://accelerator.github.com/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://accelerator.github.com/application",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "developer-programs",
+    "subcategories": [
+      "open-source-programs",
+      "maintainer-support",
+      "developer-grants"
+    ],
+    "topics": [
+      "developers",
+      "open-source"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "The official application page is for the 2024 cohort and states that applications closed on 5 March 2024. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Grant funding or structured maintainer support subject to selection"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Grant funding or structured maintainer support subject to selection"
+  },
+  "eligibility": {
+    "summary": "Applicants or participants must satisfy the provider's current technical, account, conduct, scope, selection, and regional requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": null,
+    "confidence": 0.99,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

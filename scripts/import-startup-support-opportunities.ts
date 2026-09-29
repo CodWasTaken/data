@@ -1,5 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { writeImportCandidate } from './import-candidate';
 
 type Row = [id: string, provider: string, title: string, url: string];
 const groups: Array<{ subcategories: string[]; tags: string[]; description: string; value: string; rows: Row[] }> = [
@@ -60,18 +59,15 @@ const groups: Array<{ subcategories: string[]; tags: string[]; description: stri
   },
 ];
 
-const outputDirectory = resolve(process.cwd(), 'opportunities');
-await mkdir(outputDirectory, { recursive: true });
 let count = 0;
 for (const group of groups) for (const [id, provider, title, url] of group.rows) {
   const record = {
     id, provider, title, category: 'startup-benefits', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Companies must meet the provider’s current stage, funding, age, geography, partner-referral, account, and program-specific requirements; ordinary fees may apply outside promotional benefits.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false,
-    reviewDate: '2026-07-18', regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
-  await writeFile(resolve(outputDirectory, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`);
+  await writeImportCandidate({ root: process.cwd(), importer: "startup-support-opportunities", suggestedFields: record });
   count += 1;
 }
 console.log(`Wrote ${count} curated startup support opportunities.`);

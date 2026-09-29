@@ -1,32 +1,131 @@
 {
   "id": "aws-activate-alchemy",
+  "schemaVersion": "2.0",
   "provider": "Alchemy",
   "title": "Alchemy - Get $10,000 to build on the complete Web3 development platform",
-  "category": "startup-benefits",
-  "subcategories": [
-    "saas-discounts",
-    "infrastructure-credits",
-    "developer-tooling",
-    "analytics-observability"
-  ],
-  "tags": [
-    "aws-activate",
-    "startups",
-    "easy-apply",
-    "finance",
-    "analytics",
-    "engineering"
-  ],
+  "aliases": [],
   "description": "Alchemy is the complete web3 developer platform. Combining a full stack of developer products and tools with industry-leading customer engineering support and global distribution, Alchemy powers blockchain ecosystems (chains, developers, applications) worldwide. Alchemy provides the most developer-friendly, cost-effective, and reliable SDKs and APIs for: nodes, data indexing, onboarding, and read/write operations with blockchain RPC APIs, smart wallets, rollups, and more. User dashboards integra",
-  "eligibility": "AWS Activate members who meet the offer's current provider, account, and regional requirements.",
-  "value": "Alchemy - Get $10,000 to build on the complete Web3 development platform",
-  "sourceUrl": "https://startups.aws.com/offers/alchemy",
-  "officialUrl": "https://startups.aws.com/offers/alchemy",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://startups.aws.com/offers/alchemy",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://startups.aws.com/offers/alchemy",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "benefit",
+    "primaryCategory": "startup-benefits",
+    "subcategories": [
+      "saas-discounts",
+      "infrastructure-credits",
+      "developer-tooling",
+      "analytics-observability"
+    ],
+    "topics": [
+      "aws-activate",
+      "startups",
+      "easy-apply",
+      "finance",
+      "analytics",
+      "engineering"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "unconfirmed",
+    "statusReason": "No source provided sufficiently clear current-availability evidence. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Alchemy - Get $10,000 to build on the complete Web3 development platform"
+  },
+  "eligibility": {
+    "summary": "AWS Activate members who meet the offer's current provider, account, and regional requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "confidence": 0.15,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [
+      "aws-activate-cloud-credits"
+    ],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (component-offer); record retained as benefit."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

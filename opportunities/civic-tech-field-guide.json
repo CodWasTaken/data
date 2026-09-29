@@ -1,27 +1,137 @@
 {
   "id": "civic-tech-field-guide",
+  "schemaVersion": "2.0",
   "provider": "Civic Tech Field Guide",
   "title": "Civic Tech Field Guide Community",
-  "category": "social-impact-civic-tech",
-  "subcategories": [
-    "civic-tech-programs",
-    "public-interest-technology",
-    "community-development-programs"
-  ],
-  "tags": [
-    "civic-tech",
-    "public-interest"
-  ],
+  "aliases": [],
   "description": "Civic Tech Field Guide Community is an open network, cohort, or support program through which practitioners collaborate on public-interest technology and community capacity administered by Civic Tech Field Guide.",
-  "eligibility": "Applicants or participants must meet the current mission alignment, project stage, location, cohort timing, and program-specific requirements.",
-  "value": "Peer learning, civic-technology resources, collaboration, program visibility, and community-development support",
-  "sourceUrl": "https://civictech.guide/",
-  "officialUrl": "https://civictech.guide/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://civictech.guide/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://civictech.guide/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "social-impact-civic-tech",
+    "subcategories": [
+      "civic-tech-programs",
+      "public-interest-technology",
+      "community-development-programs"
+    ],
+    "topics": [
+      "civic-tech",
+      "public-interest"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training",
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "open",
+    "statusReason": "A relevant provider page is live for an ongoing program or non-default resource; no contrary availability signal was found. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Peer learning, civic-technology resources, collaboration, program visibility, and community-development support"
+      },
+      {
+        "type": "network-access",
+        "summary": "Peer learning, civic-technology resources, collaboration, program visibility, and community-development support"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Peer learning, civic-technology resources, collaboration, program visibility, and community-development support"
+  },
+  "eligibility": {
+    "summary": "Applicants or participants must meet the current mission alignment, project stage, location, cohort timing, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-program-page-match"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "ae0970b8dc672764807d83ff1a684ab0749f79206a3ffa7079d576e97b1ca97a",
+    "confidence": 0.7,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (public-resource); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

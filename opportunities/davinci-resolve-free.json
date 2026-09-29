@@ -1,26 +1,124 @@
 {
   "id": "davinci-resolve-free",
+  "schemaVersion": "2.0",
   "provider": "Blackmagic Design",
   "title": "DaVinci Resolve Free",
-  "category": "discounts-perks",
-  "subcategories": [
-    "professional-software",
-    "design-tools"
-  ],
-  "tags": [
-    "design",
-    "free-plan"
-  ],
+  "aliases": [],
   "description": "DaVinci Resolve Free is a no-cost plan or open professional design tool available under its published terms administered by Blackmagic Design.",
-  "eligibility": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
-  "value": "Professional design capabilities without a required paid subscription",
-  "sourceUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
-  "officialUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
-  "status": "active",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "general-free-product",
+    "primaryCategory": "discounts-perks",
+    "subcategories": [
+      "professional-software",
+      "design-tools"
+    ],
+    "topics": [
+      "design",
+      "free-plan"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "open",
+    "statusReason": "A relevant provider page is live for an ongoing program or non-default resource; no contrary availability signal was found. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Professional design capabilities without a required paid subscription"
+  },
+  "eligibility": {
+    "summary": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-program-page-match"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "f899868d56c38602562f830ee088f54cffeb6c5011e5125a2fa784dcf6a6c137",
+    "confidence": 0.7,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-free-product); record retained as general-free-product."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "active",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

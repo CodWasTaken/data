@@ -1,28 +1,125 @@
 {
   "id": "icml-volunteer-program",
+  "schemaVersion": "2.0",
   "provider": "International Conference on Machine Learning",
   "title": "ICML Volunteer and Financial Aid Program",
-  "category": "events-conferences",
-  "subcategories": [
-    "conference-scholarships",
-    "travel-grants",
-    "community-tickets",
-    "student-tickets"
-  ],
-  "tags": [
-    "conference-support",
-    "students"
-  ],
+  "aliases": [],
   "description": "ICML Volunteer and Financial Aid Program is a conference attendance-support program offering registration, travel support, or student volunteer benefits under current terms administered by International Conference on Machine Learning.",
-  "eligibility": "Applicants must meet the current event, role, age, location, deadline, and program-specific requirements.",
-  "value": "Reduced-cost or supported conference participation, with program-specific registration and travel benefits",
-  "sourceUrl": "https://icml.cc/Conferences/2026/FinancialAid",
-  "officialUrl": "https://icml.cc/Conferences/2026/FinancialAid",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://icml.cc/Conferences/2026/FinancialAid",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://icml.cc/Conferences/2026/FinancialAid",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://icml.cc/Conferences/2026/FinancialAid",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "event",
+    "primaryCategory": "events-conferences",
+    "subcategories": [
+      "conference-scholarships",
+      "travel-grants",
+      "community-tickets",
+      "student-tickets"
+    ],
+    "topics": [
+      "conference-support",
+      "students"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Reduced-cost or supported conference participation, with program-specific registration and travel benefits"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current event, role, age, location, deadline, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "a8d2ec26e143b3cbb5b46318ba6b3ac1039f755a91c7b1d9c2417fd6c7f3a67a",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

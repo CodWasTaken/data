@@ -1,26 +1,123 @@
 {
   "id": "radisson-rewards",
+  "schemaVersion": "2.0",
   "provider": "Radisson Hotels",
   "title": "Radisson Rewards",
-  "category": "discounts-perks",
-  "subcategories": [
-    "travel-coworking",
-    "memberships"
-  ],
-  "tags": [
-    "travel",
-    "loyalty"
-  ],
+  "aliases": [],
   "description": "Radisson Rewards is a free travel loyalty membership with member rates or stay-related benefits administered by Radisson Hotels.",
-  "eligibility": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
-  "value": "Member rates, points, upgrades, or other travel benefits under current program terms",
-  "sourceUrl": "https://www.radissonhotels.com/en-us/rewards",
-  "officialUrl": "https://www.radissonhotels.com/en-us/rewards",
-  "status": "active",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.radissonhotels.com/en-us/rewards",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.radissonhotels.com/en-us/rewards",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "discounts-perks",
+    "subcategories": [
+      "travel-coworking",
+      "memberships"
+    ],
+    "topics": [
+      "travel",
+      "loyalty"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "unconfirmed",
+    "statusReason": "No source provided sufficiently clear current-availability evidence. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Member rates, points, upgrades, or other travel benefits under current program terms"
+  },
+  "eligibility": {
+    "summary": "Users must meet the current account, location, use, purchase, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": null,
+    "confidence": 0,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (loyalty-program); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "active",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

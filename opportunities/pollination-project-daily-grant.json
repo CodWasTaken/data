@@ -1,26 +1,130 @@
 {
   "id": "pollination-project-daily-grant",
+  "schemaVersion": "2.0",
   "provider": "The Pollination Project",
   "title": "Daily Grant Program",
-  "category": "funding",
-  "subcategories": [
-    "grants",
-    "microgrants",
-    "community-funds"
-  ],
-  "tags": [
-    "funding"
-  ],
+  "aliases": [],
   "description": "Seed funding supports early-stage social-change projects led by individuals and small groups.",
-  "eligibility": "Individuals and informal groups with an early-stage social-change idea may apply under the current guidelines.",
-  "value": "Seed grant for a selected social-change project",
-  "sourceUrl": "https://thepollinationproject.org/apply/",
-  "officialUrl": "https://thepollinationproject.org/apply/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://thepollinationproject.org/apply/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://thepollinationproject.org/apply/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://thepollinationproject.org/apply/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "funding",
+    "primaryCategory": "funding",
+    "subcategories": [
+      "grants",
+      "microgrants",
+      "community-funds"
+    ],
+    "topics": [
+      "funding"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "rolling",
+    "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Seed grant for a selected social-change project"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Seed grant for a selected social-change project"
+  },
+  "eligibility": {
+    "summary": "Individuals and informal groups with an early-stage social-change idea may apply under the current guidelines.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "36b97a33314d0d52d69018aefe8760e558e3ac11d8d8aa5f37fc87446662f0c0",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

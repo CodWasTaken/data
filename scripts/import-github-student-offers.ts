@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { writeImportCandidate } from "./import-candidate";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -72,16 +72,12 @@ for (const match of html.matchAll(/<div class="pack-offer-card[^>]*>([\s\S]*?)(?
     value: fit(offer, 200),
     sourceUrl,
     officialUrl: sourceUrl,
-    status: "limited",
+    status: "unconfirmed",
     submissionType: "maintainer",
     sponsor: false,
-    reviewDate: "2026-07-18",
     regions: ["Global"],
   };
-  await writeFile(
-    join(root, "opportunities", `${recordId}.json`),
-    `${JSON.stringify(opportunity, null, 2)}\n`,
-  );
+  await writeImportCandidate({ root, importer: "github-student-offers", suggestedFields: opportunity });
   written += 1;
 }
 

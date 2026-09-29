@@ -1,26 +1,145 @@
 {
   "id": "uchicago-polsky-accelerator",
+  "schemaVersion": "2.0",
   "provider": "Polsky Center at the University of Chicago",
   "title": "Polsky Accelerator",
-  "category": "accelerators-incubators",
-  "subcategories": [
-    "student-incubators",
-    "university-incubators"
-  ],
-  "tags": [
-    "accelerator",
-    "entrepreneurship"
-  ],
+  "aliases": [],
   "description": "Polsky Accelerator is a university-connected venture program from Polsky Center at the University of Chicago that helps eligible student founders develop and test new ventures.",
-  "eligibility": "Teams must meet the current student or university-affiliation, venture-stage, location, and participation requirements.",
-  "value": "University venture training, mentoring, workspace or funding opportunities",
-  "sourceUrl": "https://polsky.uchicago.edu/programs-events/polsky-accelerator/",
-  "officialUrl": "https://polsky.uchicago.edu/programs-events/polsky-accelerator/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://polsky.uchicago.edu/programs-events/polsky-accelerator/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://polsky.uchicago.edu/programs-events/polsky-accelerator/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://polsky.uchicago.edu/programs-events/polsky-accelerator/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "accelerators-incubators",
+    "subcategories": [
+      "student-incubators",
+      "university-incubators"
+    ],
+    "topics": [
+      "accelerator",
+      "entrepreneurship"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant",
+      "training",
+      "mentorship",
+      "workspace"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "University venture training, mentoring, workspace or funding opportunities"
+      },
+      {
+        "type": "training",
+        "summary": "University venture training, mentoring, workspace or funding opportunities"
+      },
+      {
+        "type": "mentorship",
+        "summary": "University venture training, mentoring, workspace or funding opportunities"
+      },
+      {
+        "type": "workspace",
+        "summary": "University venture training, mentoring, workspace or funding opportunities"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "University venture training, mentoring, workspace or funding opportunities"
+  },
+  "eligibility": {
+    "summary": "Teams must meet the current student or university-affiliation, venture-stage, location, and participation requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "e8561d90e4aa131f7ce15a1873c9f3ca2c11e1f5d9490cc7d37436ea736f7fbc",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

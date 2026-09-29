@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://perkcommons.org/schema/opportunity.schema.json",
+  "$id": "https://perkcommons.com/schema/opportunity.json",
   "title": "PerkCommons opportunity",
   "type": "object",
   "additionalProperties": false,

@@ -1,5 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { writeImportCandidate } from './import-candidate';
 
 type Opportunity = {
   id: string;
@@ -79,8 +78,6 @@ const openSourceSponsorships: Opportunity[] = [
 ].map(([id,provider,title,url,description,eligibility,value]) => ({id,provider,title,url,description,eligibility,value,subcategories:['community-funds','open-source-sponsorships']}));
 
 const rows = [...communityMicrogrants, ...researchFellowships, ...prizePrograms, ...creatorFunds, ...openSourceSponsorships];
-const outputDirectory = resolve(process.cwd(), 'opportunities');
-await mkdir(outputDirectory, { recursive: true });
 
 for (const row of rows) {
   const opportunity = {
@@ -95,13 +92,12 @@ for (const row of rows) {
     value: row.value,
     sourceUrl: row.url,
     officialUrl: row.url,
-    status: 'limited',
+    status: 'unconfirmed',
     submissionType: 'maintainer',
     sponsor: false,
-    reviewDate: '2026-07-18',
     regions: row.regions ?? ['Global'],
   };
-  await writeFile(resolve(outputDirectory, `${row.id}.json`), `${JSON.stringify(opportunity, null, 2)}\n`);
+  await writeImportCandidate({ root: process.cwd(), importer: "funding-opportunities", suggestedFields: opportunity });
 }
 
 console.log(`Wrote ${rows.length} curated funding opportunities.`);

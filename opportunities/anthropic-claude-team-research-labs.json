@@ -3,8 +3,14 @@
   "provider": "Anthropic",
   "title": "Claude Team Plan for Research Labs",
   "category": "discounts-perks",
-  "subcategories": ["professional-software"],
-  "tags": ["research-labs", "academic-research", "nonprofit-research"],
+  "subcategories": [
+    "professional-software"
+  ],
+  "tags": [
+    "research-labs",
+    "academic-research",
+    "nonprofit-research"
+  ],
   "description": "Anthropic offers a grant-funded discounted Claude Team plan designed for eligible academic and nonprofit scientific research laboratories.",
   "eligibility": "Active scientific labs at academic institutions and nonprofit research organizations may qualify after verification by the lab's principal investigator; smaller labs can self-verify online.",
   "value": "Discounted Claude Team plans from $15 per user per month, with research tools and shared administration",
@@ -14,5 +20,7 @@
   "submissionType": "maintainer",
   "sponsor": false,
   "reviewDate": "2026-07-18",
-  "regions": ["Global, subject to verification and service availability"]
+  "regions": [
+    "Global, subject to verification and service availability"
+  ]
 }

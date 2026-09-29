@@ -1,26 +1,135 @@
 {
   "id": "braden-storytelling-grant",
+  "schemaVersion": "2.0",
   "provider": "Stanford Storytelling Project",
   "title": "Braden Storytelling Grant",
-  "category": "creator-media",
-  "subcategories": [
-    "podcast-grants",
-    "creator-funds"
-  ],
-  "tags": [
-    "podcast",
-    "audio"
-  ],
+  "aliases": [],
   "description": "Braden Storytelling Grant is a funding or supported-development opportunity for eligible podcasts, radio work, or independent audio storytelling administered by Stanford Storytelling Project.",
-  "eligibility": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
-  "value": "Audio production funding, development support, training, pitching access, or distribution assistance",
-  "sourceUrl": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
-  "officialUrl": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "creator-media",
+    "subcategories": [
+      "podcast-grants",
+      "creator-funds"
+    ],
+    "topics": [
+      "podcast",
+      "audio"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant",
+      "training"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Audio production funding, development support, training, pitching access, or distribution assistance"
+      },
+      {
+        "type": "training",
+        "summary": "Audio production funding, development support, training, pitching access, or distribution assistance"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Audio production funding, development support, training, pitching access, or distribution assistance"
+  },
+  "eligibility": {
+    "summary": "Applicants must meet the current discipline, career stage, geography, project ownership, application window, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "1b67b8f215660005486eb007cce703cd322accfc958768d0fe9000b1bb0f7e81",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

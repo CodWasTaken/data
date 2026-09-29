@@ -1,27 +1,131 @@
 {
   "id": "f6s-founder-community",
+  "schemaVersion": "2.0",
   "provider": "F6S",
   "title": "Founder Community",
-  "category": "mentorship-community",
-  "subcategories": [
-    "founder-communities",
-    "peer-communities",
-    "expert-networks"
-  ],
-  "tags": [
-    "founders",
-    "peer-support"
-  ],
+  "aliases": [],
   "description": "Founder Community is a founder community offering peer learning, connections, and access to experienced operators administered by F6S.",
-  "eligibility": "Participants must meet the current membership, age, location, profession, conduct, and program-specific requirements.",
-  "value": "Founder peer support, practical knowledge sharing, introductions, and community events",
-  "sourceUrl": "https://www.f6s.com/",
-  "officialUrl": "https://www.f6s.com/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.f6s.com/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.f6s.com/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "community",
+    "primaryCategory": "mentorship-community",
+    "subcategories": [
+      "founder-communities",
+      "peer-communities",
+      "expert-networks"
+    ],
+    "topics": [
+      "founders",
+      "peer-support"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "unconfirmed",
+    "statusReason": "No source provided sufficiently clear current-availability evidence. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "network-access",
+        "summary": "Founder peer support, practical knowledge sharing, introductions, and community events"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Founder peer support, practical knowledge sharing, introductions, and community events"
+  },
+  "eligibility": {
+    "summary": "Participants must meet the current membership, age, location, profession, conduct, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "1f2cb475832056f4caf0f317641b7cd29e24157ddae440189be077f862379dc7",
+    "confidence": 0.15,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (generic-membership); record retained as community."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

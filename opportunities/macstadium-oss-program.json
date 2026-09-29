@@ -1,26 +1,123 @@
 {
   "id": "macstadium-oss-program",
+  "schemaVersion": "2.0",
   "provider": "MacStadium",
   "title": "Open Source Program",
-  "category": "open-source",
-  "subcategories": [
-    "maintainer-programs",
-    "infrastructure-support"
-  ],
-  "tags": [
-    "maintainers",
-    "infrastructure"
-  ],
+  "aliases": [],
   "description": "Open Source Program is an infrastructure-support program or free service tier specifically available to qualifying open-source projects administered by MacStadium.",
-  "eligibility": "Projects or contributors must meet the current open-source license, governance, activity, location, and program-specific requirements.",
-  "value": "Hosted infrastructure, testing, documentation, search, observability, or delivery support for open-source maintainers",
-  "sourceUrl": "https://macstadium.com/company/opensource",
-  "officialUrl": "https://macstadium.com/company/opensource",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://macstadium.com/company/opensource",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://macstadium.com/company/opensource",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://macstadium.com/company/opensource",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "open-source",
+    "subcategories": [
+      "maintainer-programs",
+      "infrastructure-support"
+    ],
+    "topics": [
+      "maintainers",
+      "infrastructure"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "waitlist",
+    "statusReason": "Visible source text contains the 'waitlist' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Hosted infrastructure, testing, documentation, search, observability, or delivery support for open-source maintainers"
+  },
+  "eligibility": {
+    "summary": "Projects or contributors must meet the current open-source license, governance, activity, location, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "c129358d158eafb1ef137483cbfece6d237a0a31818213b5875202779f001452",
+    "confidence": 0.92,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "waitlist",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

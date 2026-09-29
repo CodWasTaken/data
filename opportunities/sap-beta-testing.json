@@ -1,26 +1,130 @@
 {
   "id": "sap-beta-testing",
+  "schemaVersion": "2.0",
   "provider": "SAP",
   "title": "SAP Customer Influence Programs",
-  "category": "early-access",
-  "subcategories": [
-    "pilot-programs",
-    "early-adopter-programs"
-  ],
-  "tags": [
-    "pilot",
-    "early-adopter"
-  ],
+  "aliases": [],
   "description": "SAP Customer Influence Programs is an official pilot or early-adopter pathway for organizations and developers evaluating new platform capabilities before general availability administered by SAP.",
-  "eligibility": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
-  "value": "Pilot access, implementation learning, product-team feedback channels, and early deployment experience",
-  "sourceUrl": "https://influence.sap.com/",
-  "officialUrl": "https://influence.sap.com/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://influence.sap.com/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://influence.sap.com/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "early-access",
+    "subcategories": [
+      "pilot-programs",
+      "early-adopter-programs"
+    ],
+    "topics": [
+      "pilot",
+      "early-adopter"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "unconfirmed",
+    "statusReason": "No source provided sufficiently clear current-availability evidence. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Pilot access, implementation learning, product-team feedback channels, and early deployment experience"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Pilot access, implementation learning, product-team feedback channels, and early deployment experience"
+  },
+  "eligibility": {
+    "summary": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "534e98d6fae91a9e989b0f52a5a606a3569bd8e3cb70eb246f877ac9115ccdad",
+    "confidence": 0.15,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-preview-channel); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

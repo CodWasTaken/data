@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { writeImportCandidate } from "./import-candidate";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -93,16 +93,12 @@ for (const match of html.matchAll(/<a data-testid="card-link"([\s\S]*?)<\/articl
     value: fit(title, 200),
     sourceUrl,
     officialUrl: sourceUrl,
-    status: "limited",
+    status: "unconfirmed",
     submissionType: "maintainer",
     sponsor: false,
-    reviewDate: "2026-07-18",
     regions: ["Global"],
   };
-  await writeFile(
-    join(root, "opportunities", `${id}.json`),
-    `${JSON.stringify(opportunity, null, 2)}\n`,
-  );
+  await writeImportCandidate({ root, importer: "aws-offers", suggestedFields: opportunity });
   written += 1;
 }
 

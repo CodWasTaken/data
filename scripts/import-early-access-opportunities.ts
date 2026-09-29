@@ -1,5 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { writeImportCandidate } from './import-candidate';
 
 type Row = [id: string, provider: string, title: string, url: string];
 const groups: Array<{ subcategories: string[]; tags: string[]; description: string; value: string; rows: Row[] }> = [
@@ -73,18 +72,15 @@ const groups: Array<{ subcategories: string[]; tags: string[]; description: stri
   },
 ];
 
-const outputDirectory = resolve(process.cwd(), 'opportunities');
-await mkdir(outputDirectory, { recursive: true });
 let count = 0;
 for (const group of groups) for (const [id, provider, title, url] of group.rows) {
   const record = {
     id, provider, title, category: 'early-access', subcategories: group.subcategories, tags: group.tags,
     description: `${title} is ${group.description} administered by ${provider}.`,
     eligibility: 'Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.',
-    value: group.value, sourceUrl: url, officialUrl: url, status: 'limited', submissionType: 'maintainer', sponsor: false,
-    reviewDate: '2026-07-18', regions: ['Global'],
+    value: group.value, sourceUrl: url, officialUrl: url, status: 'unconfirmed', submissionType: 'maintainer', sponsor: false, regions: ['Global'],
   };
-  await writeFile(resolve(outputDirectory, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`);
+  await writeImportCandidate({ root: process.cwd(), importer: "early-access-opportunities", suggestedFields: record });
   count += 1;
 }
 console.log(`Wrote ${count} curated early-access opportunities.`);

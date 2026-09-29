@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://perkcommons.org/schema/opportunity.schema.json",
+  "title": "Legacy alias for PerkCommons opportunity v1",
+  "$comment": "Compatibility alias only. New consumers should use https://perkcommons.com/schema/opportunity.json.",
+  "$ref": "https://perkcommons.com/schema/opportunity.json"
+}

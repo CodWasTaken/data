@@ -1,27 +1,136 @@
 {
   "id": "crisis-text-line-volunteer",
+  "schemaVersion": "2.0",
   "provider": "Crisis Text Line",
   "title": "Volunteer Crisis Counselor",
-  "category": "volunteer-service",
-  "subcategories": [
-    "civic-volunteering",
-    "community-service",
-    "remote-volunteering"
-  ],
-  "tags": [
-    "civic-service",
-    "community"
-  ],
+  "aliases": [],
   "description": "Volunteer Crisis Counselor is a civic or community-service volunteer program with current opportunities administered by Crisis Text Line.",
-  "eligibility": "Volunteers must meet the current age, location, skills, availability, screening, and program-specific requirements.",
-  "value": "Structured service, community impact, training, and role-specific volunteer support",
-  "sourceUrl": "https://www.crisistextline.org/become-a-volunteer/",
-  "officialUrl": "https://www.crisistextline.org/become-a-volunteer/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.crisistextline.org/become-a-volunteer/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.crisistextline.org/become-a-volunteer/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.crisistextline.org/become-a-volunteer/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "opportunity",
+    "primaryCategory": "volunteer-service",
+    "subcategories": [
+      "civic-volunteering",
+      "community-service",
+      "remote-volunteering"
+    ],
+    "topics": [
+      "civic-service",
+      "community"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "training",
+      "network-access"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "rolling",
+    "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "training",
+        "summary": "Structured service, community impact, training, and role-specific volunteer support"
+      },
+      {
+        "type": "network-access",
+        "summary": "Structured service, community impact, training, and role-specific volunteer support"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Structured service, community impact, training, and role-specific volunteer support"
+  },
+  "eligibility": {
+    "summary": "Volunteers must meet the current age, location, skills, availability, screening, and program-specific requirements.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "80006c0648b13986e04abaad937fa3523f59514f0d6b50cd9e46025cb00f3bda",
+    "confidence": 0.94,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://perkcommons.com/schema/import-candidate.json",
+  "title": "PerkCommons import candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["candidateVersion", "id", "importer", "sourceUrl", "fetchedAt", "sourceHash", "extractorVersion", "rawSourceFields", "suggestedClassification", "suggestedFields", "confidence", "reviewState", "humanReview"],
+  "properties": {
+    "candidateVersion": { "const": "1.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "importer": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "sourceUrl": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "fetchedAt": { "type": "string", "format": "date-time" },
+    "sourceHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "extractorVersion": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "rawSourceFields": {},
+    "suggestedClassification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primaryCategory", "subcategories", "topics"],
+      "properties": {
+        "primaryCategory": { "type": ["string", "null"] },
+        "subcategories": { "type": "array", "items": { "type": "string" } },
+        "topics": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "suggestedFields": { "type": "object" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "reviewState": { "enum": ["unreviewed", "automated-lint-passed", "needs-human-review", "human-reviewed", "rejected", "published"] },
+    "humanReview": { "type": ["object", "null"] }
+  }
+}

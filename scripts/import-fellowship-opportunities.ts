@@ -1,5 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { writeImportCandidate } from './import-candidate';
 
 type Row = [id: string, provider: string, title: string, url: string];
 const groups = [
@@ -113,8 +112,6 @@ const groups = [
   },
 ];
 
-const outputDirectory = resolve(process.cwd(), 'opportunities');
-await mkdir(outputDirectory, { recursive: true });
 let count = 0;
 for (const group of groups) {
   for (const [id, provider, title, url] of group.rows) {
@@ -128,13 +125,12 @@ for (const group of groups) {
       value: group.value,
       sourceUrl: url,
       officialUrl: url,
-      status: 'limited',
+      status: 'unconfirmed',
       submissionType: 'maintainer',
       sponsor: false,
-      reviewDate: '2026-07-18',
       regions: ['Global'],
     };
-    await writeFile(resolve(outputDirectory, `${id}.json`), `${JSON.stringify(record, null, 2)}\n`);
+    await writeImportCandidate({ root: process.cwd(), importer: "fellowship-opportunities", suggestedFields: record });
     count += 1;
   }
 }

@@ -1,0 +1,135 @@
+{
+  "decisionVersion": 1,
+  "decidedAt": "2026-07-23",
+  "method": "ai-assisted-context-review",
+  "automaticPublicationAllowed": false,
+  "note": "These overrides correct cases where page-wide phrase matching loses record or date context. They remain needs-human-review and must not be represented as manual approval.",
+  "decisions": [
+    {
+      "id": "amazon-sustainability-accelerator",
+      "status": "closed",
+      "confidence": 0.98,
+      "evidenceUrl": "https://sustainability.aboutamazon.com/sustainability-accelerator-climate-tech",
+      "rationale": "The cited 2026 application window closed on 10 July 2026."
+    },
+    {
+      "id": "aws-generative-ai-accelerator",
+      "status": "closed",
+      "confidence": 0.98,
+      "evidenceUrl": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
+      "rationale": "The published 2025 application window ended on 10 July 2025; current application availability has not been established for a later cohort."
+    },
+    {
+      "id": "berkeley-skydeck",
+      "status": "open",
+      "confidence": 0.99,
+      "evidenceUrl": "https://skydeck.berkeley.edu/apply/",
+      "rationale": "The official Batch 23 page says applications are open from 20 July through 21 August 2026."
+    },
+    {
+      "id": "aws-activate-cloud-credits",
+      "status": "open",
+      "confidence": 0.96,
+      "evidenceUrl": "https://aws.amazon.com/startups/credits/",
+      "rationale": "The official page provides current application paths for the Founders and Portfolio packages; an invite-only higher tier does not make the whole program limited."
+    },
+    {
+      "id": "datadog-preview-features",
+      "status": "unconfirmed",
+      "confidence": 0.2,
+      "evidenceUrl": "https://docs.datadoghq.com/account_management/rbac/permissions/",
+      "rationale": "The matched invite-only text describes a dashboard permission, not availability of Datadog preview features."
+    },
+    {
+      "id": "embl-visitor-programme",
+      "status": "rolling",
+      "confidence": 0.9,
+      "evidenceUrl": "https://www.embl.org/about/info/scientific-visitor-programme/fellowships/corporate-partnership-programme-fellowships/",
+      "rationale": "Current visitor fellowship routes accept applications throughout the year; capacity language does not mean the whole visitor programme is limited."
+    },
+    {
+      "id": "euro-python-financial-aid",
+      "status": "closed",
+      "confidence": 0.99,
+      "evidenceUrl": "https://ep2026.europython.eu/finaid/",
+      "rationale": "The official page says in-person applications ended and remote ticket grant applications are closed."
+    },
+    {
+      "id": "fast-forward-accelerator",
+      "status": "closed",
+      "confidence": 0.9,
+      "evidenceUrl": "https://www.ffwd.org/accelerator/",
+      "rationale": "The 2026 cohort has completed and the current accelerator page offers an interest form rather than an open application."
+    },
+    {
+      "id": "freshworks-for-startups",
+      "status": "open",
+      "confidence": 0.9,
+      "evidenceUrl": "https://www.freshworks.com/assets/resources/Freshworks-for-Startups_Terms-%26-Conditions.pdf",
+      "rationale": "Current program terms describe signup and review; the invite-only phrase on the original FAQ refers to a partner conference."
+    },
+    {
+      "id": "github-accelerator",
+      "status": "closed",
+      "confidence": 0.99,
+      "evidenceUrl": "https://accelerator.github.com/application",
+      "rationale": "The official application page is for the 2024 cohort and states that applications closed on 5 March 2024."
+    },
+    {
+      "id": "issuehunt",
+      "status": "open",
+      "confidence": 0.95,
+      "evidenceUrl": "https://issuehunt.io/programs",
+      "rationale": "The live directory contains public programs; only one of several participation modes is invite-only."
+    },
+    {
+      "id": "lambda-literary-writers-retreat",
+      "status": "closed",
+      "confidence": 0.95,
+      "evidenceUrl": "https://lambdaliterary.org/2026/06/fellows-announcement-2026-writers-retreat/",
+      "rationale": "The stored source is a stale 2015 application page, while the provider has already announced the selected 2026 fellows."
+    },
+    {
+      "id": "neh-media-projects",
+      "status": "closed",
+      "confidence": 0.99,
+      "evidenceUrl": "https://www.neh.gov/program/media-projects",
+      "rationale": "The official 2026 deadline was 25 June 2026."
+    },
+    {
+      "id": "public-art-futures-lab-residency",
+      "status": "closed",
+      "confidence": 0.99,
+      "evidenceUrl": "https://fultoncountyga.gov/News/2026/01/07/Call-for-2026-Artists-in-Residence-at-the-Public-Art-Futures-Lab",
+      "rationale": "The page says applications were open through 10 February 2026, a date that has passed."
+    },
+    {
+      "id": "remarkable-accelerator",
+      "status": "upcoming",
+      "confidence": 0.95,
+      "evidenceUrl": "https://www.remarkable.org/accelerator",
+      "rationale": "The provider currently accepts expressions of interest and says applicants will be notified when the next application window opens."
+    },
+    {
+      "id": "resilient-coders-bootcamp",
+      "status": "closed",
+      "confidence": 0.95,
+      "evidenceUrl": "https://www.resilientcoders.org/",
+      "rationale": "The provider page gave 10 July 2026 as the extended Fall 2026 application deadline, which has passed."
+    },
+    {
+      "id": "slack-beta-program",
+      "status": "open",
+      "confidence": 0.98,
+      "evidenceUrl": "https://slack.com/help/articles/226192087-Join-Slack%E2%80%99s-desktop-app-beta-program",
+      "rationale": "Slack's current instructions allow users to opt into the desktop beta; unrelated invite-only workspace text caused the automatic match."
+    },
+    {
+      "id": "sundance-documentary-fund",
+      "status": "closed",
+      "confidence": 0.99,
+      "evidenceUrl": "https://www.sundance.org/documentary-fund/",
+      "rationale": "The official fund page says it is not accepting applications and lists 15 June 2026 as the last deadline."
+    }
+  ]
+}

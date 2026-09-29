@@ -1,26 +1,124 @@
 {
   "id": "chrome-beta-channel",
+  "schemaVersion": "2.0",
   "provider": "Google",
   "title": "Chrome Beta Channel",
-  "category": "early-access",
-  "subcategories": [
-    "public-betas",
-    "product-testing"
-  ],
-  "tags": [
-    "beta",
-    "product-testing"
-  ],
+  "aliases": [],
   "description": "Chrome Beta Channel is an official public beta channel that lets participants test prerelease product builds and provide feedback administered by Google.",
-  "eligibility": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
-  "value": "Early product access, prerelease testing, and a supported feedback channel",
-  "sourceUrl": "https://www.google.com/chrome/beta/",
-  "officialUrl": "https://www.google.com/chrome/beta/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.google.com/chrome/beta/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": null,
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.google.com/chrome/beta/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "resource",
+    "primaryCategory": "early-access",
+    "subcategories": [
+      "public-betas",
+      "product-testing"
+    ],
+    "topics": [
+      "beta",
+      "product-testing"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": false
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "open",
+    "statusReason": "A relevant provider page is live for an ongoing program or non-default resource; no contrary availability signal was found. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Early product access, prerelease testing, and a supported feedback channel"
+  },
+  "eligibility": {
+    "summary": "Access depends on the current program, account, device, geography, capacity, confidentiality, and testing requirements; preview features may be unstable.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-program-page-match"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": "e976ea4cce06aee67b6e07fc876d85da048a96a07c35c8af5437385c8cdfe759",
+    "confidence": 0.7,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-23T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": "Default-search exclusion (ordinary-preview-channel); record retained as resource."
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "limited",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.providerUrl",
+      "urls.programUrl",
+      "urls.applicationUrl",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }

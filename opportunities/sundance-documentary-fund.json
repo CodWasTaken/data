@@ -1,25 +1,135 @@
 {
   "id": "sundance-documentary-fund",
+  "schemaVersion": "2.0",
   "provider": "Sundance Institute",
   "title": "Documentary Fund",
-  "category": "funding",
-  "subcategories": [
-    "grants",
-    "creator-funds"
-  ],
-  "tags": [
-    "funding"
-  ],
+  "aliases": [],
   "description": "The Documentary Fund supports nonfiction filmmakers through development, production, and post-production grants.",
-  "eligibility": "Independent nonfiction projects must meet the current application stage, creative, and eligibility criteria.",
-  "value": "Documentary project grant and creative support",
-  "sourceUrl": "https://www.sundance.org/programs/documentary-film/",
-  "officialUrl": "https://www.sundance.org/programs/documentary-film/",
-  "status": "limited",
-  "submissionType": "maintainer",
-  "sponsor": false,
-  "reviewDate": "2026-07-18",
-  "regions": [
-    "Global"
-  ]
+  "canonicalUrl": "https://www.sundance.org/programs/documentary-film/",
+  "urls": {
+    "providerUrl": null,
+    "programUrl": "https://www.sundance.org/programs/documentary-film/",
+    "applicationUrl": null,
+    "evidenceUrls": [
+      {
+        "type": "overview",
+        "url": "https://www.sundance.org/programs/documentary-film/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "overview",
+        "url": "https://www.sundance.org/documentary-fund/",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
+      }
+    ]
+  },
+  "classification": {
+    "resourceType": "funding",
+    "primaryCategory": "funding",
+    "subcategories": [
+      "grants",
+      "creator-funds"
+    ],
+    "topics": [
+      "funding"
+    ],
+    "audiences": [],
+    "organizationStages": [],
+    "benefitTypes": [
+      "grant"
+    ],
+    "reviewState": "needs-human-review",
+    "defaultSearchEligible": null
+  },
+  "geography": {
+    "global": null,
+    "remote": null,
+    "countries": [],
+    "excludedCountries": [],
+    "physicalLocations": [],
+    "residencyRequired": null,
+    "languages": []
+  },
+  "availability": {
+    "status": "closed",
+    "statusReason": "The official fund page says it is not accepting applications and lists 15 June 2026 as the last deadline. Status assigned by AI-assisted source research; human editorial review is still required.",
+    "opensAt": null,
+    "closesAt": null,
+    "deadlineType": "unknown",
+    "applicationCycle": null,
+    "nextExpectedOpening": null
+  },
+  "costAndBenefit": {
+    "cost": null,
+    "benefits": [
+      {
+        "type": "grant",
+        "summary": "Documentary project grant and creative support"
+      }
+    ],
+    "currency": null,
+    "amount": null,
+    "maximumAmount": null,
+    "benefitSummary": "Documentary project grant and creative support"
+  },
+  "eligibility": {
+    "summary": "Independent nonfiction projects must meet the current application stage, creative, and eligibility criteria.",
+    "studentLevels": [],
+    "organizationTypes": [],
+    "companyStages": [],
+    "ageRestrictions": null,
+    "incorporationRequired": null,
+    "nonprofitStatusRequired": null,
+    "openSourceRequired": null,
+    "researchAffiliationRequired": null
+  },
+  "reviewProvenance": {
+    "reviewedAt": null,
+    "reviewMethod": "automated-source-research",
+    "reviewerReference": "automation:availability-research-v1",
+    "claimsChecked": [
+      "automated-source-access",
+      "automated-availability-signal"
+    ],
+    "nextReviewAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceHash": null,
+    "confidence": 0.99,
+    "importSource": "legacy-maintainer-record",
+    "extractorVersion": "availability-research/1"
+  },
+  "changeHistory": {
+    "createdAt": null,
+    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "previousIds": [],
+    "supersedes": [],
+    "supersededBy": [],
+    "tombstone": false,
+    "removalReason": null
+  },
+  "sponsorship": {
+    "sponsored": false,
+    "sponsorshipType": null,
+    "sponsorshipDisclosure": null,
+    "featuredReason": null,
+    "featureExpiresAt": null
+  },
+  "migration": {
+    "fromSchemaVersion": "1",
+    "legacyStatus": "unconfirmed",
+    "legacyRegions": [
+      "Global"
+    ],
+    "unresolvedFields": [
+      "urls.applicationUrl",
+      "classification.defaultSearchEligible",
+      "geography.global",
+      "geography.remote",
+      "geography.countries",
+      "geography.residencyRequired",
+      "availability.deadlineType"
+    ]
+  }
 }
