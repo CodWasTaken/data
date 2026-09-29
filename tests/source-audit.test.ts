@@ -45,6 +45,7 @@ test("audit distinguishes redirects, blocked, broken, and ambiguous results", as
     ["https://example.org/final", new Response("ok", { status: 200 })],
     ["https://example.org/blocked", new Response("no", { status: 403 })],
     ["https://example.org/broken", new Response("gone", { status: 404 })],
+    ["https://example.org/transient", new Response("bad gateway", { status: 502 })],
   ]);
   const fetchFn: typeof fetch = async (input) => {
     const response = responses.get(String(input));
@@ -59,5 +60,6 @@ test("audit distinguishes redirects, blocked, broken, and ambiguous results", as
 
   assert.equal((await auditUrl("https://example.org/blocked", fetchFn)).status, "blocked");
   assert.equal((await auditUrl("https://example.org/broken", fetchFn)).status, "broken");
+  assert.equal((await auditUrl("https://example.org/transient", fetchFn)).status, "ambiguous");
   assert.equal((await auditUrl("https://example.org/unknown", fetchFn)).status, "ambiguous");
 });
