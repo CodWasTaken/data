@@ -6,6 +6,7 @@ import {
   type ScopeManifest,
 } from "./apply-scope-decisions";
 import { reviewPriority } from "./review-priority";
+import { sourceAuditMetrics, type SourceAuditSummary } from "./network-quality";
 
 interface ReportRecord {
   id: string;
@@ -485,6 +486,26 @@ const metric = (count: number) => ({
   count,
   percentage: Number(((count / records.length) * 100).toFixed(2)),
 });
+const sourceAudit = await readFile(
+  join(reportDirectory, "source-audit.json"),
+  "utf8",
+).then((value) => JSON.parse(value) as SourceAuditSummary).catch(() => null);
+
+const networkMetrics = sourceAudit
+  ? sourceAuditMetrics(sourceAudit)
+  : {
+      brokenLinkRate: {
+        status: "not-measured" as const,
+        reason:
+          "Network source audit was not available when this deterministic report was generated.",
+      },
+      redirectRate: {
+        status: "not-measured" as const,
+        reason:
+          "Network source audit was not available when this deterministic report was generated.",
+      },
+    };
+
 const qualityReport = {
   reportVersion: 2,
   asOf,
@@ -511,15 +532,8 @@ const qualityReport = {
     duplicateUrlRecords: metric(duplicateUrlRecords),
     duplicateProviderTitleRecords: metric(duplicateProviderTitleRecords),
     genericTextRecords: metric(genericTextRecords),
-    brokenLinkRate: {
-      status: "not-measured",
-      reason:
-        "Network source audit was not run as part of deterministic report generation.",
-    },
-    redirectRate: {
-      status: "not-measured",
-      reason: "Redirect destinations require a separate network audit.",
-    },
+    brokenLinkRate: networkMetrics.brokenLinkRate,
+    redirectRate: networkMetrics.redirectRate,
     uncertainStatus: metric(uncertain),
     incompleteGeography: metric(incompleteGeography),
     humanReviewProvenance: metric(
@@ -550,7 +564,7 @@ const qualityMarkdown =
       ? `| ${name} | ${value.count} (${value.percentage}%) |`
       : `| ${name} | ${value.status} |`
   ).join("\n") +
-  `\n\nBroken-link and redirect rates remain unmeasured until the separate network audit is run. Explicit exclusions preserve history and require human review before re-entry.\n`;
+  `\n\nNetwork rates use the most recent checked-in source audit when available. Blocked and ambiguous automated requests are tracked separately from confirmed broken links. Explicit exclusions preserve history and require human review before re-entry.\n`;
 await writeFile(
   join(reportDirectory, "data-quality.md"),
   qualityMarkdown,
