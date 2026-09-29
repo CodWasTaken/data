@@ -1,96 +1,123 @@
-import { readFile, readdir } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { auditUrl, sourceUrlsForRecord } from "./source-audit";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const reportDirectory = join(root, "reports");
+await mkdir(reportDirectory, { recursive: true });
+
 const categoryIndex = process.argv.indexOf("--category");
 const requestedCategory =
   categoryIndex >= 0 ? process.argv[categoryIndex + 1] : undefined;
-const candidateFiles = (await readdir(join(root, "opportunities"))).filter(
-  (name) => name.endsWith(".json") && !name.startsWith("_"),
-);
-const files: string[] = [];
-for (const file of candidateFiles) {
-  const opportunity = JSON.parse(
-    await readFile(join(root, "opportunities", file), "utf8"),
-  ) as { category?: string };
-  if (!requestedCategory || opportunity.category === requestedCategory) {
-    files.push(file);
-  }
-}
-if (requestedCategory && files.length === 0) {
-  throw new Error(`No opportunities found for category ${requestedCategory}.`);
-}
-const queue = files.slice();
-const failures: string[] = [];
-const blocked: string[] = [];
-const manualReviewHosts = new Set([
-  "fi.co",
-  "fosdem.org",
-  "internships.si.edu",
-  "ors.od.nih.gov",
-  "prototypefund.de",
-  "www.awesomefoundation.org",
-  "www.epo.org",
-  "www.macdowell.org",
-  "www.microsoft.com",
-]);
+const asOfIndex = process.argv.indexOf("--as-of");
+const asOf = asOfIndex >= 0
+  ? process.argv[asOfIndex + 1]
+  : new Date().toISOString().slice(0, 10);
+if (!asOf || !/^\d{4}-\d{2}-\d{2}$/.test(asOf))
+  throw new Error("--as-of must use YYYY-MM-DD");
 
-async function audit(file: string) {
-  const opportunity = JSON.parse(
+const candidateFiles = (await readdir(join(root, "opportunities")))
+  .filter((name) => name.endsWith(".json") && !name.startsWith("_"))
+  .sort();
+
+const queue: Array<{
+  id: string;
+  file: string;
+  field: string;
+  url: string;
+}> = [];
+
+for (const file of candidateFiles) {
+  const raw = JSON.parse(
     await readFile(join(root, "opportunities", file), "utf8"),
-  ) as { sourceUrl: string; officialUrl: string };
-  const urls = Object.entries({
-    sourceUrl: opportunity.sourceUrl,
-    officialUrl: opportunity.officialUrl,
-  }).filter(([, url], index, entries) =>
-    entries.findIndex(([, candidate]) => candidate === url) === index,
-  );
-  for (const [field, url] of urls) {
-    try {
-      const response = await fetch(url, {
-        redirect: "follow",
-        signal: AbortSignal.timeout(15_000),
-        headers: { "user-agent": "PerkCommons source audit/1.0" },
-      });
-      if (
-        response.status === 401 ||
-        response.status === 403 ||
-        response.status === 405 ||
-        response.status === 429 ||
-        response.status === 503
-      ) {
-        blocked.push(`${file} ${field}: HTTP ${response.status} ${url}`);
-      } else if (response.status >= 400) {
-        failures.push(`${file} ${field}: HTTP ${response.status} ${url}`);
-      }
-      await response.body?.cancel();
-    } catch (error) {
-      if (manualReviewHosts.has(new URL(url).hostname)) {
-        blocked.push(`${file} ${field}: ${String(error)} ${url}`);
-      } else {
-        failures.push(`${file} ${field}: ${String(error)} ${url}`);
-      }
-    }
-  }
+  ) as Record<string, unknown>;
+  const category = raw.schemaVersion === "2.0"
+    ? (raw.classification as Record<string, unknown> | undefined)?.primaryCategory
+    : raw.category;
+  if (requestedCategory && category !== requestedCategory) continue;
+  const id = typeof raw.id === "string" ? raw.id : file.replace(/\.json$/, "");
+  for (const source of sourceUrlsForRecord(raw))
+    queue.push({ id, file, ...source });
 }
+
+if (requestedCategory && queue.length === 0)
+  throw new Error(`No opportunity URLs found for category ${requestedCategory}.`);
+
+const work = queue.slice();
+const records: Array<{
+  id: string;
+  file: string;
+  field: string;
+  url: string;
+  finalUrl: string;
+  status: string;
+  httpStatus: number | null;
+  redirects: Array<{ status: number; from: string; to: string }>;
+  error: string | null;
+}> = [];
 
 await Promise.all(
   Array.from({ length: 8 }, async () => {
-    while (queue.length > 0) {
-      const file = queue.shift();
-      if (file) await audit(file);
+    while (work.length > 0) {
+      const item = work.shift();
+      if (!item) continue;
+      const result = await auditUrl(item.url);
+      records.push({ ...item, ...result });
     }
   }),
 );
 
-if (failures.length > 0) {
-  console.error(failures.join("\n"));
-  process.exit(1);
+records.sort((a, b) =>
+  a.id.localeCompare(b.id) ||
+  a.field.localeCompare(b.field) ||
+  a.url.localeCompare(b.url)
+);
+
+const counts = records.reduce<Record<string, number>>((acc, record) => {
+  acc[record.status] = (acc[record.status] ?? 0) + 1;
+  return acc;
+}, {});
+
+const report = {
+  reportVersion: 2,
+  asOf,
+  recordsInspected: new Set(records.map((record) => record.id)).size,
+  urlsInspected: records.length,
+  counts,
+  complete: (counts.ambiguous ?? 0) === 0 && (counts.blocked ?? 0) === 0,
+  records,
+};
+await writeFile(
+  join(reportDirectory, "source-audit.json"),
+  `${JSON.stringify(report, null, 2)}\n`,
+);
+
+const markdown = [
+  "# Source URL audit",
+  "",
+  `As of ${asOf}, the audit checked ${records.length} distinct published source/destination URLs across ${report.recordsInspected} records.`,
+  "",
+  "| Result | URLs |",
+  "| --- | ---: |",
+  ...["success", "redirect", "redirect-chain", "blocked", "broken", "ambiguous"]
+    .map((status) => `| ${status} | ${counts[status] ?? 0} |`),
+  "",
+  "Blocked and ambiguous results require manual browser review and are not counted as broken links.",
+  "",
+].join("\n");
+await writeFile(join(reportDirectory, "source-audit.md"), markdown);
+
+console.log(
+  `Source audit: ${records.length} URLs; ` +
+    `success ${counts.success ?? 0}; redirects ${(counts.redirect ?? 0) + (counts["redirect-chain"] ?? 0)}; ` +
+    `blocked ${counts.blocked ?? 0}; broken ${counts.broken ?? 0}; ambiguous ${counts.ambiguous ?? 0}.`,
+);
+
+if ((counts.broken ?? 0) > 0) {
+  const broken = records
+    .filter((record) => record.status === "broken")
+    .map((record) => `${record.file} ${record.field}: HTTP ${record.httpStatus} ${record.url}`);
+  console.error(broken.join("\n"));
+  process.exitCode = 1;
 }
-if (blocked.length > 0) {
-  console.warn(
-    `${blocked.length} URLs blocked automated access and require browser review:\n${blocked.join("\n")}`,
-  );
-}
-console.log(`Verified source and official URLs for ${files.length} opportunities.`);
