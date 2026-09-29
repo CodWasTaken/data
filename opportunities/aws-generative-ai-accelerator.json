@@ -5,23 +5,17 @@
   "title": "AWS Generative AI Accelerator",
   "aliases": [],
   "description": "AWS Generative AI Accelerator is a startup support or accelerator program from Amazon Web Services for teams building artificial-intelligence products or infrastructure.",
-  "canonicalUrl": "https://startups.aws.com/programs/generative-ai",
+  "canonicalUrl": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
   "urls": {
     "providerUrl": null,
-    "programUrl": "https://startups.aws.com/programs/generative-ai",
+    "programUrl": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
     "applicationUrl": null,
     "evidenceUrls": [
       {
         "type": "overview",
         "url": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
-        "checkedAt": null,
-        "claim": "AWS overview confirming the Generative AI Accelerator program; current application availability still requires human review."
-      },
-      {
-        "type": "overview",
-        "url": "https://startups.aws.com/programs/generative-ai",
         "checkedAt": "2026-07-23T21:05:26.354Z",
-        "claim": "Additional source used for AI-assisted availability context."
+        "claim": "AWS program overview used for AI-assisted availability context; human editorial review is still required."
       }
     ]
   },
