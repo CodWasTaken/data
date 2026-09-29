@@ -128,6 +128,15 @@ export async function auditUrl(
           redirects,
           error: null,
         };
+      if (status >= 500)
+        return {
+          url,
+          finalUrl: current,
+          status: "ambiguous",
+          httpStatus: status,
+          redirects,
+          error: "server-side response may be transient",
+        };
       if (status >= 400)
         return {
           url,
