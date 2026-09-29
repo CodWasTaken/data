@@ -5,6 +5,7 @@ import {
   expandScopeDecisions,
   type ScopeManifest,
 } from "./apply-scope-decisions";
+import { reviewPriority } from "./review-priority";
 
 interface ReportRecord {
   id: string;
@@ -554,6 +555,72 @@ await writeFile(
   join(reportDirectory, "data-quality.md"),
   qualityMarkdown,
 );
+
+const requiresReviewIds = new Set([
+  ...pendingCandidates.map((item) => item.id),
+  ...stale.map((item) => item.id),
+]);
+const humanReviewQueue = records
+  .filter((record) => requiresReviewIds.has(record.id))
+  .map((record) => {
+    const priority = reviewPriority(record);
+    return {
+      id: record.id,
+      provider: record.provider,
+      title: record.title,
+      status: record.status,
+      resourceType: record.resourceType,
+      defaultSearchEligible: record.defaultSearchEligible,
+      score: priority.score,
+      priorityReasons: priority.reasons,
+    };
+  })
+  .sort((a, b) =>
+    b.score - a.score ||
+    a.provider.localeCompare(b.provider) ||
+    a.title.localeCompare(b.title) ||
+    a.id.localeCompare(b.id)
+  );
+
+await writeFile(
+  join(reportDirectory, "human-review-queue.json"),
+  `${JSON.stringify({
+    reportVersion: 1,
+    asOf,
+    recordsQueued: humanReviewQueue.length,
+    policy: [
+      "default-search-eligible",
+      "material-or-selective-resource-type",
+      "current-or-actionable-status",
+      "provider-source-coverage",
+      "structured-deadline",
+      "application-url",
+    ],
+    note:
+      "This queue prioritizes editorial work only. Queue position is not a review event and does not confer human-reviewed or verified status.",
+    records: humanReviewQueue,
+  }, null, 2)}\n`,
+);
+await writeFile(
+  join(reportDirectory, "human-review-queue.md"),
+  [
+    "# Human review queue",
+    "",
+    `As of ${asOf}, ${humanReviewQueue.length} records are queued for human source review.`,
+    "",
+    "The order prioritizes default-search eligibility, materially valuable/selective resource types, current or actionable status, stronger source coverage, structured deadlines, and direct application URLs.",
+    "",
+    "Queue position is work planning only. It is not a review event and does not make a record human-reviewed or verified.",
+    "",
+    "| Priority | Record | Provider | Status | Reasons |",
+    "| ---: | --- | --- | --- | --- |",
+    ...humanReviewQueue.slice(0, 250).map((record, index) =>
+      `| ${index + 1} | ${record.id} | ${record.provider.replaceAll("|", "\\|")} | ${record.status} | ${record.priorityReasons.join(", ")} |`
+    ),
+    "",
+  ].join("\n"),
+);
+
 console.log(
   `Generated mixed-schema scope and quality reports for ${records.length} records; ${explicitExclusions.length} excluded from default search.`,
 );
