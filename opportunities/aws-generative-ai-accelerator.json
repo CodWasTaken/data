@@ -5,10 +5,10 @@
   "title": "AWS Generative AI Accelerator",
   "aliases": [],
   "description": "AWS Generative AI Accelerator is a startup support or accelerator program from Amazon Web Services for teams building artificial-intelligence products or infrastructure.",
-  "canonicalUrl": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
+  "canonicalUrl": "https://startups.aws.com/programs/generative-ai",
   "urls": {
     "providerUrl": null,
-    "programUrl": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
+    "programUrl": "https://startups.aws.com/programs/generative-ai",
     "applicationUrl": null,
     "evidenceUrls": [
       {
@@ -16,6 +16,12 @@
         "url": "https://aws.amazon.com/aws-startups/learn/aws-generative-ai-accelerator-seeks-the-next-generation-of-global-ai-leaders/",
         "checkedAt": null,
         "claim": "AWS overview confirming the Generative AI Accelerator program; current application availability still requires human review."
+      },
+      {
+        "type": "overview",
+        "url": "https://startups.aws.com/programs/generative-ai",
+        "checkedAt": "2026-07-23T21:05:26.354Z",
+        "claim": "Additional source used for AI-assisted availability context."
       }
     ]
   },
@@ -50,8 +56,8 @@
     "languages": []
   },
   "availability": {
-    "status": "unconfirmed",
-    "statusReason": "The previous program URL no longer resolves. A live AWS program overview confirms the accelerator existed, but current application availability requires human editorial review.",
+    "status": "closed",
+    "statusReason": "The published 2025 application window ended on 10 July 2025; current application availability has not been established for a later cohort. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
@@ -99,9 +105,9 @@
       "automated-availability-signal"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": null,
+    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
     "sourceHash": null,
-    "confidence": null,
+    "confidence": 0.98,
     "importSource": "legacy-maintainer-record",
     "extractorVersion": "availability-research/1"
   },
