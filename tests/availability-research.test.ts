@@ -28,19 +28,16 @@ test("every canonical record has an availability decision", () => {
   assert.equal(report.records.length, 1068);
   assert.equal(new Set(report.records.map((record) => record.id)).size, 1068);
   assert.equal(report.methodology.automaticPublicationAllowed, false);
-  assert.equal(report.methodology.contextOverrides, 17);
+  assert.equal(report.methodology.contextOverrides, 18);
 });
 
 test("limited is reserved for directly supported restrictions", () => {
-  assert.equal(report.counts.limited, 2);
+  assert.equal(report.counts.limited, 1);
   const limited = report.records
     .filter((record) => record.suggestedStatus === "limited")
     .map((record) => record.id)
     .sort();
-  assert.deepEqual(limited, [
-    "aws-generative-ai-accelerator",
-    "founders-network",
-  ]);
+  assert.deepEqual(limited, ["founders-network"]);
 });
 
 test("context-sensitive corrections override misleading page-wide phrases", () => {
@@ -48,6 +45,7 @@ test("context-sensitive corrections override misleading page-wide phrases", () =
     report.records.map((record) => [record.id, record.suggestedStatus]),
   );
   assert.equal(statuses.get("aws-activate-cloud-credits"), "open");
+  assert.equal(statuses.get("aws-generative-ai-accelerator"), "closed");
   assert.equal(statuses.get("datadog-preview-features"), "unconfirmed");
   assert.equal(statuses.get("github-accelerator"), "closed");
   assert.equal(statuses.get("sundance-documentary-fund"), "closed");
