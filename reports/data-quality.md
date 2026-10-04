@@ -1,6 +1,6 @@
 # Data quality report
 
-As of 2026-10-04, 1068 mixed v1/v2 records were inspected. Coverage totals are descriptive and are not pass/fail quotas.
+As of 2026-10-05, 1068 mixed v1/v2 records were inspected. Coverage totals are descriptive and are not pass/fail quotas.
 
 | Metric | Result |
 | --- | ---: |

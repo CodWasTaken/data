@@ -1,6 +1,6 @@
 # Catalogue scope audit
 
-As of 2026-10-04, the audit inspected 1068 records. 289 explicit decisions remove resources from default opportunity search while preserving their records and Git history. 772 flagged records still require human source review; a heuristic flag is not an editorial decision.
+As of 2026-10-05, the audit inspected 1068 records. 289 explicit decisions remove resources from default opportunity search while preserving their records and Git history. 772 flagged records still require human source review; a heuristic flag is not an editorial decision.
 
 ## Inclusion policy
 

@@ -1,6 +1,6 @@
 # Human review queue
 
-As of 2026-10-04, 1061 records are queued for human source review.
+As of 2026-10-05, 1061 records are queued for human source review.
 
 The order prioritizes default-search eligibility, materially valuable/selective resource types, current or actionable status, stronger source coverage, structured deadlines, and direct application URLs.
 

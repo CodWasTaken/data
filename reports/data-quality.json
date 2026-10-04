@@ -1,6 +1,6 @@
 {
   "reportVersion": 2,
-  "asOf": "2026-10-04",
+  "asOf": "2026-10-05",
   "recordsInspected": 1068,
   "metrics": {
     "defaultSearchEligible": {
@@ -56,14 +56,14 @@
       "count": 0,
       "inspected": 1086,
       "percentage": 0,
-      "asOf": "2026-10-04"
+      "asOf": "2026-10-05"
     },
     "redirectRate": {
       "status": "measured",
       "count": 251,
       "inspected": 1086,
       "percentage": 23.11,
-      "asOf": "2026-10-04"
+      "asOf": "2026-10-05"
     },
     "uncertainStatus": {
       "count": 720,
