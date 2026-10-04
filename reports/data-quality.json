@@ -1,6 +1,6 @@
 {
   "reportVersion": 2,
-  "asOf": "2026-07-23",
+  "asOf": "2026-10-04",
   "recordsInspected": 1068,
   "metrics": {
     "defaultSearchEligible": {
@@ -12,12 +12,16 @@
       "percentage": 27.06
     },
     "recentlyReviewed": {
-      "count": 1068,
-      "percentage": 100
+      "count": 736,
+      "percentage": 68.91
     },
     "recordsOverdueForReview": {
       "count": 0,
       "percentage": 0
+    },
+    "missingReviewDate": {
+      "count": 332,
+      "percentage": 31.09
     },
     "structuredDeadlines": {
       "count": 0,
@@ -32,8 +36,8 @@
       "percentage": 6.84
     },
     "multipleEvidenceLinks": {
-      "count": 0,
-      "percentage": 0
+      "count": 7,
+      "percentage": 0.66
     },
     "duplicateUrlRecords": {
       "count": 120,
@@ -48,16 +52,22 @@
       "percentage": 93.16
     },
     "brokenLinkRate": {
-      "status": "not-measured",
-      "reason": "Network source audit was not run as part of deterministic report generation."
+      "status": "measured",
+      "count": 0,
+      "inspected": 1086,
+      "percentage": 0,
+      "asOf": "2026-10-04"
     },
     "redirectRate": {
-      "status": "not-measured",
-      "reason": "Redirect destinations require a separate network audit."
+      "status": "measured",
+      "count": 251,
+      "inspected": 1086,
+      "percentage": 23.11,
+      "asOf": "2026-10-04"
     },
     "uncertainStatus": {
-      "count": 1061,
-      "percentage": 99.34
+      "count": 720,
+      "percentage": 67.42
     },
     "incompleteGeography": {
       "count": 1057,
@@ -72,8 +82,8 @@
       "percentage": 99.91
     },
     "requiresManualSourceReview": {
-      "count": 772,
-      "percentage": 72.28
+      "count": 1061,
+      "percentage": 99.34
     }
   },
   "interpretation": "Coverage counts are descriptive only. Explicit scope decisions affect default discovery; heuristics never mutate records."
