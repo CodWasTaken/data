@@ -591,8 +591,16 @@ const humanReviewQueue = records
       provider: record.provider,
       title: record.title,
       status: record.status,
+      schemaVersion: record.schemaVersion,
       resourceType: record.resourceType,
       defaultSearchEligible: record.defaultSearchEligible,
+      applicationUrlStructured: Boolean(record.applicationUrl),
+      deadlineStructured: record.structuredDeadline,
+      structuredFieldGaps: [
+        ...(record.schemaVersion === "1" ? ["schema-v2-migration"] : []),
+        ...(!record.applicationUrl ? ["application-url"] : []),
+        ...(!record.structuredDeadline ? ["deadline"] : []),
+      ],
       score: priority.score,
       priorityReasons: priority.reasons,
     };
@@ -634,10 +642,10 @@ await writeFile(
     "",
     "Queue position is work planning only. It is not a review event and does not make a record human-reviewed or verified.",
     "",
-    "| Priority | Record | Provider | Status | Reasons |",
-    "| ---: | --- | --- | --- | --- |",
+    "| Priority | Record | Provider | Status | Structured-field gaps | Reasons |",
+    "| ---: | --- | --- | --- | --- | --- |",
     ...humanReviewQueue.slice(0, 250).map((record, index) =>
-      `| ${index + 1} | ${record.id} | ${record.provider.replaceAll("|", "\\|")} | ${record.status} | ${record.priorityReasons.join(", ")} |`
+      `| ${index + 1} | ${record.id} | ${record.provider.replaceAll("|", "\\|")} | ${record.status} | ${record.structuredFieldGaps.join(", ") || "none"} | ${record.priorityReasons.join(", ")} |`
     ),
     "",
   ].join("\n"),

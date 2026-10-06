@@ -1,6 +1,6 @@
 {
   "reportVersion": 2,
-  "asOf": "2026-10-05",
+  "asOf": "2026-10-06",
   "recordsInspected": 1068,
   "candidateCount": 1061,
   "pendingCandidateCount": 772,
@@ -28,7 +28,7 @@
     "formulaic-record": 924,
     "generic-eligibility": 995,
     "generic-membership": 40,
-    "low-informational-value": 1058,
+    "low-informational-value": 1055,
     "loyalty-program": 20,
     "ordinary-free-product": 34,
     "public-resource": 37
@@ -607,13 +607,11 @@
       "decisionRule": null,
       "flags": [
         "formulaic-record",
-        "generic-eligibility",
-        "low-informational-value"
+        "generic-eligibility"
       ],
       "reasons": [
         "Eligibility text is reused across 10 records.",
-        "Text follows a repeated template and needs provider-specific verification.",
-        "Decision-critical detail or distinct evidence/application URL is limited."
+        "Text follows a repeated template and needs provider-specific verification."
       ]
     },
     {
@@ -5883,13 +5881,11 @@
       "decisionRule": null,
       "flags": [
         "formulaic-record",
-        "generic-eligibility",
-        "low-informational-value"
+        "generic-eligibility"
       ],
       "reasons": [
         "Eligibility text is reused across 30 records.",
-        "Text follows a repeated template and needs provider-specific verification.",
-        "Decision-critical detail or distinct evidence/application URL is limited."
+        "Text follows a repeated template and needs provider-specific verification."
       ]
     },
     {
@@ -13594,12 +13590,10 @@
       "disposition": "human-review-candidate",
       "decisionRule": null,
       "flags": [
-        "formulaic-record",
-        "low-informational-value"
+        "formulaic-record"
       ],
       "reasons": [
-        "Text follows a repeated template and needs provider-specific verification.",
-        "Decision-critical detail or distinct evidence/application URL is limited."
+        "Text follows a repeated template and needs provider-specific verification."
       ]
     },
     {

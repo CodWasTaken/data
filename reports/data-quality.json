@@ -1,6 +1,6 @@
 {
   "reportVersion": 2,
-  "asOf": "2026-10-05",
+  "asOf": "2026-10-06",
   "recordsInspected": 1068,
   "metrics": {
     "defaultSearchEligible": {
@@ -24,20 +24,20 @@
       "percentage": 31.09
     },
     "structuredDeadlines": {
-      "count": 0,
-      "percentage": 0
+      "count": 8,
+      "percentage": 0.75
     },
     "applicationUrls": {
-      "count": 0,
-      "percentage": 0
+      "count": 5,
+      "percentage": 0.47
     },
     "providerSpecificEligibility": {
       "count": 73,
       "percentage": 6.84
     },
     "multipleEvidenceLinks": {
-      "count": 7,
-      "percentage": 0.66
+      "count": 14,
+      "percentage": 1.31
     },
     "duplicateUrlRecords": {
       "count": 120,

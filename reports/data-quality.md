@@ -1,6 +1,6 @@
 # Data quality report
 
-As of 2026-10-05, 1068 mixed v1/v2 records were inspected. Coverage totals are descriptive and are not pass/fail quotas.
+As of 2026-10-06, 1068 mixed v1/v2 records were inspected. Coverage totals are descriptive and are not pass/fail quotas.
 
 | Metric | Result |
 | --- | ---: |
@@ -9,10 +9,10 @@ As of 2026-10-05, 1068 mixed v1/v2 records were inspected. Coverage totals are d
 | recentlyReviewed | 736 (68.91%) |
 | recordsOverdueForReview | 0 (0%) |
 | missingReviewDate | 332 (31.09%) |
-| structuredDeadlines | 0 (0%) |
-| applicationUrls | 0 (0%) |
+| structuredDeadlines | 8 (0.75%) |
+| applicationUrls | 5 (0.47%) |
 | providerSpecificEligibility | 73 (6.84%) |
-| multipleEvidenceLinks | 7 (0.66%) |
+| multipleEvidenceLinks | 14 (1.31%) |
 | duplicateUrlRecords | 120 (11.24%) |
 | duplicateProviderTitleRecords | 0 (0%) |
 | genericTextRecords | 995 (93.16%) |

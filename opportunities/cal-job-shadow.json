@@ -16,6 +16,12 @@
         "url": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "deadline",
+        "url": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
+        "checkedAt": "2026-10-06T11:45:00.000Z",
+        "claim": "The provider lists the Winter Session application period as August 17 through October 26, 2026."
       }
     ]
   },
@@ -48,12 +54,12 @@
     "languages": []
   },
   "availability": {
-    "status": "upcoming",
-    "statusReason": "Visible source text contains the 'future-opening' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
-    "opensAt": null,
-    "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "status": "open",
+    "statusReason": "The provider's Winter Session timeline lists the student application period as August 17 through October 26, 2026. Structured by AI-assisted source research; human editorial review is still required.",
+    "opensAt": "2026-08-17",
+    "closesAt": "2026-10-26",
+    "deadlineType": "fixed",
+    "applicationCycle": "Winter 2027 session",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -83,21 +89,22 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "c8db184ed971fb46f17c09ddc38125cd2969b21916503e265915f795429dedd5",
-    "confidence": 0.86,
+    "sourceFetchedAt": "2026-10-06T11:45:00.000Z",
+    "sourceHash": null,
+    "confidence": 0.99,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T11:45:00.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -123,8 +130,7 @@
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

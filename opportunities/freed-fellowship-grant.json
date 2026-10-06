@@ -16,6 +16,12 @@
         "url": "https://www.freedfellowship.com/grant",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "deadline",
+        "url": "https://www.freedfellowship.com/grant",
+        "checkedAt": "2026-10-06T11:45:00.000Z",
+        "claim": "The provider describes rolling applications with a monthly last-day cutoff for each grant cycle."
       }
     ]
   },
@@ -52,8 +58,8 @@
     "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "deadlineType": "periodic",
+    "applicationCycle": "Applications are accepted continuously; monthly consideration closes at midnight Eastern on the last day of each month.",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -83,21 +89,22 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "72156114f0698ae01ca9a65acd831e1471e31b94ab24aeb7c778c171d0f6c11c",
-    "confidence": 0.94,
+    "sourceFetchedAt": "2026-10-06T11:45:00.000Z",
+    "sourceHash": null,
+    "confidence": 0.96,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T11:45:00.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -123,8 +130,7 @@
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

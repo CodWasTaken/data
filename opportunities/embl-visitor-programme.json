@@ -22,6 +22,12 @@
         "url": "https://www.embl.org/about/info/scientific-visitor-programme/fellowships/corporate-partnership-programme-fellowships/",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Additional source used for AI-assisted availability context."
+      },
+      {
+        "type": "deadline",
+        "url": "https://www.embl.org/about/info/scientific-visitor-programme/visits-embl/",
+        "checkedAt": "2026-10-06T11:45:00.000Z",
+        "claim": "EMBL states that there is no specific application deadline for a scientific visit."
       }
     ]
   },
@@ -56,8 +62,8 @@
     "statusReason": "Current visitor fellowship routes accept applications throughout the year; capacity language does not mean the whole visitor programme is limited. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "deadlineType": "rolling",
+    "applicationCycle": "There is no specific application deadline; prospective visitors arrange a visit with an EMBL host.",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -82,21 +88,22 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
+    "sourceFetchedAt": "2026-10-06T11:45:00.000Z",
     "sourceHash": null,
-    "confidence": 0.9,
+    "confidence": 0.96,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T11:45:00.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -122,8 +129,7 @@
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

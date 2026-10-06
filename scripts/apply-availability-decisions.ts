@@ -3,6 +3,10 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { OpportunityV2 } from "../generated/opportunity-v2";
 import {
+  applyStructuredFieldDecision,
+  type StructuredFieldManifest,
+} from "./apply-structured-field-overrides";
+import {
   migrateV1ToV2,
   type OpportunityV1,
 } from "./migrate-v1-to-v2";
@@ -39,6 +43,13 @@ const report = JSON.parse(
   await readFile(join(root, "reports", "availability-research.json"), "utf8"),
 ) as AvailabilityReport;
 const decisions = new Map(report.records.map((record) => [record.id, record]));
+const structuredManifest = JSON.parse(
+  await readFile(join(root, "editorial", "structured-field-overrides.json"), "utf8"),
+) as StructuredFieldManifest;
+const structuredDecisions = new Map(
+  structuredManifest.decisions.map((decision) => [decision.id, decision]),
+);
+
 const files = (await readdir(join(root, "opportunities")))
   .filter((file) => file.endsWith(".json") && !file.startsWith("_"))
   .sort();
@@ -168,6 +179,17 @@ for (const file of files) {
       );
     }
     legacy.status = mappedStatus;
+  }
+
+  const structuredDecision = structuredDecisions.get(raw.id);
+  if (structuredDecision) {
+    if ((updated as OpportunityV2).schemaVersion !== "2.0")
+      throw new Error(`Structured-field decision '${raw.id}' requires a v2 record.`);
+    updated = applyStructuredFieldDecision(
+      updated as OpportunityV2,
+      structuredDecision,
+      structuredManifest,
+    );
   }
 
   const rendered = `${JSON.stringify(updated, null, 2)}\n`;

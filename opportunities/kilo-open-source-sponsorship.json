@@ -9,13 +9,25 @@
   "urls": {
     "providerUrl": null,
     "programUrl": "https://kilo.ai/oss",
-    "applicationUrl": null,
+    "applicationUrl": "https://form.typeform.com/to/KeAxDfj5",
     "evidenceUrls": [
       {
         "type": "overview",
         "url": "https://kilo.ai/oss",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "application",
+        "url": "https://form.typeform.com/to/KeAxDfj5",
+        "checkedAt": "2026-10-06T11:45:00.000Z",
+        "claim": "The provider links this Typeform as Apply for Sponsorship."
+      },
+      {
+        "type": "deadline",
+        "url": "https://kilo.ai/oss",
+        "checkedAt": "2026-10-06T11:45:00.000Z",
+        "claim": "The provider states that applications are reviewed on a rolling basis."
       }
     ]
   },
@@ -51,8 +63,8 @@
     "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "deadlineType": "rolling",
+    "applicationCycle": "Applications are reviewed on a rolling basis.",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -82,21 +94,23 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-application-link",
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "0e25ad6ede3b0689acd3e21bfcdeefed3ff10a119b561560f5a51a765274c89d",
-    "confidence": 0.94,
+    "sourceFetchedAt": "2026-10-06T11:45:00.000Z",
+    "sourceHash": null,
+    "confidence": 0.98,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T11:45:00.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -117,13 +131,11 @@
       "Global"
     ],
     "unresolvedFields": [
-      "urls.applicationUrl",
       "classification.defaultSearchEligible",
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

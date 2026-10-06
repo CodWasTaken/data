@@ -43,3 +43,18 @@ test("review priority is deterministic and does not claim human review", () => {
   assert.equal("verified" in first, false);
   assert.equal("humanReviewed" in first, false);
 });
+
+
+test("checked-in review queue exposes structured-field gaps without treating them as review events", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const queue = JSON.parse(
+    await readFile(new URL("../reports/human-review-queue.json", import.meta.url), "utf8"),
+  ) as { records: Array<{ schemaVersion: string; structuredFieldGaps: string[] }> };
+  assert.ok(queue.records.length > 0);
+  for (const record of queue.records) {
+    assert.ok(["1", "2.0"].includes(record.schemaVersion));
+    assert.ok(Array.isArray(record.structuredFieldGaps));
+    assert.equal(record.structuredFieldGaps.includes("verified"), false);
+    assert.equal(record.structuredFieldGaps.includes("human-reviewed"), false);
+  }
+});

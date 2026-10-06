@@ -1,6 +1,6 @@
 {
-  "decisionVersion": 1,
-  "decidedAt": "2026-07-23",
+  "decisionVersion": 2,
+  "decidedAt": "2026-10-06",
   "method": "ai-assisted-context-review",
   "automaticPublicationAllowed": false,
   "note": "These overrides correct cases where page-wide phrase matching loses record or date context. They remain needs-human-review and must not be represented as manual approval.",
@@ -11,6 +11,13 @@
       "confidence": 0.98,
       "evidenceUrl": "https://sustainability.aboutamazon.com/sustainability-accelerator-climate-tech",
       "rationale": "The cited 2026 application window closed on 10 July 2026."
+    },
+    {
+      "id": "aws-activate-cloud-credits",
+      "status": "open",
+      "confidence": 0.96,
+      "evidenceUrl": "https://aws.amazon.com/startups/credits/",
+      "rationale": "The official page provides current application paths for the Founders and Portfolio packages; an invite-only higher tier does not make the whole program limited."
     },
     {
       "id": "aws-generative-ai-accelerator",
@@ -27,11 +34,11 @@
       "rationale": "The official Batch 23 page says applications are open from 20 July through 21 August 2026."
     },
     {
-      "id": "aws-activate-cloud-credits",
+      "id": "cal-job-shadow",
       "status": "open",
-      "confidence": 0.96,
-      "evidenceUrl": "https://aws.amazon.com/startups/credits/",
-      "rationale": "The official page provides current application paths for the Founders and Portfolio packages; an invite-only higher tier does not make the whole program limited."
+      "confidence": 0.99,
+      "evidenceUrl": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
+      "rationale": "The official Winter Session timeline lists student applications from 17 August through 26 October 2026, so the application window is currently open."
     },
     {
       "id": "datadog-preview-features",

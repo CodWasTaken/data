@@ -65,9 +65,9 @@ test("automated provenance never claims human review", async () => {
     if (provenance.reviewMethod !== "automated-source-research") continue;
     const classification = record.classification as Record<string, unknown>;
     assert.equal(classification.reviewState, "needs-human-review", decision.id);
-    assert.equal(
-      provenance.reviewerReference,
-      "automation:availability-research-v1",
+    assert.match(
+      String(provenance.reviewerReference ?? ""),
+      /^automation:/,
       decision.id,
     );
     assert.equal(provenance.reviewedAt, null, decision.id);

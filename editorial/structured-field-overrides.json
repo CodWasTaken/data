@@ -1,0 +1,109 @@
+{
+  "decisionVersion": 1,
+  "researchedAt": "2026-10-06T11:45:00.000Z",
+  "methodology": "Explicit provider-source research for structured application and deadline fields. These decisions are automated-source-research inputs only and never constitute human editorial review.",
+  "decisions": [
+    {
+      "id": "alchemist-accelerator",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://www.alchemistaccelerator.com/apply",
+        "deadlineType": "rolling",
+        "applicationCycle": "Applications are accepted on a rolling basis."
+      },
+      "evidence": [
+        { "type": "application", "url": "https://www.alchemistaccelerator.com/apply", "claim": "The provider exposes this page as the direct Apply Now destination." },
+        { "type": "deadline", "url": "https://www.alchemistaccelerator.com/", "claim": "The provider states that application deadlines are rolling." }
+      ]
+    },
+    {
+      "id": "kilo-open-source-sponsorship",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://form.typeform.com/to/KeAxDfj5",
+        "deadlineType": "rolling",
+        "applicationCycle": "Applications are reviewed on a rolling basis."
+      },
+      "evidence": [
+        { "type": "application", "url": "https://form.typeform.com/to/KeAxDfj5", "claim": "The provider links this Typeform as Apply for Sponsorship." },
+        { "type": "deadline", "url": "https://kilo.ai/oss", "claim": "The provider states that applications are reviewed on a rolling basis." }
+      ]
+    },
+    {
+      "id": "crisis-text-line-volunteer",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://signup.crisistextline.org/",
+        "deadlineType": "rolling",
+        "applicationCycle": "Volunteer applications are accepted on a rolling basis."
+      },
+      "evidence": [
+        { "type": "application", "url": "https://signup.crisistextline.org/", "claim": "The provider links this destination as the volunteer application." },
+        { "type": "deadline", "url": "https://www.crisistextline.org/volunteer/", "claim": "The provider states that volunteer applications are accepted on a rolling basis." }
+      ]
+    },
+    {
+      "id": "pollination-project-daily-grant",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://thepollinationproject.smapply.us/prog/daily_grants_program/",
+        "deadlineType": "rolling",
+        "applicationCycle": "Daily Grant applications are accepted on a rolling basis."
+      },
+      "evidence": [
+        { "type": "application", "url": "https://thepollinationproject.smapply.us/prog/daily_grants_program/", "claim": "The provider links this SMApply page as the Daily Grants application form." },
+        { "type": "deadline", "url": "https://thepollinationproject.org/apply/", "claim": "The provider describes the grant application process as rolling." }
+      ]
+    },
+    {
+      "id": "openai-codex-for-open-source",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://openai.com/form/codex-for-oss/",
+        "deadlineType": "rolling",
+        "applicationCycle": "Applications are reviewed on a rolling basis."
+      },
+      "evidence": [
+        { "type": "application", "url": "https://openai.com/form/codex-for-oss/", "claim": "The provider page is the application form itself." },
+        { "type": "deadline", "url": "https://openai.com/form/codex-for-oss/", "claim": "The provider states that applications are reviewed on a rolling basis." }
+      ]
+    },
+    {
+      "id": "embl-visitor-programme",
+      "confidence": 0.96,
+      "fields": {
+        "deadlineType": "rolling",
+        "applicationCycle": "There is no specific application deadline; prospective visitors arrange a visit with an EMBL host."
+      },
+      "evidence": [
+        { "type": "deadline", "url": "https://www.embl.org/about/info/scientific-visitor-programme/visits-embl/", "claim": "EMBL states that there is no specific application deadline for a scientific visit." }
+      ]
+    },
+    {
+      "id": "freed-fellowship-grant",
+      "confidence": 0.96,
+      "fields": {
+        "deadlineType": "periodic",
+        "applicationCycle": "Applications are accepted continuously; monthly consideration closes at midnight Eastern on the last day of each month."
+      },
+      "evidence": [
+        { "type": "deadline", "url": "https://www.freedfellowship.com/grant", "claim": "The provider describes rolling applications with a monthly last-day cutoff for each grant cycle." }
+      ]
+    },
+    {
+      "id": "cal-job-shadow",
+      "confidence": 0.99,
+      "fields": {
+        "status": "open",
+        "opensAt": "2026-08-17",
+        "closesAt": "2026-10-26",
+        "deadlineType": "fixed",
+        "applicationCycle": "Winter 2027 session",
+        "statusReason": "The provider's Winter Session timeline lists the student application period as August 17 through October 26, 2026. Structured by AI-assisted source research; human editorial review is still required."
+      },
+      "evidence": [
+        { "type": "deadline", "url": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/", "claim": "The provider lists the Winter Session application period as August 17 through October 26, 2026." }
+      ]
+    }
+  ]
+}

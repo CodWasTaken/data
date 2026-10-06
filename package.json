@@ -19,8 +19,10 @@
     "status:apply": "tsx scripts/correct-generated-statuses.ts",
     "status:check": "tsx scripts/correct-generated-statuses.ts --check",
     "validate": "tsx scripts/validate.ts",
-    "check": "npm run generate:check && npm run scope:check && npm run status:check && npm run availability:check && npm run validate",
-    "test": "npm run check && tsx --test tests/*.test.ts"
+    "check": "npm run generate:check && npm run scope:check && npm run status:check && npm run availability:check && npm run structured:check && npm run validate",
+    "test": "npm run check && tsx --test tests/*.test.ts",
+    "structured:apply": "tsx scripts/apply-structured-field-overrides.ts",
+    "structured:check": "tsx scripts/apply-structured-field-overrides.ts --check"
   },
   "devDependencies": {
     "@types/node": "^26.1.1",
