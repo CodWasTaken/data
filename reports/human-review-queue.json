@@ -35,6 +35,28 @@
       ]
     },
     {
+      "id": "anthropic-model-safety-bug-bounty",
+      "provider": "Anthropic",
+      "title": "Anthropic Model Safety Bug Bounty Program",
+      "status": "rolling",
+      "schemaVersion": "2.0",
+      "resourceType": "opportunity",
+      "defaultSearchEligible": null,
+      "applicationUrlStructured": true,
+      "deadlineStructured": true,
+      "structuredFieldGaps": [],
+      "score": 1680,
+      "priorityReasons": [
+        "default-search-eligible",
+        "material-or-selective-resource-type",
+        "current-or-actionable-status",
+        "provider-source-coverage",
+        "multiple-evidence-links",
+        "structured-deadline",
+        "application-url"
+      ]
+    },
+    {
       "id": "crisis-text-line-volunteer",
       "provider": "Crisis Text Line",
       "title": "Volunteer Crisis Counselor",
@@ -101,6 +123,28 @@
       ]
     },
     {
+      "id": "freed-fellowship-grant",
+      "provider": "The Freed Fellowship",
+      "title": "Freed Fellowship Grant",
+      "status": "rolling",
+      "schemaVersion": "2.0",
+      "resourceType": "funding",
+      "defaultSearchEligible": null,
+      "applicationUrlStructured": true,
+      "deadlineStructured": true,
+      "structuredFieldGaps": [],
+      "score": 1680,
+      "priorityReasons": [
+        "default-search-eligible",
+        "material-or-selective-resource-type",
+        "current-or-actionable-status",
+        "provider-source-coverage",
+        "multiple-evidence-links",
+        "structured-deadline",
+        "application-url"
+      ]
+    },
+    {
       "id": "pollination-project-daily-grant",
       "provider": "The Pollination Project",
       "title": "Daily Grant Program",
@@ -123,17 +167,39 @@
       ]
     },
     {
-      "id": "freed-fellowship-grant",
-      "provider": "The Freed Fellowship",
-      "title": "Freed Fellowship Grant",
+      "id": "wfp-innovation-accelerator",
+      "provider": "World Food Programme",
+      "title": "WFP Innovation Accelerator",
       "status": "rolling",
       "schemaVersion": "2.0",
-      "resourceType": "funding",
+      "resourceType": "opportunity",
       "defaultSearchEligible": null,
-      "applicationUrlStructured": false,
+      "applicationUrlStructured": true,
       "deadlineStructured": true,
-      "structuredFieldGaps": [
+      "structuredFieldGaps": [],
+      "score": 1680,
+      "priorityReasons": [
+        "default-search-eligible",
+        "material-or-selective-resource-type",
+        "current-or-actionable-status",
+        "provider-source-coverage",
+        "multiple-evidence-links",
+        "structured-deadline",
         "application-url"
+      ]
+    },
+    {
+      "id": "macstadium-oss-program",
+      "provider": "MacStadium",
+      "title": "Open Source Program",
+      "status": "waitlist",
+      "schemaVersion": "2.0",
+      "resourceType": "opportunity",
+      "defaultSearchEligible": null,
+      "applicationUrlStructured": true,
+      "deadlineStructured": false,
+      "structuredFieldGaps": [
+        "deadline"
       ],
       "score": 1640,
       "priorityReasons": [
@@ -142,7 +208,7 @@
         "current-or-actionable-status",
         "provider-source-coverage",
         "multiple-evidence-links",
-        "structured-deadline"
+        "application-url"
       ]
     },
     {
@@ -192,50 +258,6 @@
       ]
     },
     {
-      "id": "anthropic-model-safety-bug-bounty",
-      "provider": "Anthropic",
-      "title": "Anthropic Model Safety Bug Bounty Program",
-      "status": "rolling",
-      "schemaVersion": "2.0",
-      "resourceType": "opportunity",
-      "defaultSearchEligible": null,
-      "applicationUrlStructured": false,
-      "deadlineStructured": false,
-      "structuredFieldGaps": [
-        "application-url",
-        "deadline"
-      ],
-      "score": 1550,
-      "priorityReasons": [
-        "default-search-eligible",
-        "material-or-selective-resource-type",
-        "current-or-actionable-status",
-        "provider-source-coverage"
-      ]
-    },
-    {
-      "id": "macstadium-oss-program",
-      "provider": "MacStadium",
-      "title": "Open Source Program",
-      "status": "waitlist",
-      "schemaVersion": "2.0",
-      "resourceType": "opportunity",
-      "defaultSearchEligible": null,
-      "applicationUrlStructured": false,
-      "deadlineStructured": false,
-      "structuredFieldGaps": [
-        "application-url",
-        "deadline"
-      ],
-      "score": 1550,
-      "priorityReasons": [
-        "default-search-eligible",
-        "material-or-selective-resource-type",
-        "current-or-actionable-status",
-        "provider-source-coverage"
-      ]
-    },
-    {
       "id": "ou-impact-accelerator",
       "provider": "Orthodox Union",
       "title": "OU Impact Accelerator",
@@ -280,25 +302,69 @@
       ]
     },
     {
-      "id": "wfp-innovation-accelerator",
-      "provider": "World Food Programme",
-      "title": "WFP Innovation Accelerator",
-      "status": "rolling",
+      "id": "amazon-sustainability-accelerator",
+      "provider": "Amazon",
+      "title": "Amazon Sustainability Accelerator: Climate Tech",
+      "status": "closed",
       "schemaVersion": "2.0",
       "resourceType": "opportunity",
       "defaultSearchEligible": null,
       "applicationUrlStructured": false,
-      "deadlineStructured": false,
+      "deadlineStructured": true,
       "structuredFieldGaps": [
-        "application-url",
-        "deadline"
+        "application-url"
       ],
-      "score": 1550,
+      "score": 1440,
       "priorityReasons": [
         "default-search-eligible",
         "material-or-selective-resource-type",
-        "current-or-actionable-status",
-        "provider-source-coverage"
+        "provider-source-coverage",
+        "multiple-evidence-links",
+        "structured-deadline"
+      ]
+    },
+    {
+      "id": "public-art-futures-lab-residency",
+      "provider": "Fulton County Arts and Culture",
+      "title": "Public Art Futures Lab Residency",
+      "status": "closed",
+      "schemaVersion": "2.0",
+      "resourceType": "opportunity",
+      "defaultSearchEligible": null,
+      "applicationUrlStructured": false,
+      "deadlineStructured": true,
+      "structuredFieldGaps": [
+        "application-url"
+      ],
+      "score": 1440,
+      "priorityReasons": [
+        "default-search-eligible",
+        "material-or-selective-resource-type",
+        "provider-source-coverage",
+        "multiple-evidence-links",
+        "structured-deadline"
+      ]
+    },
+    {
+      "id": "braden-storytelling-grant",
+      "provider": "Stanford Storytelling Project",
+      "title": "Braden Storytelling Grant",
+      "status": "closed",
+      "schemaVersion": "2.0",
+      "resourceType": "opportunity",
+      "defaultSearchEligible": null,
+      "applicationUrlStructured": false,
+      "deadlineStructured": true,
+      "structuredFieldGaps": [
+        "application-url"
+      ],
+      "score": 1440,
+      "priorityReasons": [
+        "default-search-eligible",
+        "material-or-selective-resource-type",
+        "provider-source-coverage",
+        "multiple-evidence-links",
+        "structured-deadline"
       ]
     },
     {
@@ -371,27 +437,6 @@
       "id": "one-hundred-plus-accelerator",
       "provider": "100+ Accelerator",
       "title": "100+ Accelerator",
-      "status": "closed",
-      "schemaVersion": "2.0",
-      "resourceType": "opportunity",
-      "defaultSearchEligible": null,
-      "applicationUrlStructured": false,
-      "deadlineStructured": false,
-      "structuredFieldGaps": [
-        "application-url",
-        "deadline"
-      ],
-      "score": 1350,
-      "priorityReasons": [
-        "default-search-eligible",
-        "material-or-selective-resource-type",
-        "provider-source-coverage"
-      ]
-    },
-    {
-      "id": "amazon-sustainability-accelerator",
-      "provider": "Amazon",
-      "title": "Amazon Sustainability Accelerator: Climate Tech",
       "status": "closed",
       "schemaVersion": "2.0",
       "resourceType": "opportunity",
@@ -539,27 +584,6 @@
       "id": "fast-forward-accelerator",
       "provider": "Fast Forward",
       "title": "Tech Nonprofit Accelerator",
-      "status": "closed",
-      "schemaVersion": "2.0",
-      "resourceType": "opportunity",
-      "defaultSearchEligible": null,
-      "applicationUrlStructured": false,
-      "deadlineStructured": false,
-      "structuredFieldGaps": [
-        "application-url",
-        "deadline"
-      ],
-      "score": 1350,
-      "priorityReasons": [
-        "default-search-eligible",
-        "material-or-selective-resource-type",
-        "provider-source-coverage"
-      ]
-    },
-    {
-      "id": "public-art-futures-lab-residency",
-      "provider": "Fulton County Arts and Culture",
-      "title": "Public Art Futures Lab Residency",
       "status": "closed",
       "schemaVersion": "2.0",
       "resourceType": "opportunity",
@@ -791,27 +815,6 @@
       "id": "spotify-technology-fellowship",
       "provider": "Spotify",
       "title": "Technology Fellowship Program",
-      "status": "closed",
-      "schemaVersion": "2.0",
-      "resourceType": "opportunity",
-      "defaultSearchEligible": null,
-      "applicationUrlStructured": false,
-      "deadlineStructured": false,
-      "structuredFieldGaps": [
-        "application-url",
-        "deadline"
-      ],
-      "score": 1350,
-      "priorityReasons": [
-        "default-search-eligible",
-        "material-or-selective-resource-type",
-        "provider-source-coverage"
-      ]
-    },
-    {
-      "id": "braden-storytelling-grant",
-      "provider": "Stanford Storytelling Project",
-      "title": "Braden Storytelling Grant",
       "status": "closed",
       "schemaVersion": "2.0",
       "resourceType": "opportunity",

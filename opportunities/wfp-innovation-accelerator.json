@@ -9,13 +9,25 @@
   "urls": {
     "providerUrl": null,
     "programUrl": "https://innovation.wfp.org/apply",
-    "applicationUrl": null,
+    "applicationUrl": "https://innovation.wfp.org/apply",
     "evidenceUrls": [
       {
         "type": "overview",
         "url": "https://innovation.wfp.org/apply",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "application",
+        "url": "https://innovation.wfp.org/apply",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "The WFP Innovation Accelerator exposes this page as its official Apply entry point."
+      },
+      {
+        "type": "deadline",
+        "url": "https://innovation.wfp.org/apply",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "The provider states that it has a rolling application process reviewed multiple times throughout the year."
       }
     ]
   },
@@ -53,8 +65,8 @@
     "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "deadlineType": "rolling",
+    "applicationCycle": "The provider accepts and reviews applications multiple times throughout the year through a rolling process.",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -84,21 +96,23 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-application-link",
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "c2978dbf9034e34e728f214e6f76f8b283684ba30e1146ff5ee4bedf7634b890",
-    "confidence": 0.94,
+    "sourceFetchedAt": "2026-10-06T14:13:06.000Z",
+    "sourceHash": null,
+    "confidence": 0.98,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T14:13:06.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -119,13 +133,11 @@
       "Global"
     ],
     "unresolvedFields": [
-      "urls.applicationUrl",
       "classification.defaultSearchEligible",
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

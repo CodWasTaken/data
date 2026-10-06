@@ -2,8 +2,8 @@
   "reportVersion": 2,
   "asOf": "2026-10-06",
   "recordsInspected": 1068,
-  "candidateCount": 1061,
-  "pendingCandidateCount": 772,
+  "candidateCount": 1060,
+  "pendingCandidateCount": 771,
   "explicitlyExcludedCount": 289,
   "defaultEligibleCount": 779,
   "policy": {
@@ -28,7 +28,7 @@
     "formulaic-record": 924,
     "generic-eligibility": 995,
     "generic-membership": 40,
-    "low-informational-value": 1055,
+    "low-informational-value": 1053,
     "loyalty-program": 20,
     "ordinary-free-product": 34,
     "public-resource": 37
@@ -1035,23 +1035,6 @@
       "category": "research-opportunities",
       "schemaVersion": "1",
       "resourceType": null,
-      "defaultSearchEligible": null,
-      "disposition": "human-review-candidate",
-      "decisionRule": null,
-      "flags": [
-        "low-informational-value"
-      ],
-      "reasons": [
-        "Decision-critical detail or distinct evidence/application URL is limited."
-      ]
-    },
-    {
-      "id": "anthropic-model-safety-bug-bounty",
-      "provider": "Anthropic",
-      "title": "Anthropic Model Safety Bug Bounty Program",
-      "category": "developer-programs",
-      "schemaVersion": "2.0",
-      "resourceType": "opportunity",
       "defaultSearchEligible": null,
       "disposition": "human-review-candidate",
       "decisionRule": null,
@@ -14218,14 +14201,12 @@
       "flags": [
         "formulaic-record",
         "generic-eligibility",
-        "low-informational-value",
         "public-resource"
       ],
       "reasons": [
         "Appears primarily to be a public resource rather than an application-based opportunity.",
         "Eligibility text is reused across 40 records.",
-        "Text follows a repeated template and needs provider-specific verification.",
-        "Decision-critical detail or distinct evidence/application URL is limited."
+        "Text follows a repeated template and needs provider-specific verification."
       ]
     },
     {

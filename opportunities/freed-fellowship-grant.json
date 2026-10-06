@@ -9,7 +9,7 @@
   "urls": {
     "providerUrl": null,
     "programUrl": "https://www.freedfellowship.com/grant",
-    "applicationUrl": null,
+    "applicationUrl": "https://freedfellowship.com/application",
     "evidenceUrls": [
       {
         "type": "overview",
@@ -20,8 +20,14 @@
       {
         "type": "deadline",
         "url": "https://www.freedfellowship.com/grant",
-        "checkedAt": "2026-10-06T11:45:00.000Z",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
         "claim": "The provider describes rolling applications with a monthly last-day cutoff for each grant cycle."
+      },
+      {
+        "type": "application",
+        "url": "https://freedfellowship.com/application",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "The provider hosts the grant application form at this direct application page."
       }
     ]
   },
@@ -91,12 +97,13 @@
     "reviewMethod": "automated-source-research",
     "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
+      "automated-application-link",
       "automated-availability-signal",
       "automated-deadline-structure",
       "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-10-06T11:45:00.000Z",
+    "sourceFetchedAt": "2026-10-06T14:13:06.000Z",
     "sourceHash": null,
     "confidence": 0.96,
     "importSource": "legacy-maintainer-record",
@@ -104,7 +111,7 @@
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-10-06T11:45:00.000Z",
+    "updatedAt": "2026-10-06T14:13:06.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -125,7 +132,6 @@
       "Global"
     ],
     "unresolvedFields": [
-      "urls.applicationUrl",
       "classification.defaultSearchEligible",
       "geography.global",
       "geography.remote",

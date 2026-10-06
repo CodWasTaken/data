@@ -9,13 +9,25 @@
   "urls": {
     "providerUrl": null,
     "programUrl": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
-    "applicationUrl": null,
+    "applicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf3IuyunFH1Rbz_9Bpt2kGBfwSW5QQ1TBkeAzNZrtCP-hRvNA/viewform",
     "evidenceUrls": [
       {
         "type": "overview",
         "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "application",
+        "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "Anthropic's official program page links this Google Form as the application to join the program."
+      },
+      {
+        "type": "deadline",
+        "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "Anthropic states that applications are reviewed on a rolling basis."
       }
     ]
   },
@@ -52,8 +64,8 @@
     "statusReason": "Visible source text contains the 'rolling-applications' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
     "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "deadlineType": "rolling",
+    "applicationCycle": "Applications are reviewed on a rolling basis.",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -78,21 +90,23 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-application-link",
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "27552855d0a6fd5552cf8a2c72f86a7195e66e6040d9794a2cff5d78439d32d8",
-    "confidence": 0.94,
+    "sourceFetchedAt": "2026-10-06T14:13:06.000Z",
+    "sourceHash": null,
+    "confidence": 0.99,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T14:13:06.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -113,13 +127,11 @@
       "Global, subject to program availability and selection"
     ],
     "unresolvedFields": [
-      "urls.applicationUrl",
       "classification.defaultSearchEligible",
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

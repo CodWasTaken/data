@@ -16,6 +16,12 @@
         "url": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "deadline",
+        "url": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "Stanford states that 2026 Braden Grant applications were due February 22, 2026 at 11:59 p.m. PST."
       }
     ]
   },
@@ -52,9 +58,9 @@
     "status": "closed",
     "statusReason": "Visible source text contains the 'applications-closed' signal. Status assigned by AI-assisted source research; human editorial review is still required.",
     "opensAt": null,
-    "closesAt": null,
-    "deadlineType": "unknown",
-    "applicationCycle": null,
+    "closesAt": "2026-02-22",
+    "deadlineType": "fixed",
+    "applicationCycle": "2026 Braden Grant cohort",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -88,21 +94,22 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-availability-signal",
+      "automated-deadline-structure",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "1b67b8f215660005486eb007cce703cd322accfc958768d0fe9000b1bb0f7e81",
-    "confidence": 0.94,
+    "sourceFetchedAt": "2026-10-06T14:13:06.000Z",
+    "sourceHash": null,
+    "confidence": 0.99,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T14:13:06.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -128,8 +135,7 @@
       "geography.global",
       "geography.remote",
       "geography.countries",
-      "geography.residencyRequired",
-      "availability.deadlineType"
+      "geography.residencyRequired"
     ]
   }
 }

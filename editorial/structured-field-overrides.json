@@ -12,82 +12,73 @@
         "applicationCycle": "Applications are accepted on a rolling basis."
       },
       "evidence": [
-        { "type": "application", "url": "https://www.alchemistaccelerator.com/apply", "claim": "The provider exposes this page as the direct Apply Now destination." },
-        { "type": "deadline", "url": "https://www.alchemistaccelerator.com/", "claim": "The provider states that application deadlines are rolling." }
+        {
+          "type": "application",
+          "url": "https://www.alchemistaccelerator.com/apply",
+          "claim": "The provider exposes this page as the direct Apply Now destination."
+        },
+        {
+          "type": "deadline",
+          "url": "https://www.alchemistaccelerator.com/",
+          "claim": "The provider states that application deadlines are rolling."
+        }
       ]
     },
     {
-      "id": "kilo-open-source-sponsorship",
-      "confidence": 0.98,
+      "id": "amazon-sustainability-accelerator",
+      "researchedAt": "2026-10-06T14:13:06.000Z",
+      "confidence": 0.99,
       "fields": {
-        "applicationUrl": "https://form.typeform.com/to/KeAxDfj5",
+        "opensAt": "2026-06-03",
+        "closesAt": "2026-07-10",
+        "deadlineType": "fixed",
+        "applicationCycle": "2026 Climate Tech cohort"
+      },
+      "evidence": [
+        {
+          "type": "deadline",
+          "url": "https://sustainability.aboutamazon.com/sustainability-accelerator-climate-tech",
+          "claim": "Amazon states that 2026 applications opened 3 June and closed 10 July 2026."
+        }
+      ]
+    },
+    {
+      "id": "anthropic-model-safety-bug-bounty",
+      "researchedAt": "2026-10-06T14:13:06.000Z",
+      "confidence": 0.99,
+      "fields": {
+        "applicationUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf3IuyunFH1Rbz_9Bpt2kGBfwSW5QQ1TBkeAzNZrtCP-hRvNA/viewform",
         "deadlineType": "rolling",
         "applicationCycle": "Applications are reviewed on a rolling basis."
       },
       "evidence": [
-        { "type": "application", "url": "https://form.typeform.com/to/KeAxDfj5", "claim": "The provider links this Typeform as Apply for Sponsorship." },
-        { "type": "deadline", "url": "https://kilo.ai/oss", "claim": "The provider states that applications are reviewed on a rolling basis." }
+        {
+          "type": "application",
+          "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+          "claim": "Anthropic's official program page links this Google Form as the application to join the program."
+        },
+        {
+          "type": "deadline",
+          "url": "https://support.claude.com/en/articles/12119250-model-safety-bug-bounty-program",
+          "claim": "Anthropic states that applications are reviewed on a rolling basis."
+        }
       ]
     },
     {
-      "id": "crisis-text-line-volunteer",
-      "confidence": 0.98,
+      "id": "braden-storytelling-grant",
+      "researchedAt": "2026-10-06T14:13:06.000Z",
+      "confidence": 0.99,
       "fields": {
-        "applicationUrl": "https://signup.crisistextline.org/",
-        "deadlineType": "rolling",
-        "applicationCycle": "Volunteer applications are accepted on a rolling basis."
+        "closesAt": "2026-02-22",
+        "deadlineType": "fixed",
+        "applicationCycle": "2026 Braden Grant cohort"
       },
       "evidence": [
-        { "type": "application", "url": "https://signup.crisistextline.org/", "claim": "The provider links this destination as the volunteer application." },
-        { "type": "deadline", "url": "https://www.crisistextline.org/volunteer/", "claim": "The provider states that volunteer applications are accepted on a rolling basis." }
-      ]
-    },
-    {
-      "id": "pollination-project-daily-grant",
-      "confidence": 0.98,
-      "fields": {
-        "applicationUrl": "https://thepollinationproject.smapply.us/prog/daily_grants_program/",
-        "deadlineType": "rolling",
-        "applicationCycle": "Daily Grant applications are accepted on a rolling basis."
-      },
-      "evidence": [
-        { "type": "application", "url": "https://thepollinationproject.smapply.us/prog/daily_grants_program/", "claim": "The provider links this SMApply page as the Daily Grants application form." },
-        { "type": "deadline", "url": "https://thepollinationproject.org/apply/", "claim": "The provider describes the grant application process as rolling." }
-      ]
-    },
-    {
-      "id": "openai-codex-for-open-source",
-      "confidence": 0.98,
-      "fields": {
-        "applicationUrl": "https://openai.com/form/codex-for-oss/",
-        "deadlineType": "rolling",
-        "applicationCycle": "Applications are reviewed on a rolling basis."
-      },
-      "evidence": [
-        { "type": "application", "url": "https://openai.com/form/codex-for-oss/", "claim": "The provider page is the application form itself." },
-        { "type": "deadline", "url": "https://openai.com/form/codex-for-oss/", "claim": "The provider states that applications are reviewed on a rolling basis." }
-      ]
-    },
-    {
-      "id": "embl-visitor-programme",
-      "confidence": 0.96,
-      "fields": {
-        "deadlineType": "rolling",
-        "applicationCycle": "There is no specific application deadline; prospective visitors arrange a visit with an EMBL host."
-      },
-      "evidence": [
-        { "type": "deadline", "url": "https://www.embl.org/about/info/scientific-visitor-programme/visits-embl/", "claim": "EMBL states that there is no specific application deadline for a scientific visit." }
-      ]
-    },
-    {
-      "id": "freed-fellowship-grant",
-      "confidence": 0.96,
-      "fields": {
-        "deadlineType": "periodic",
-        "applicationCycle": "Applications are accepted continuously; monthly consideration closes at midnight Eastern on the last day of each month."
-      },
-      "evidence": [
-        { "type": "deadline", "url": "https://www.freedfellowship.com/grant", "claim": "The provider describes rolling applications with a monthly last-day cutoff for each grant cycle." }
+        {
+          "type": "deadline",
+          "url": "https://storytelling.stanford.edu/grants-fellowships/braden-storytelling-grant/apply-braden-grant",
+          "claim": "Stanford states that 2026 Braden Grant applications were due February 22, 2026 at 11:59 p.m. PST."
+        }
       ]
     },
     {
@@ -102,7 +93,187 @@
         "statusReason": "The provider's Winter Session timeline lists the student application period as August 17 through October 26, 2026. Structured by AI-assisted source research; human editorial review is still required."
       },
       "evidence": [
-        { "type": "deadline", "url": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/", "claim": "The provider lists the Winter Session application period as August 17 through October 26, 2026." }
+        {
+          "type": "deadline",
+          "url": "https://www.career.berkeley.edu/find-opportunities/experiential-learning/externship-program/",
+          "claim": "The provider lists the Winter Session application period as August 17 through October 26, 2026."
+        }
+      ]
+    },
+    {
+      "id": "crisis-text-line-volunteer",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://signup.crisistextline.org/",
+        "deadlineType": "rolling",
+        "applicationCycle": "Volunteer applications are accepted on a rolling basis."
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://signup.crisistextline.org/",
+          "claim": "The provider links this destination as the volunteer application."
+        },
+        {
+          "type": "deadline",
+          "url": "https://www.crisistextline.org/volunteer/",
+          "claim": "The provider states that volunteer applications are accepted on a rolling basis."
+        }
+      ]
+    },
+    {
+      "id": "embl-visitor-programme",
+      "confidence": 0.96,
+      "fields": {
+        "deadlineType": "rolling",
+        "applicationCycle": "There is no specific application deadline; prospective visitors arrange a visit with an EMBL host."
+      },
+      "evidence": [
+        {
+          "type": "deadline",
+          "url": "https://www.embl.org/about/info/scientific-visitor-programme/visits-embl/",
+          "claim": "EMBL states that there is no specific application deadline for a scientific visit."
+        }
+      ]
+    },
+    {
+      "id": "freed-fellowship-grant",
+      "confidence": 0.96,
+      "fields": {
+        "deadlineType": "periodic",
+        "applicationCycle": "Applications are accepted continuously; monthly consideration closes at midnight Eastern on the last day of each month.",
+        "applicationUrl": "https://freedfellowship.com/application"
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://freedfellowship.com/application",
+          "claim": "The provider hosts the grant application form at this direct application page."
+        },
+        {
+          "type": "deadline",
+          "url": "https://www.freedfellowship.com/grant",
+          "claim": "The provider describes rolling applications with a monthly last-day cutoff for each grant cycle."
+        }
+      ],
+      "researchedAt": "2026-10-06T14:13:06.000Z"
+    },
+    {
+      "id": "kilo-open-source-sponsorship",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://form.typeform.com/to/KeAxDfj5",
+        "deadlineType": "rolling",
+        "applicationCycle": "Applications are reviewed on a rolling basis."
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://form.typeform.com/to/KeAxDfj5",
+          "claim": "The provider links this Typeform as Apply for Sponsorship."
+        },
+        {
+          "type": "deadline",
+          "url": "https://kilo.ai/oss",
+          "claim": "The provider states that applications are reviewed on a rolling basis."
+        }
+      ]
+    },
+    {
+      "id": "macstadium-oss-program",
+      "researchedAt": "2026-10-06T14:13:06.000Z",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://macstadium.com/opensource-application",
+        "applicationCycle": "The provider currently accepts a waitlist registration for future FOSS program openings."
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://macstadium.com/company/opensource",
+          "claim": "MacStadium links its FOSS-program waitlist to the opensource-application page."
+        }
+      ]
+    },
+    {
+      "id": "openai-codex-for-open-source",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://openai.com/form/codex-for-oss/",
+        "deadlineType": "rolling",
+        "applicationCycle": "Applications are reviewed on a rolling basis."
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://openai.com/form/codex-for-oss/",
+          "claim": "The provider page is the application form itself."
+        },
+        {
+          "type": "deadline",
+          "url": "https://openai.com/form/codex-for-oss/",
+          "claim": "The provider states that applications are reviewed on a rolling basis."
+        }
+      ]
+    },
+    {
+      "id": "pollination-project-daily-grant",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://thepollinationproject.smapply.us/prog/daily_grants_program/",
+        "deadlineType": "rolling",
+        "applicationCycle": "Daily Grant applications are accepted on a rolling basis."
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://thepollinationproject.smapply.us/prog/daily_grants_program/",
+          "claim": "The provider links this SMApply page as the Daily Grants application form."
+        },
+        {
+          "type": "deadline",
+          "url": "https://thepollinationproject.org/apply/",
+          "claim": "The provider describes the grant application process as rolling."
+        }
+      ]
+    },
+    {
+      "id": "public-art-futures-lab-residency",
+      "researchedAt": "2026-10-06T14:13:06.000Z",
+      "confidence": 0.99,
+      "fields": {
+        "closesAt": "2026-02-10",
+        "deadlineType": "fixed",
+        "applicationCycle": "2026 Public Art Futures Lab Artists-in-Residence Program"
+      },
+      "evidence": [
+        {
+          "type": "deadline",
+          "url": "https://fultoncountyga.gov/News/2026/01/07/Call-for-2026-Artists-in-Residence-at-the-Public-Art-Futures-Lab",
+          "claim": "Fulton County states that applications for the 2026 residency were open through February 10, 2026."
+        }
+      ]
+    },
+    {
+      "id": "wfp-innovation-accelerator",
+      "researchedAt": "2026-10-06T14:13:06.000Z",
+      "confidence": 0.98,
+      "fields": {
+        "applicationUrl": "https://innovation.wfp.org/apply",
+        "deadlineType": "rolling",
+        "applicationCycle": "The provider accepts and reviews applications multiple times throughout the year through a rolling process."
+      },
+      "evidence": [
+        {
+          "type": "application",
+          "url": "https://innovation.wfp.org/apply",
+          "claim": "The WFP Innovation Accelerator exposes this page as its official Apply entry point."
+        },
+        {
+          "type": "deadline",
+          "url": "https://innovation.wfp.org/apply",
+          "claim": "The provider states that it has a rolling application process reviewed multiple times throughout the year."
+        }
       ]
     }
   ]

@@ -9,10 +9,10 @@ As of 2026-10-06, 1068 mixed v1/v2 records were inspected. Coverage totals are d
 | recentlyReviewed | 736 (68.91%) |
 | recordsOverdueForReview | 0 (0%) |
 | missingReviewDate | 332 (31.09%) |
-| structuredDeadlines | 8 (0.75%) |
-| applicationUrls | 5 (0.47%) |
+| structuredDeadlines | 13 (1.22%) |
+| applicationUrls | 9 (0.84%) |
 | providerSpecificEligibility | 73 (6.84%) |
-| multipleEvidenceLinks | 14 (1.31%) |
+| multipleEvidenceLinks | 20 (1.87%) |
 | duplicateUrlRecords | 120 (11.24%) |
 | duplicateProviderTitleRecords | 0 (0%) |
 | genericTextRecords | 995 (93.16%) |

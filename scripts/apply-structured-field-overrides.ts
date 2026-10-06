@@ -10,6 +10,7 @@ type Status = OpportunityV2["availability"]["status"];
 
 export interface StructuredFieldDecision {
   id: string;
+  researchedAt?: string;
   confidence: number;
   fields: {
     applicationUrl?: string;
@@ -54,6 +55,8 @@ export function validateStructuredFieldManifest(manifest: StructuredFieldManifes
   for (const decision of manifest.decisions) {
     if (ids.has(decision.id)) throw new Error(`Duplicate structured-field decision '${decision.id}'.`);
     ids.add(decision.id);
+    if (decision.researchedAt && Number.isNaN(new Date(decision.researchedAt).valueOf()))
+      throw new Error(`${decision.id}: researchedAt is invalid.`);
     if (decision.confidence < 0 || decision.confidence > 1)
       throw new Error(`${decision.id}: confidence must be between 0 and 1.`);
     if (!Object.keys(decision.fields).length)
@@ -107,6 +110,15 @@ export function applyStructuredFieldDecision(
   if (raw.id !== decision.id) throw new Error(`${decision.id}: record ID mismatch.`);
   const record = structuredClone(raw);
   const fields = decision.fields;
+  const researchedAt = decision.researchedAt ?? manifest.researchedAt;
+  const humanReviewed =
+    record.reviewProvenance.reviewedAt !== null &&
+    ["human", "human-assisted", "provider-confirmed"].includes(
+      record.reviewProvenance.reviewMethod,
+    );
+  // Human review is authoritative. Once a real moderator has reviewed a record,
+  // this automated research manifest must never rewrite its structured fields or provenance.
+  if (humanReviewed) return record;
   if (fields.applicationUrl !== undefined) record.urls.applicationUrl = fields.applicationUrl;
   if (fields.status !== undefined) record.availability.status = fields.status;
   if (fields.statusReason !== undefined) record.availability.statusReason = fields.statusReason;
@@ -117,12 +129,12 @@ export function applyStructuredFieldDecision(
   if (fields.nextExpectedOpening !== undefined)
     record.availability.nextExpectedOpening = fields.nextExpectedOpening;
 
-  upsertEvidence(record, decision, manifest.researchedAt);
+  upsertEvidence(record, decision, researchedAt);
   record.classification.reviewState = "needs-human-review";
   record.reviewProvenance.reviewedAt = null;
   record.reviewProvenance.reviewMethod = "automated-source-research";
   record.reviewProvenance.reviewerReference = "automation:structured-field-research-v1";
-  record.reviewProvenance.sourceFetchedAt = manifest.researchedAt;
+  record.reviewProvenance.sourceFetchedAt = researchedAt;
   record.reviewProvenance.sourceHash = null;
   record.reviewProvenance.confidence = decision.confidence;
   record.reviewProvenance.extractorVersion = "structured-field-research/1";
@@ -132,7 +144,7 @@ export function applyStructuredFieldDecision(
   if (fields.deadlineType !== undefined || fields.closesAt !== undefined)
     claims.add("automated-deadline-structure");
   record.reviewProvenance.claimsChecked = [...claims].sort();
-  record.changeHistory.updatedAt = manifest.researchedAt;
+  record.changeHistory.updatedAt = researchedAt;
 
   if (record.migration) {
     const resolved = new Set<string>();

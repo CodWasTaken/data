@@ -24,20 +24,20 @@
       "percentage": 31.09
     },
     "structuredDeadlines": {
-      "count": 8,
-      "percentage": 0.75
+      "count": 13,
+      "percentage": 1.22
     },
     "applicationUrls": {
-      "count": 5,
-      "percentage": 0.47
+      "count": 9,
+      "percentage": 0.84
     },
     "providerSpecificEligibility": {
       "count": 73,
       "percentage": 6.84
     },
     "multipleEvidenceLinks": {
-      "count": 14,
-      "percentage": 1.31
+      "count": 20,
+      "percentage": 1.87
     },
     "duplicateUrlRecords": {
       "count": 120,

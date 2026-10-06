@@ -9,13 +9,19 @@
   "urls": {
     "providerUrl": null,
     "programUrl": "https://macstadium.com/company/opensource",
-    "applicationUrl": null,
+    "applicationUrl": "https://macstadium.com/opensource-application",
     "evidenceUrls": [
       {
         "type": "overview",
         "url": "https://macstadium.com/company/opensource",
         "checkedAt": "2026-07-23T21:05:26.354Z",
         "claim": "Legacy source used for the published v1 record."
+      },
+      {
+        "type": "application",
+        "url": "https://macstadium.com/company/opensource",
+        "checkedAt": "2026-10-06T14:13:06.000Z",
+        "claim": "MacStadium links its FOSS-program waitlist to the opensource-application page."
       }
     ]
   },
@@ -51,7 +57,7 @@
     "opensAt": null,
     "closesAt": null,
     "deadlineType": "unknown",
-    "applicationCycle": null,
+    "applicationCycle": "The provider currently accepts a waitlist registration for future FOSS program openings.",
     "nextExpectedOpening": null
   },
   "costAndBenefit": {
@@ -76,21 +82,22 @@
   "reviewProvenance": {
     "reviewedAt": null,
     "reviewMethod": "automated-source-research",
-    "reviewerReference": "automation:availability-research-v1",
+    "reviewerReference": "automation:structured-field-research-v1",
     "claimsChecked": [
-      "automated-source-access",
-      "automated-availability-signal"
+      "automated-application-link",
+      "automated-availability-signal",
+      "automated-source-access"
     ],
     "nextReviewAt": null,
-    "sourceFetchedAt": "2026-07-23T21:05:26.354Z",
-    "sourceHash": "c129358d158eafb1ef137483cbfece6d237a0a31818213b5875202779f001452",
-    "confidence": 0.92,
+    "sourceFetchedAt": "2026-10-06T14:13:06.000Z",
+    "sourceHash": null,
+    "confidence": 0.98,
     "importSource": "legacy-maintainer-record",
-    "extractorVersion": "availability-research/1"
+    "extractorVersion": "structured-field-research/1"
   },
   "changeHistory": {
     "createdAt": null,
-    "updatedAt": "2026-07-18T00:00:00.000Z",
+    "updatedAt": "2026-10-06T14:13:06.000Z",
     "previousIds": [],
     "supersedes": [],
     "supersededBy": [],
@@ -111,7 +118,6 @@
       "Global"
     ],
     "unresolvedFields": [
-      "urls.applicationUrl",
       "classification.defaultSearchEligible",
       "geography.global",
       "geography.remote",

@@ -1,6 +1,6 @@
 # Catalogue scope audit
 
-As of 2026-10-06, the audit inspected 1068 records. 289 explicit decisions remove resources from default opportunity search while preserving their records and Git history. 772 flagged records still require human source review; a heuristic flag is not an editorial decision.
+As of 2026-10-06, the audit inspected 1068 records. 289 explicit decisions remove resources from default opportunity search while preserving their records and Git history. 771 flagged records still require human source review; a heuristic flag is not an editorial decision.
 
 ## Inclusion policy
 
@@ -26,7 +26,7 @@ A default opportunity should have at least one meaningful signal: restricted eli
 | formulaic-record | 924 |
 | generic-eligibility | 995 |
 | generic-membership | 40 |
-| low-informational-value | 1055 |
+| low-informational-value | 1053 |
 | loyalty-program | 20 |
 | ordinary-free-product | 34 |
 | public-resource | 37 |
